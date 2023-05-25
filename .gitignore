@@ -1,0 +1,42 @@
+# Next.js / Node
+.next/
+out/
+node_modules/
+*.log
+
+# Django / Python
+*.py[cod]
+*.pyo
+*.pyc
+__pycache__
+*.so
+
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# If you are using PostgreSQL
+*.env
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# PyCharm / IntelliJ IDEA related
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
