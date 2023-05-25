@@ -1,0 +1,19 @@
+{
+  "trendingPacks": [
+    {
+      "imagePath": "/assets/images/carnaval.jpg",
+      "author": "Trak Train",
+      "packName": "Maak - Carnaval"
+    },
+    {
+      "imagePath": "/assets/images/tastyloops.jpeg",
+      "author": "One Stop Shop",
+      "packName": "Tasty Loops by Mars Today"
+    },
+    {
+      "imagePath": "/assets/images/tape-vinyl-drums.jpg",
+      "author": "Sample Magic",
+      "packName": "Tape & Vinyl Drums"
+    }
+  ]
+}
