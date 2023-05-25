@@ -1,55 +1,55 @@
 [
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 1,
     "fields": {
       "name": "Hip Hop / R&B"
     }
   },
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 2,
     "fields": {
       "name": "Pop/EDM"
     }
   },
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 3,
     "fields": {
       "name": "Bass Music"
     }
   },
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 4,
     "fields": {
       "name": "Global"
     }
   },
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 5,
     "fields": {
       "name": "House/Techno"
     }
   },
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 6,
     "fields": {
       "name": "Live Sounds"
     }
   },
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 7,
     "fields": {
       "name": "Electronic"
     }
   },
   {
-    "model": "soundsprout.genre",
+    "model": "sound_sprout.genre",
     "pk": 8,
     "fields": {
       "name": "Cinematic"

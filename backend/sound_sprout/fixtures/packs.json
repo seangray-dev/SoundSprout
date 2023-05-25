@@ -1,0 +1,14 @@
+[
+  {
+    "model": "sound_sprout.pack",
+    "pk": 1,
+    "fields": {
+      "name": "Clouds - Indie Pop",
+      "description": "Samplestar are very proud to present Clouds! A production pack creatively inspired by bands like 2 Door Cinema Club, Bombay Bicycle Club, Foals, Friendly Fires, Metric, Phoenix, The Wombats - to name but a few. This pack is a must-have for any alternative indie pop enthusiasts. Clouds provides the perfect balance between nostalgic indie sounds and fresh modern pop sensibilities. From the infectious grooves of danceable indie pop to the introspective atmospheres of bedroom pop, Clouds has everything you need to start crafting your very own unique indie pop gems today! While suitable for a broad range of musical genres this library will be especially useful for media producers / composers within the Games, Film, TV and Radio advertising industry. Expect to hear - Hook laden jangly guitars, dreamy keys, lush vintage synths, tight and punchy drums, solid bass grooves and much more! All content has been carefully mixed and eq’d for optimum sonic balance while allowing plenty of extra headroom for further processing and also final mastering stages.",
+      "price": 9.99,
+      "cover_art_location": "packs/Clouds - Indie Pop/coverart.jepg",
+      "uploader": "Samplestar",
+      "preview": "packs/Clouds - Indie Pop/preview.wav"
+    }
+  }
+]
