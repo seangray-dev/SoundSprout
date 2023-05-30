@@ -2,7 +2,7 @@ import Heading from '../Utils/Heading';
 import Image from 'next/image';
 import Btn_Primary from '../Buttons/Btn_Primary';
 import { RocketLaunchIcon } from '@heroicons/react/24/solid';
-import FeaturedPack from '../../../public/assets/images/soul-vibes-cover-art.jpeg';
+import FeaturedPack from '/public/assets/images/soul-vibes-cover-art.jpeg';
 
 const Header = () => {
   return (

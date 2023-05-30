@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Bars2Icon } from '@heroicons/react/24/solid';
-import logo from '../../../public/assets/images/logo-no-background.png';
+import logo from '/public/assets/images/logo-no-background.png';
 
 const Nav = () => {
   return (
