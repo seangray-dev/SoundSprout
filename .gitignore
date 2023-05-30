@@ -40,3 +40,6 @@ ENV/
 
 # Visual Studio Code
 .vscode/
+
+# Audio Files
+*packs

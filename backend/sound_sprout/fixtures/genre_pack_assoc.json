@@ -1,0 +1,82 @@
+[
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 1,
+    "fields": {
+      "pack": 1,
+      "genre": 2
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 2,
+    "fields": {
+      "pack": 2,
+      "genre": 1
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 3,
+    "fields": {
+      "pack": 3,
+      "genre": 5
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 4,
+    "fields": {
+      "pack": 4,
+      "genre": 8
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 5,
+    "fields": {
+      "pack": 5,
+      "genre": 1
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 6,
+    "fields": {
+      "pack": 6,
+      "genre": 7
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 7,
+    "fields": {
+      "pack": 7,
+      "genre": 4
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 8,
+    "fields": {
+      "pack": 8,
+      "genre": 3
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 9,
+    "fields": {
+      "pack": 9,
+      "genre": 6
+    }
+  },
+  {
+    "model": "sound_sprout.genre_pack_assoc",
+    "pk": 10,
+    "fields": {
+      "pack": 10,
+      "genre": 1
+    }
+  }
+]
