@@ -4,6 +4,7 @@ import TrendingPacks from './components/Layout/TrendingPacks';
 import BrowseGenres from './components/Layout/BrowseGenres';
 import HowItWorks from './components/Layout/HowItWorks';
 import Footer from './components/Layout/Footer';
+import AudioPlayer from './components/AudioPlayer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <HowItWorks />
       </main>
       <Footer />
+      <AudioPlayer />
     </>
   );
 }
