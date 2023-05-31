@@ -6,18 +6,13 @@ import { useState, useEffect } from 'react';
 import Nav from '@/app/components/Layout/Nav';
 import AudioPlayer from '@/app/components/AudioPlayer';
 
-{
-  /* @ts-expect-error Async Server Component */
-}
 export default function Packs({ params }: { params: { id: string } }) {
   const [pack, setPack] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(
-          `http://your-django-api-url.com/packs/${params.id}`
-        );
+        const res = await fetch(`https://localhost:8000/packs/${params.id}`);
         setPack(res.data);
       } catch (err) {
         console.error(err);
