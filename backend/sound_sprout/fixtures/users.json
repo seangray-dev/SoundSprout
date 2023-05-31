@@ -1,0 +1,102 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "samplestar",
+      "password": "pbkdf2_sha256$260000$HPxhJPlP5iUo$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "samplestar@samples.com",
+      "first_name": "Samplestar"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "traktrain",
+      "password": "pbkdf2_sha256$260000$P3kA9PlJ5iUb$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "traktrain@samples.com",
+      "first_name": "TrakTrain"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "four4",
+      "password": "pbkdf2_sha256$260000$H7kF9PlL5iUc$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "four4@samples.com",
+      "first_name": "Four4"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "audiomodern",
+      "password": "pbkdf2_sha256$260000$J5kZ1PlM5iUd$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "audiomodern@samples.com",
+      "first_name": "Audiomodern"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "originsound",
+      "password": "pbkdf2_sha256$260000$F6kW5PlN5iUe$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "originsound@samples.com",
+      "first_name": "Origin Sound"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "username": "komorebiaudio",
+      "password": "pbkdf2_sha256$260000$K8kQ7PlO5iUf$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "komorebiaudio@samples.com",
+      "first_name": "Komorebi Audio"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "username": "blackoctopus",
+      "password": "pbkdf2_sha256$260000$F7kW5PlN7iUe$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "blackoctopus@samples.com",
+      "first_name": "Black Octopus"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "username": "productionmaster",
+      "password": "pbkdf2_sha256$260000$H8kF9PlL8iUc$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "user8@samples.com",
+      "first_name": "Production Master"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+      "username": "samplemagic",
+      "password": "pbkdf2_sha256$260000$J9kZ1PlM9iUd$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "user9@samples.com",
+      "first_name": "Sample Magic"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "username": "onestopshop",
+      "password": "pbkdf2_sha256$260000$K10kQ7PlO10iUf$ueozm6C/g1hpgE1Epr9ouVk7lYZaUVYqbjSQ47Rz9Cs=",
+      "email": "onestopshop@samples.com",
+      "first_name": "One Stop Shop"
+    }
+  }
+]

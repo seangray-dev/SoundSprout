@@ -29,7 +29,7 @@ class Pack(models.Model):
 class Sound(models.Model):
     """A Sound is an individual sound file that belongs to a Pack."""
     name = models.CharField(max_length=255)
-    audio_file = models.FileField(upload_to='audio_files/')
+    audio_file = models.FileField(upload_to='sounds/')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     pack = models.ForeignKey(Pack, on_delete=models.CASCADE)
 

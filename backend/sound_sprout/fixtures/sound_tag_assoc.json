@@ -1,4958 +1,4958 @@
 [
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 1,
-            "tag_id": 1
+            "sound": 1,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 1,
-            "tag_id": 2
+            "sound": 1,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 1,
-            "tag_id": 3
+            "sound": 1,
+            "tag": 3
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 1,
-            "tag_id": 4
+            "sound": 1,
+            "tag": 4
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 1,
-            "tag_id": 5
+            "sound": 1,
+            "tag": 5
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 1,
-            "tag_id": 6
+            "sound": 1,
+            "tag": 6
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 2,
-            "tag_id": 1
+            "sound": 2,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 2,
-            "tag_id": 2
+            "sound": 2,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 2,
-            "tag_id": 7
+            "sound": 2,
+            "tag": 7
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 2,
-            "tag_id": 8
+            "sound": 2,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 2,
-            "tag_id": 9
+            "sound": 2,
+            "tag": 9
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 2,
-            "tag_id": 10
+            "sound": 2,
+            "tag": 10
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 2,
-            "tag_id": 6
+            "sound": 2,
+            "tag": 6
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 3,
-            "tag_id": 1
+            "sound": 3,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 3,
-            "tag_id": 2
+            "sound": 3,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 3,
-            "tag_id": 11
+            "sound": 3,
+            "tag": 11
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 3,
-            "tag_id": 12
+            "sound": 3,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 3,
-            "tag_id": 13
+            "sound": 3,
+            "tag": 13
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 3,
-            "tag_id": 14
+            "sound": 3,
+            "tag": 14
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 4,
-            "tag_id": 1
+            "sound": 4,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 4,
-            "tag_id": 2
+            "sound": 4,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 4,
-            "tag_id": 11
+            "sound": 4,
+            "tag": 11
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 4,
-            "tag_id": 12
+            "sound": 4,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 4,
-            "tag_id": 15
+            "sound": 4,
+            "tag": 15
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 4,
-            "tag_id": 16
+            "sound": 4,
+            "tag": 16
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 5,
-            "tag_id": 1
+            "sound": 5,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 5,
-            "tag_id": 2
+            "sound": 5,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 5,
-            "tag_id": 3
+            "sound": 5,
+            "tag": 3
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 5,
-            "tag_id": 4
+            "sound": 5,
+            "tag": 4
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 5,
-            "tag_id": 17
+            "sound": 5,
+            "tag": 17
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 5,
-            "tag_id": 18
+            "sound": 5,
+            "tag": 18
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 6,
-            "tag_id": 1
+            "sound": 6,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 6,
-            "tag_id": 2
+            "sound": 6,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 6,
-            "tag_id": 11
+            "sound": 6,
+            "tag": 11
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 6,
-            "tag_id": 12
+            "sound": 6,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 6,
-            "tag_id": 19
+            "sound": 6,
+            "tag": 19
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 6,
-            "tag_id": 20
+            "sound": 6,
+            "tag": 20
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 1
+            "sound": 7,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 2
+            "sound": 7,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 21
+            "sound": 7,
+            "tag": 21
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 22
+            "sound": 7,
+            "tag": 22
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 8
+            "sound": 7,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 9
+            "sound": 7,
+            "tag": 9
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 23
+            "sound": 7,
+            "tag": 23
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 7,
-            "tag_id": 16
+            "sound": 7,
+            "tag": 16
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 8,
-            "tag_id": 1
+            "sound": 8,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 8,
-            "tag_id": 2
+            "sound": 8,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 8,
-            "tag_id": 11
+            "sound": 8,
+            "tag": 11
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 8,
-            "tag_id": 12
+            "sound": 8,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 8,
-            "tag_id": 24
+            "sound": 8,
+            "tag": 24
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 8,
-            "tag_id": 25
+            "sound": 8,
+            "tag": 25
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 8,
-            "tag_id": 14
+            "sound": 8,
+            "tag": 14
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 9,
-            "tag_id": 1
+            "sound": 9,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 9,
-            "tag_id": 2
+            "sound": 9,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 9,
-            "tag_id": 26
+            "sound": 9,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 9,
-            "tag_id": 8
+            "sound": 9,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 9,
-            "tag_id": 27
+            "sound": 9,
+            "tag": 27
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 9,
-            "tag_id": 28
+            "sound": 9,
+            "tag": 28
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 9,
-            "tag_id": 29
+            "sound": 9,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 10,
-            "tag_id": 1
+            "sound": 10,
+            "tag": 1
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 10,
-            "tag_id": 2
+            "sound": 10,
+            "tag": 2
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 10,
-            "tag_id": 30
+            "sound": 10,
+            "tag": 30
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 10,
-            "tag_id": 31
+            "sound": 10,
+            "tag": 31
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 32
+            "sound": 11,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 33
+            "sound": 11,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 34
+            "sound": 11,
+            "tag": 34
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 8
+            "sound": 11,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 12
+            "sound": 11,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 35
+            "sound": 11,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 36
+            "sound": 11,
+            "tag": 36
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 37
+            "sound": 11,
+            "tag": 37
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 38
+            "sound": 11,
+            "tag": 38
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 39
+            "sound": 11,
+            "tag": 39
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 11,
-            "tag_id": 40
+            "sound": 11,
+            "tag": 40
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 32
+            "sound": 12,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 33
+            "sound": 12,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 41
+            "sound": 12,
+            "tag": 41
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 8
+            "sound": 12,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 12
+            "sound": 12,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 35
+            "sound": 12,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 42
+            "sound": 12,
+            "tag": 42
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 43
+            "sound": 12,
+            "tag": 43
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 12,
-            "tag_id": 44
+            "sound": 12,
+            "tag": 44
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 32
+            "sound": 13,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 33
+            "sound": 13,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 45
+            "sound": 13,
+            "tag": 45
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 8
+            "sound": 13,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 12
+            "sound": 13,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 35
+            "sound": 13,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 46
+            "sound": 13,
+            "tag": 46
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 47
+            "sound": 13,
+            "tag": 47
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 13,
-            "tag_id": 14
+            "sound": 13,
+            "tag": 14
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 32
+            "sound": 14,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 33
+            "sound": 14,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 34
+            "sound": 14,
+            "tag": 34
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 48
+            "sound": 14,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 49
+            "sound": 14,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 35
+            "sound": 14,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 50
+            "sound": 14,
+            "tag": 50
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 14,
-            "tag_id": 51
+            "sound": 14,
+            "tag": 51
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 32
+            "sound": 15,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 33
+            "sound": 15,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 45
+            "sound": 15,
+            "tag": 45
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 8
+            "sound": 15,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 39
+            "sound": 15,
+            "tag": 39
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 35
+            "sound": 15,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 46
+            "sound": 15,
+            "tag": 46
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 47
+            "sound": 15,
+            "tag": 47
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 15,
-            "tag_id": 14
+            "sound": 15,
+            "tag": 14
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 16,
-            "tag_id": 32
+            "sound": 16,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 16,
-            "tag_id": 33
+            "sound": 16,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 16,
-            "tag_id": 52
+            "sound": 16,
+            "tag": 52
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 16,
-            "tag_id": 30
+            "sound": 16,
+            "tag": 30
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 16,
-            "tag_id": 53
+            "sound": 16,
+            "tag": 53
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 16,
-            "tag_id": 35
+            "sound": 16,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 16,
-            "tag_id": 54
+            "sound": 16,
+            "tag": 54
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 32
+            "sound": 17,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 33
+            "sound": 17,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 55
+            "sound": 17,
+            "tag": 55
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 8
+            "sound": 17,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 12
+            "sound": 17,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 35
+            "sound": 17,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 56
+            "sound": 17,
+            "tag": 56
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 17,
-            "tag_id": 57
+            "sound": 17,
+            "tag": 57
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 32
+            "sound": 18,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 33
+            "sound": 18,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 41
+            "sound": 18,
+            "tag": 41
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 8
+            "sound": 18,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 12
+            "sound": 18,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 35
+            "sound": 18,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 58
+            "sound": 18,
+            "tag": 58
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 59
+            "sound": 18,
+            "tag": 59
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 38
+            "sound": 18,
+            "tag": 38
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 60
+            "sound": 18,
+            "tag": 60
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 18,
-            "tag_id": 61
+            "sound": 18,
+            "tag": 61
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 19,
-            "tag_id": 32
+            "sound": 19,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 19,
-            "tag_id": 33
+            "sound": 19,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 19,
-            "tag_id": 53
+            "sound": 19,
+            "tag": 53
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 19,
-            "tag_id": 62
+            "sound": 19,
+            "tag": 62
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 19,
-            "tag_id": 63
+            "sound": 19,
+            "tag": 63
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 19,
-            "tag_id": 64
+            "sound": 19,
+            "tag": 64
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 20,
-            "tag_id": 32
+            "sound": 20,
+            "tag": 32
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 20,
-            "tag_id": 33
+            "sound": 20,
+            "tag": 33
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 20,
-            "tag_id": 30
+            "sound": 20,
+            "tag": 30
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 20,
-            "tag_id": 62
+            "sound": 20,
+            "tag": 62
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 20,
-            "tag_id": 63
+            "sound": 20,
+            "tag": 63
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 20,
-            "tag_id": 65
+            "sound": 20,
+            "tag": 65
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 20,
-            "tag_id": 66
+            "sound": 20,
+            "tag": 66
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 67
+            "sound": 21,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 68
+            "sound": 21,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 35
+            "sound": 21,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 69
+            "sound": 21,
+            "tag": 69
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 70
+            "sound": 21,
+            "tag": 70
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 71
+            "sound": 21,
+            "tag": 71
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 72
+            "sound": 21,
+            "tag": 72
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 21,
-            "tag_id": 73
+            "sound": 21,
+            "tag": 73
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 67
+            "sound": 22,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 68
+            "sound": 22,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 12
+            "sound": 22,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 74
+            "sound": 22,
+            "tag": 74
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 75
+            "sound": 22,
+            "tag": 75
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 76
+            "sound": 22,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 48
+            "sound": 22,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 22,
-            "tag_id": 77
+            "sound": 22,
+            "tag": 77
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 23,
-            "tag_id": 67
+            "sound": 23,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 23,
-            "tag_id": 68
+            "sound": 23,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 23,
-            "tag_id": 35
+            "sound": 23,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 23,
-            "tag_id": 78
+            "sound": 23,
+            "tag": 78
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 23,
-            "tag_id": 79
+            "sound": 23,
+            "tag": 79
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 23,
-            "tag_id": 39
+            "sound": 23,
+            "tag": 39
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 23,
-            "tag_id": 80
+            "sound": 23,
+            "tag": 80
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 24,
-            "tag_id": 67
+            "sound": 24,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 24,
-            "tag_id": 68
+            "sound": 24,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 24,
-            "tag_id": 35
+            "sound": 24,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 24,
-            "tag_id": 81
+            "sound": 24,
+            "tag": 81
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 24,
-            "tag_id": 75
+            "sound": 24,
+            "tag": 75
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 24,
-            "tag_id": 82
+            "sound": 24,
+            "tag": 82
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 24,
-            "tag_id": 73
+            "sound": 24,
+            "tag": 73
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 67
+            "sound": 25,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 68
+            "sound": 25,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 12
+            "sound": 25,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 83
+            "sound": 25,
+            "tag": 83
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 84
+            "sound": 25,
+            "tag": 84
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 85
+            "sound": 25,
+            "tag": 85
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 86
+            "sound": 25,
+            "tag": 86
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 25,
-            "tag_id": 80
+            "sound": 25,
+            "tag": 80
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 26,
-            "tag_id": 67
+            "sound": 26,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 26,
-            "tag_id": 68
+            "sound": 26,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 26,
-            "tag_id": 35
+            "sound": 26,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 26,
-            "tag_id": 81
+            "sound": 26,
+            "tag": 81
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 26,
-            "tag_id": 75
+            "sound": 26,
+            "tag": 75
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 26,
-            "tag_id": 72
+            "sound": 26,
+            "tag": 72
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 26,
-            "tag_id": 73
+            "sound": 26,
+            "tag": 73
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 67
+            "sound": 27,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 68
+            "sound": 27,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 35
+            "sound": 27,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 87
+            "sound": 27,
+            "tag": 87
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 88
+            "sound": 27,
+            "tag": 88
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 89
+            "sound": 27,
+            "tag": 89
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 90
+            "sound": 27,
+            "tag": 90
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 27,
-            "tag_id": 73
+            "sound": 27,
+            "tag": 73
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 67
+            "sound": 28,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 68
+            "sound": 28,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 35
+            "sound": 28,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 91
+            "sound": 28,
+            "tag": 91
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 92
+            "sound": 28,
+            "tag": 92
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 71
+            "sound": 28,
+            "tag": 71
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 72
+            "sound": 28,
+            "tag": 72
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 28,
-            "tag_id": 20
+            "sound": 28,
+            "tag": 20
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 67
+            "sound": 29,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 68
+            "sound": 29,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 12
+            "sound": 29,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 83
+            "sound": 29,
+            "tag": 83
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 84
+            "sound": 29,
+            "tag": 84
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 76
+            "sound": 29,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 93
+            "sound": 29,
+            "tag": 93
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 29,
-            "tag_id": 80
+            "sound": 29,
+            "tag": 80
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 67
+            "sound": 30,
+            "tag": 67
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 68
+            "sound": 30,
+            "tag": 68
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 35
+            "sound": 30,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 94
+            "sound": 30,
+            "tag": 94
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 95
+            "sound": 30,
+            "tag": 95
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 95
+            "sound": 30,
+            "tag": 95
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 95
+            "sound": 30,
+            "tag": 95
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 96
+            "sound": 30,
+            "tag": 96
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 30,
-            "tag_id": 6
+            "sound": 30,
+            "tag": 6
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 97
+            "sound": 31,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 98
+            "sound": 31,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 7
+            "sound": 31,
+            "tag": 7
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 49
+            "sound": 31,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 99
+            "sound": 31,
+            "tag": 99
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 35
+            "sound": 31,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 100
+            "sound": 31,
+            "tag": 100
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 31,
-            "tag_id": 53
+            "sound": 31,
+            "tag": 53
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 97
+            "sound": 32,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 98
+            "sound": 32,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 101
+            "sound": 32,
+            "tag": 101
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 49
+            "sound": 32,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 35
+            "sound": 32,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 48
+            "sound": 32,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 102
+            "sound": 32,
+            "tag": 102
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 32,
-            "tag_id": 103
+            "sound": 32,
+            "tag": 103
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 97
+            "sound": 33,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 98
+            "sound": 33,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 104
+            "sound": 33,
+            "tag": 104
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 105
+            "sound": 33,
+            "tag": 105
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 106
+            "sound": 33,
+            "tag": 106
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 96
+            "sound": 33,
+            "tag": 96
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 35
+            "sound": 33,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 107
+            "sound": 33,
+            "tag": 107
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 108
+            "sound": 33,
+            "tag": 108
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 33,
-            "tag_id": 109
+            "sound": 33,
+            "tag": 109
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 97
+            "sound": 34,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 98
+            "sound": 34,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 110
+            "sound": 34,
+            "tag": 110
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 106
+            "sound": 34,
+            "tag": 106
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 96
+            "sound": 34,
+            "tag": 96
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 35
+            "sound": 34,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 111
+            "sound": 34,
+            "tag": 111
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 112
+            "sound": 34,
+            "tag": 112
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 34,
-            "tag_id": 113
+            "sound": 34,
+            "tag": 113
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 97
+            "sound": 35,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 98
+            "sound": 35,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 114
+            "sound": 35,
+            "tag": 114
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 106
+            "sound": 35,
+            "tag": 106
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 96
+            "sound": 35,
+            "tag": 96
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 35
+            "sound": 35,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 115
+            "sound": 35,
+            "tag": 115
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 116
+            "sound": 35,
+            "tag": 116
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 35,
-            "tag_id": 117
+            "sound": 35,
+            "tag": 117
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 97
+            "sound": 36,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 98
+            "sound": 36,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 118
+            "sound": 36,
+            "tag": 118
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 49
+            "sound": 36,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 35
+            "sound": 36,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 119
+            "sound": 36,
+            "tag": 119
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 120
+            "sound": 36,
+            "tag": 120
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 36,
-            "tag_id": 121
+            "sound": 36,
+            "tag": 121
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 97
+            "sound": 37,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 98
+            "sound": 37,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 26
+            "sound": 37,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 49
+            "sound": 37,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 35
+            "sound": 37,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 48
+            "sound": 37,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 122
+            "sound": 37,
+            "tag": 122
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 123
+            "sound": 37,
+            "tag": 123
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 37,
-            "tag_id": 124
+            "sound": 37,
+            "tag": 124
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 97
+            "sound": 38,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 98
+            "sound": 38,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 125
+            "sound": 38,
+            "tag": 125
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 49
+            "sound": 38,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 35
+            "sound": 38,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 126
+            "sound": 38,
+            "tag": 126
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 127
+            "sound": 38,
+            "tag": 127
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 128
+            "sound": 38,
+            "tag": 128
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 38,
-            "tag_id": 129
+            "sound": 38,
+            "tag": 129
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 97
+            "sound": 39,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 98
+            "sound": 39,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 130
+            "sound": 39,
+            "tag": 130
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 49
+            "sound": 39,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 35
+            "sound": 39,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 48
+            "sound": 39,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 131
+            "sound": 39,
+            "tag": 131
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 39,
-            "tag_id": 132
+            "sound": 39,
+            "tag": 132
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 97
+            "sound": 40,
+            "tag": 97
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 98
+            "sound": 40,
+            "tag": 98
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 133
+            "sound": 40,
+            "tag": 133
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 134
+            "sound": 40,
+            "tag": 134
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 135
+            "sound": 40,
+            "tag": 135
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 35
+            "sound": 40,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 136
+            "sound": 40,
+            "tag": 136
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 137
+            "sound": 40,
+            "tag": 137
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 40,
-            "tag_id": 138
+            "sound": 40,
+            "tag": 138
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 41,
-            "tag_id": 139
+            "sound": 41,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 41,
-            "tag_id": 99
+            "sound": 41,
+            "tag": 99
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 41,
-            "tag_id": 35
+            "sound": 41,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 41,
-            "tag_id": 140
+            "sound": 41,
+            "tag": 140
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 41,
-            "tag_id": 141
+            "sound": 41,
+            "tag": 141
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 42,
-            "tag_id": 139
+            "sound": 42,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 42,
-            "tag_id": 48
+            "sound": 42,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 42,
-            "tag_id": 49
+            "sound": 42,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 42,
-            "tag_id": 35
+            "sound": 42,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 42,
-            "tag_id": 140
+            "sound": 42,
+            "tag": 140
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 42,
-            "tag_id": 83
+            "sound": 42,
+            "tag": 83
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 43,
-            "tag_id": 139
+            "sound": 43,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 43,
-            "tag_id": 39
+            "sound": 43,
+            "tag": 39
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 43,
-            "tag_id": 35
+            "sound": 43,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 43,
-            "tag_id": 140
+            "sound": 43,
+            "tag": 140
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 43,
-            "tag_id": 142
+            "sound": 43,
+            "tag": 142
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 43,
-            "tag_id": 143
+            "sound": 43,
+            "tag": 143
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 44,
-            "tag_id": 139
+            "sound": 44,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 44,
-            "tag_id": 144
+            "sound": 44,
+            "tag": 144
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 44,
-            "tag_id": 142
+            "sound": 44,
+            "tag": 142
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 44,
-            "tag_id": 145
+            "sound": 44,
+            "tag": 145
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 45,
-            "tag_id": 139
+            "sound": 45,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 45,
-            "tag_id": 30
+            "sound": 45,
+            "tag": 30
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 45,
-            "tag_id": 146
+            "sound": 45,
+            "tag": 146
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 46,
-            "tag_id": 139
+            "sound": 46,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 46,
-            "tag_id": 39
+            "sound": 46,
+            "tag": 39
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 46,
-            "tag_id": 147
+            "sound": 46,
+            "tag": 147
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 46,
-            "tag_id": 8
+            "sound": 46,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 46,
-            "tag_id": 148
+            "sound": 46,
+            "tag": 148
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 46,
-            "tag_id": 142
+            "sound": 46,
+            "tag": 142
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 46,
-            "tag_id": 74
+            "sound": 46,
+            "tag": 74
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 47,
-            "tag_id": 139
+            "sound": 47,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 47,
-            "tag_id": 53
+            "sound": 47,
+            "tag": 53
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 47,
-            "tag_id": 149
+            "sound": 47,
+            "tag": 149
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 48,
-            "tag_id": 139
+            "sound": 48,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 48,
-            "tag_id": 39
+            "sound": 48,
+            "tag": 39
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 48,
-            "tag_id": 35
+            "sound": 48,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 48,
-            "tag_id": 140
+            "sound": 48,
+            "tag": 140
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 48,
-            "tag_id": 142
+            "sound": 48,
+            "tag": 142
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 48,
-            "tag_id": 146
+            "sound": 48,
+            "tag": 146
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 49,
-            "tag_id": 139
+            "sound": 49,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 49,
-            "tag_id": 53
+            "sound": 49,
+            "tag": 53
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 49,
-            "tag_id": 150
+            "sound": 49,
+            "tag": 150
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 50,
-            "tag_id": 139
+            "sound": 50,
+            "tag": 139
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 50,
-            "tag_id": 151
+            "sound": 50,
+            "tag": 151
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 50,
-            "tag_id": 152
+            "sound": 50,
+            "tag": 152
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 50,
-            "tag_id": 140
+            "sound": 50,
+            "tag": 140
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 50,
-            "tag_id": 145
+            "sound": 50,
+            "tag": 145
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 51,
-            "tag_id": 153
+            "sound": 51,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 51,
-            "tag_id": 130
+            "sound": 51,
+            "tag": 130
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 51,
-            "tag_id": 154
+            "sound": 51,
+            "tag": 154
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 51,
-            "tag_id": 155
+            "sound": 51,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 51,
-            "tag_id": 156
+            "sound": 51,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 51,
-            "tag_id": 157
+            "sound": 51,
+            "tag": 157
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 51,
-            "tag_id": 158
+            "sound": 51,
+            "tag": 158
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 52,
-            "tag_id": 153
+            "sound": 52,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 52,
-            "tag_id": 52
+            "sound": 52,
+            "tag": 52
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 52,
-            "tag_id": 49
+            "sound": 52,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 52,
-            "tag_id": 155
+            "sound": 52,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 52,
-            "tag_id": 156
+            "sound": 52,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 52,
-            "tag_id": 159
+            "sound": 52,
+            "tag": 159
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 52,
-            "tag_id": 48
+            "sound": 52,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 53,
-            "tag_id": 153
+            "sound": 53,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 53,
-            "tag_id": 130
+            "sound": 53,
+            "tag": 130
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 53,
-            "tag_id": 160
+            "sound": 53,
+            "tag": 160
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 53,
-            "tag_id": 155
+            "sound": 53,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 53,
-            "tag_id": 156
+            "sound": 53,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 53,
-            "tag_id": 161
+            "sound": 53,
+            "tag": 161
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 54,
-            "tag_id": 153
+            "sound": 54,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 54,
-            "tag_id": 125
+            "sound": 54,
+            "tag": 125
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 54,
-            "tag_id": 162
+            "sound": 54,
+            "tag": 162
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 54,
-            "tag_id": 163
+            "sound": 54,
+            "tag": 163
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 54,
-            "tag_id": 164
+            "sound": 54,
+            "tag": 164
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 55,
-            "tag_id": 153
+            "sound": 55,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 55,
-            "tag_id": 133
+            "sound": 55,
+            "tag": 133
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 55,
-            "tag_id": 160
+            "sound": 55,
+            "tag": 160
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 55,
-            "tag_id": 155
+            "sound": 55,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 55,
-            "tag_id": 156
+            "sound": 55,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 55,
-            "tag_id": 165
+            "sound": 55,
+            "tag": 165
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 56,
-            "tag_id": 153
+            "sound": 56,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 56,
-            "tag_id": 133
+            "sound": 56,
+            "tag": 133
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 56,
-            "tag_id": 49
+            "sound": 56,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 56,
-            "tag_id": 166
+            "sound": 56,
+            "tag": 166
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 56,
-            "tag_id": 155
+            "sound": 56,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 56,
-            "tag_id": 156
+            "sound": 56,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 56,
-            "tag_id": 167
+            "sound": 56,
+            "tag": 167
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 57,
-            "tag_id": 153
+            "sound": 57,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 57,
-            "tag_id": 160
+            "sound": 57,
+            "tag": 160
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 57,
-            "tag_id": 155
+            "sound": 57,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 57,
-            "tag_id": 156
+            "sound": 57,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 57,
-            "tag_id": 168
+            "sound": 57,
+            "tag": 168
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 57,
-            "tag_id": 169
+            "sound": 57,
+            "tag": 169
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 58,
-            "tag_id": 153
+            "sound": 58,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 58,
-            "tag_id": 53
+            "sound": 58,
+            "tag": 53
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 58,
-            "tag_id": 155
+            "sound": 58,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 58,
-            "tag_id": 156
+            "sound": 58,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 58,
-            "tag_id": 170
+            "sound": 58,
+            "tag": 170
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 59,
-            "tag_id": 153
+            "sound": 59,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 59,
-            "tag_id": 133
+            "sound": 59,
+            "tag": 133
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 59,
-            "tag_id": 154
+            "sound": 59,
+            "tag": 154
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 59,
-            "tag_id": 155
+            "sound": 59,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 59,
-            "tag_id": 156
+            "sound": 59,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 59,
-            "tag_id": 171
+            "sound": 59,
+            "tag": 171
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 59,
-            "tag_id": 172
+            "sound": 59,
+            "tag": 172
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 60,
-            "tag_id": 153
+            "sound": 60,
+            "tag": 153
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 60,
-            "tag_id": 52
+            "sound": 60,
+            "tag": 52
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 60,
-            "tag_id": 160
+            "sound": 60,
+            "tag": 160
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 60,
-            "tag_id": 155
+            "sound": 60,
+            "tag": 155
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 60,
-            "tag_id": 156
+            "sound": 60,
+            "tag": 156
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 60,
-            "tag_id": 173
+            "sound": 60,
+            "tag": 173
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 61,
-            "tag_id": 174
+            "sound": 61,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 61,
-            "tag_id": 175
+            "sound": 61,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 61,
-            "tag_id": 176
+            "sound": 61,
+            "tag": 176
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 61,
-            "tag_id": 119
+            "sound": 61,
+            "tag": 119
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 61,
-            "tag_id": 62
+            "sound": 61,
+            "tag": 62
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 61,
-            "tag_id": 63
+            "sound": 61,
+            "tag": 63
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 61,
-            "tag_id": 177
+            "sound": 61,
+            "tag": 177
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 174
+            "sound": 62,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 175
+            "sound": 62,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 52
+            "sound": 62,
+            "tag": 52
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 12
+            "sound": 62,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 35
+            "sound": 62,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 39
+            "sound": 62,
+            "tag": 39
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 178
+            "sound": 62,
+            "tag": 178
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 62,
-            "tag_id": 179
+            "sound": 62,
+            "tag": 179
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 174
+            "sound": 63,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 175
+            "sound": 63,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 26
+            "sound": 63,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 180
+            "sound": 63,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 83
+            "sound": 63,
+            "tag": 83
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 35
+            "sound": 63,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 181
+            "sound": 63,
+            "tag": 181
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 76
+            "sound": 63,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 63,
-            "tag_id": 166
+            "sound": 63,
+            "tag": 166
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 174
+            "sound": 64,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 175
+            "sound": 64,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 26
+            "sound": 64,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 180
+            "sound": 64,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 182
+            "sound": 64,
+            "tag": 182
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 35
+            "sound": 64,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 183
+            "sound": 64,
+            "tag": 183
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 76
+            "sound": 64,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 64,
-            "tag_id": 30
+            "sound": 64,
+            "tag": 30
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 174
+            "sound": 65,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 175
+            "sound": 65,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 26
+            "sound": 65,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 119
+            "sound": 65,
+            "tag": 119
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 100
+            "sound": 65,
+            "tag": 100
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 62
+            "sound": 65,
+            "tag": 62
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 63
+            "sound": 65,
+            "tag": 63
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 65,
-            "tag_id": 183
+            "sound": 65,
+            "tag": 183
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 174
+            "sound": 66,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 175
+            "sound": 66,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 52
+            "sound": 66,
+            "tag": 52
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 12
+            "sound": 66,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 35
+            "sound": 66,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 48
+            "sound": 66,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 184
+            "sound": 66,
+            "tag": 184
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 66,
-            "tag_id": 179
+            "sound": 66,
+            "tag": 179
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 67,
-            "tag_id": 174
+            "sound": 67,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 67,
-            "tag_id": 175
+            "sound": 67,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 67,
-            "tag_id": 176
+            "sound": 67,
+            "tag": 176
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 67,
-            "tag_id": 30
+            "sound": 67,
+            "tag": 30
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 67,
-            "tag_id": 62
+            "sound": 67,
+            "tag": 62
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 67,
-            "tag_id": 63
+            "sound": 67,
+            "tag": 63
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 67,
-            "tag_id": 177
+            "sound": 67,
+            "tag": 177
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 174
+            "sound": 68,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 175
+            "sound": 68,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 52
+            "sound": 68,
+            "tag": 52
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 12
+            "sound": 68,
+            "tag": 12
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 35
+            "sound": 68,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 48
+            "sound": 68,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 185
+            "sound": 68,
+            "tag": 185
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 68,
-            "tag_id": 186
+            "sound": 68,
+            "tag": 186
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 174
+            "sound": 69,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 175
+            "sound": 69,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 26
+            "sound": 69,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 180
+            "sound": 69,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 187
+            "sound": 69,
+            "tag": 187
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 35
+            "sound": 69,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 188
+            "sound": 69,
+            "tag": 188
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 96
+            "sound": 69,
+            "tag": 96
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 106
+            "sound": 69,
+            "tag": 106
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 189
+            "sound": 69,
+            "tag": 189
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 190
+            "sound": 69,
+            "tag": 190
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 69,
-            "tag_id": 57
+            "sound": 69,
+            "tag": 57
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 174
+            "sound": 70,
+            "tag": 174
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 175
+            "sound": 70,
+            "tag": 175
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 26
+            "sound": 70,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 180
+            "sound": 70,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 182
+            "sound": 70,
+            "tag": 182
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 35
+            "sound": 70,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 183
+            "sound": 70,
+            "tag": 183
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 76
+            "sound": 70,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 119
+            "sound": 70,
+            "tag": 119
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 70,
-            "tag_id": 168
+            "sound": 70,
+            "tag": 168
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 71,
-            "tag_id": 29
+            "sound": 71,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 71,
-            "tag_id": 191
+            "sound": 71,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 71,
-            "tag_id": 192
+            "sound": 71,
+            "tag": 192
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 71,
-            "tag_id": 193
+            "sound": 71,
+            "tag": 193
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 72,
-            "tag_id": 29
+            "sound": 72,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 72,
-            "tag_id": 191
+            "sound": 72,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 72,
-            "tag_id": 194
+            "sound": 72,
+            "tag": 194
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 72,
-            "tag_id": 195
+            "sound": 72,
+            "tag": 195
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 72,
-            "tag_id": 196
+            "sound": 72,
+            "tag": 196
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 73,
-            "tag_id": 29
+            "sound": 73,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 73,
-            "tag_id": 191
+            "sound": 73,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 73,
-            "tag_id": 197
+            "sound": 73,
+            "tag": 197
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 73,
-            "tag_id": 195
+            "sound": 73,
+            "tag": 195
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 73,
-            "tag_id": 198
+            "sound": 73,
+            "tag": 198
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 74,
-            "tag_id": 29
+            "sound": 74,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 74,
-            "tag_id": 191
+            "sound": 74,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 74,
-            "tag_id": 194
+            "sound": 74,
+            "tag": 194
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 75,
-            "tag_id": 29
+            "sound": 75,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 75,
-            "tag_id": 191
+            "sound": 75,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 75,
-            "tag_id": 199
+            "sound": 75,
+            "tag": 199
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 75,
-            "tag_id": 195
+            "sound": 75,
+            "tag": 195
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 75,
-            "tag_id": 196
+            "sound": 75,
+            "tag": 196
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 76,
-            "tag_id": 29
+            "sound": 76,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 76,
-            "tag_id": 191
+            "sound": 76,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 76,
-            "tag_id": 200
+            "sound": 76,
+            "tag": 200
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 77,
-            "tag_id": 29
+            "sound": 77,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 77,
-            "tag_id": 191
+            "sound": 77,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 77,
-            "tag_id": 201
+            "sound": 77,
+            "tag": 201
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 77,
-            "tag_id": 202
+            "sound": 77,
+            "tag": 202
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 77,
-            "tag_id": 74
+            "sound": 77,
+            "tag": 74
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 78,
-            "tag_id": 29
+            "sound": 78,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 78,
-            "tag_id": 191
+            "sound": 78,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 78,
-            "tag_id": 203
+            "sound": 78,
+            "tag": 203
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 79,
-            "tag_id": 29
+            "sound": 79,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 79,
-            "tag_id": 191
+            "sound": 79,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 79,
-            "tag_id": 204
+            "sound": 79,
+            "tag": 204
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 79,
-            "tag_id": 195
+            "sound": 79,
+            "tag": 195
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 79,
-            "tag_id": 196
+            "sound": 79,
+            "tag": 196
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 80,
-            "tag_id": 29
+            "sound": 80,
+            "tag": 29
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 80,
-            "tag_id": 191
+            "sound": 80,
+            "tag": 191
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 80,
-            "tag_id": 205
+            "sound": 80,
+            "tag": 205
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 80,
-            "tag_id": 195
+            "sound": 80,
+            "tag": 195
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 80,
-            "tag_id": 198
+            "sound": 80,
+            "tag": 198
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 206
+            "sound": 81,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 207
+            "sound": 81,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 208
+            "sound": 81,
+            "tag": 208
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 180
+            "sound": 81,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 35
+            "sound": 81,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 209
+            "sound": 81,
+            "tag": 209
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 76
+            "sound": 81,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 210
+            "sound": 81,
+            "tag": 210
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 81,
-            "tag_id": 113
+            "sound": 81,
+            "tag": 113
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 206
+            "sound": 82,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 207
+            "sound": 82,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 211
+            "sound": 82,
+            "tag": 211
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 180
+            "sound": 82,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 35
+            "sound": 82,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 212
+            "sound": 82,
+            "tag": 212
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 76
+            "sound": 82,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 213
+            "sound": 82,
+            "tag": 213
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 214
+            "sound": 82,
+            "tag": 214
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 82,
-            "tag_id": 215
+            "sound": 82,
+            "tag": 215
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 206
+            "sound": 83,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 207
+            "sound": 83,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 26
+            "sound": 83,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 180
+            "sound": 83,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 35
+            "sound": 83,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 216
+            "sound": 83,
+            "tag": 216
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 217
+            "sound": 83,
+            "tag": 217
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 218
+            "sound": 83,
+            "tag": 218
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 83,
-            "tag_id": 113
+            "sound": 83,
+            "tag": 113
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 206
+            "sound": 84,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 207
+            "sound": 84,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 133
+            "sound": 84,
+            "tag": 133
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 180
+            "sound": 84,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 35
+            "sound": 84,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 219
+            "sound": 84,
+            "tag": 219
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 76
+            "sound": 84,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 213
+            "sound": 84,
+            "tag": 213
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 214
+            "sound": 84,
+            "tag": 214
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 84,
-            "tag_id": 220
+            "sound": 84,
+            "tag": 220
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 206
+            "sound": 85,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 207
+            "sound": 85,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 26
+            "sound": 85,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 180
+            "sound": 85,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 35
+            "sound": 85,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 221
+            "sound": 85,
+            "tag": 221
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 8
+            "sound": 85,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 222
+            "sound": 85,
+            "tag": 222
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 85,
-            "tag_id": 220
+            "sound": 85,
+            "tag": 220
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 206
+            "sound": 86,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 207
+            "sound": 86,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 211
+            "sound": 86,
+            "tag": 211
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 180
+            "sound": 86,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 35
+            "sound": 86,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 223
+            "sound": 86,
+            "tag": 223
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 76
+            "sound": 86,
+            "tag": 76
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 213
+            "sound": 86,
+            "tag": 213
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 86,
-            "tag_id": 224
+            "sound": 86,
+            "tag": 224
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 206
+            "sound": 87,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 207
+            "sound": 87,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 133
+            "sound": 87,
+            "tag": 133
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 180
+            "sound": 87,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 35
+            "sound": 87,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 219
+            "sound": 87,
+            "tag": 219
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 48
+            "sound": 87,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 87,
-            "tag_id": 220
+            "sound": 87,
+            "tag": 220
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 206
+            "sound": 88,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 207
+            "sound": 88,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 225
+            "sound": 88,
+            "tag": 225
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 180
+            "sound": 88,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 35
+            "sound": 88,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 226
+            "sound": 88,
+            "tag": 226
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 8
+            "sound": 88,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 227
+            "sound": 88,
+            "tag": 227
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 88,
-            "tag_id": 220
+            "sound": 88,
+            "tag": 220
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 206
+            "sound": 89,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 207
+            "sound": 89,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 26
+            "sound": 89,
+            "tag": 26
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 180
+            "sound": 89,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 35
+            "sound": 89,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 221
+            "sound": 89,
+            "tag": 221
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 48
+            "sound": 89,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 89,
-            "tag_id": 220
+            "sound": 89,
+            "tag": 220
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 206
+            "sound": 90,
+            "tag": 206
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 207
+            "sound": 90,
+            "tag": 207
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 228
+            "sound": 90,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 180
+            "sound": 90,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 35
+            "sound": 90,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 229
+            "sound": 90,
+            "tag": 229
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 48
+            "sound": 90,
+            "tag": 48
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 90,
-            "tag_id": 230
+            "sound": 90,
+            "tag": 230
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 91,
-            "tag_id": 231
+            "sound": 91,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 91,
-            "tag_id": 232
+            "sound": 91,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 91,
-            "tag_id": 228
+            "sound": 91,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 91,
-            "tag_id": 151
+            "sound": 91,
+            "tag": 151
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 91,
-            "tag_id": 35
+            "sound": 91,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 91,
-            "tag_id": 233
+            "sound": 91,
+            "tag": 233
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 92,
-            "tag_id": 231
+            "sound": 92,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 92,
-            "tag_id": 232
+            "sound": 92,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 92,
-            "tag_id": 228
+            "sound": 92,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 92,
-            "tag_id": 234
+            "sound": 92,
+            "tag": 234
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 92,
-            "tag_id": 35
+            "sound": 92,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 92,
-            "tag_id": 235
+            "sound": 92,
+            "tag": 235
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 92,
-            "tag_id": 224
+            "sound": 92,
+            "tag": 224
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 93,
-            "tag_id": 231
+            "sound": 93,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 93,
-            "tag_id": 232
+            "sound": 93,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 93,
-            "tag_id": 228
+            "sound": 93,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 93,
-            "tag_id": 8
+            "sound": 93,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 93,
-            "tag_id": 35
+            "sound": 93,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 93,
-            "tag_id": 236
+            "sound": 93,
+            "tag": 236
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 93,
-            "tag_id": 224
+            "sound": 93,
+            "tag": 224
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 94,
-            "tag_id": 231
+            "sound": 94,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 94,
-            "tag_id": 232
+            "sound": 94,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 94,
-            "tag_id": 228
+            "sound": 94,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 94,
-            "tag_id": 154
+            "sound": 94,
+            "tag": 154
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 94,
-            "tag_id": 35
+            "sound": 94,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 94,
-            "tag_id": 237
+            "sound": 94,
+            "tag": 237
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 95,
-            "tag_id": 231
+            "sound": 95,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 95,
-            "tag_id": 232
+            "sound": 95,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 95,
-            "tag_id": 8
+            "sound": 95,
+            "tag": 8
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 95,
-            "tag_id": 238
+            "sound": 95,
+            "tag": 238
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 95,
-            "tag_id": 224
+            "sound": 95,
+            "tag": 224
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 96,
-            "tag_id": 231
+            "sound": 96,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 96,
-            "tag_id": 232
+            "sound": 96,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 96,
-            "tag_id": 228
+            "sound": 96,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 96,
-            "tag_id": 49
+            "sound": 96,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 96,
-            "tag_id": 35
+            "sound": 96,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 96,
-            "tag_id": 239
+            "sound": 96,
+            "tag": 239
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 96,
-            "tag_id": 154
+            "sound": 96,
+            "tag": 154
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 231
+            "sound": 97,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 232
+            "sound": 97,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 228
+            "sound": 97,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 180
+            "sound": 97,
+            "tag": 180
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 35
+            "sound": 97,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 240
+            "sound": 97,
+            "tag": 240
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 241
+            "sound": 97,
+            "tag": 241
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 97,
-            "tag_id": 113
+            "sound": 97,
+            "tag": 113
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 98,
-            "tag_id": 231
+            "sound": 98,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 98,
-            "tag_id": 232
+            "sound": 98,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 98,
-            "tag_id": 228
+            "sound": 98,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 98,
-            "tag_id": 49
+            "sound": 98,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 98,
-            "tag_id": 35
+            "sound": 98,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 98,
-            "tag_id": 242
+            "sound": 98,
+            "tag": 242
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 98,
-            "tag_id": 119
+            "sound": 98,
+            "tag": 119
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 99,
-            "tag_id": 231
+            "sound": 99,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 99,
-            "tag_id": 232
+            "sound": 99,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 99,
-            "tag_id": 228
+            "sound": 99,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 99,
-            "tag_id": 49
+            "sound": 99,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 99,
-            "tag_id": 35
+            "sound": 99,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 99,
-            "tag_id": 243
+            "sound": 99,
+            "tag": 243
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 99,
-            "tag_id": 160
+            "sound": 99,
+            "tag": 160
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 100,
-            "tag_id": 231
+            "sound": 100,
+            "tag": 231
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 100,
-            "tag_id": 232
+            "sound": 100,
+            "tag": 232
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 100,
-            "tag_id": 228
+            "sound": 100,
+            "tag": 228
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 100,
-            "tag_id": 49
+            "sound": 100,
+            "tag": 49
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 100,
-            "tag_id": 35
+            "sound": 100,
+            "tag": 35
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 100,
-            "tag_id": 244
+            "sound": 100,
+            "tag": 244
         }
     },
     {
-        "model": "sound_sprout.soundtagassoc",
+        "model": "sound_sprout.SoundTagAssociation",
         "fields": {
-            "sound_id": 100,
-            "tag_id": 160
+            "sound": 100,
+            "tag": 160
         }
     }
 ]

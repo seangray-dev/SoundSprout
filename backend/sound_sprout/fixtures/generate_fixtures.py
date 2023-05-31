@@ -31,17 +31,17 @@ for pack_name in os.listdir(base_dir):
             name, _ = os.path.splitext(sound_file)
 
             # The file path is the relative path from the base directory to the sound file
-            file_path = os.path.relpath(
+            audio_file = os.path.relpath(
                 os.path.join(pack_dir, sound_file), base_dir)
 
             # Create the sound fixture object and append it to the fixture list
             sounds_fixture.append({
-                "model": "sound_sprout.sounds",
+                "model": "sound_sprout.Sound",
                 "pk": sound_id_counter,
                 "fields": {
-                    "pack_id": pack_id_counter,
+                    "pack": pack_id_counter,
                     "name": name,
-                    "file_path": file_path,
+                    "audio_file": audio_file,
                     "price": 0.99
                 }
             })
@@ -60,7 +60,7 @@ for pack_name in os.listdir(base_dir):
 
                     # Create the tag fixture object and append it to the fixture list
                     tags_fixture.append({
-                        "model": "sound_sprout.tags",
+                        "model": "sound_sprout.Tag",
                         "pk": tag_id_counter,
                         "fields": {
                             "name": part,
@@ -72,10 +72,10 @@ for pack_name in os.listdir(base_dir):
 
                 # Create the sound-tag association fixture object and append it to the fixture list
                 sound_tag_assoc_fixture.append({
-                    "model": "sound_sprout.soundtagassoc",
+                    "model": "sound_sprout.SoundTagAssociation",
                     "fields": {
-                        "sound_id": sound_id_counter,
-                        "tag_id": tags_dict[part]
+                        "sound": sound_id_counter,
+                        "tag": tags_dict[part]
                     }
                 })
 
