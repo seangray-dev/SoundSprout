@@ -14,4 +14,5 @@ class PackSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Pack
-        fields = ['id', 'cover_art_location', 'uploader', 'name']
+        fields = ['id', 'name', 'description', 'price',
+                  'cover_art_location', 'uploader', 'preview']
