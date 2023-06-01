@@ -23,7 +23,7 @@ class Pack(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     cover_art_location = models.CharField(max_length=255)
     uploader = models.ForeignKey(User, on_delete=models.CASCADE)
-    preview = models.FileField(upload_to='previews/', null=True)
+    preview = models.CharField(max_length=255, blank=True, null=True)
 
 
 class Sound(models.Model):

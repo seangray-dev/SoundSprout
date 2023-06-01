@@ -14,7 +14,6 @@ const TrendingCard: React.FC<TrendingCardProps> = ({
   uploader,
   packName,
 }) => {
-  console.log(id);
   const slug = `${packName}`.toLowerCase().replace(/\s+/g, '-');
   return (
     <li className='flex flex-col gap-4'>

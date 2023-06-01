@@ -18,9 +18,9 @@
       "name": "maak - Carnaval",
       "description": "The maak producers team that conquered the beats, song and service market for artists and musicians are expanding their boundaries right now to introduce to your attention the first signature Carnaval Sample Pack, which includes 328 unique loops and 27 unique sound sets. maak® — universe for artists, creators, bloggers and brands. The 'maak'® ecosystem includes a song, beat and cover store, digital goods and NFT, recording studio, sound producers, ghostwriters and sound engineers team, distribution and graphic design services, marketing and advertising, promotion, targeting services, educational platform and more.",
       "price": 9.99,
-      "cover_art_location": "packs/maak - Carnaval/coverart.jepg",
+      "cover_art_location": "https://res.cloudinary.com/dfcg1eeap/image/upload/v1685642265/packs/maak%20-%20Carnaval/coverart_amgu7j.jpg",
       "uploader": 2,
-      "preview": "packs/maak - Carnaval/preview.wav"
+      "preview": "https://res.cloudinary.com/dfcg1eeap/video/upload/v1685642300/packs/maak%20-%20Carnaval/preview_oeqnyz.m4a"
     }
   },
   {
@@ -102,9 +102,9 @@
       "name": "Tape & Vinyl Drums",
       "description": "Raw breaks, rare grooves and resampled beats. Tape & Vinyl Drums is a digital crate diggers dream for all things drums. Ran through a vintage Ampex tape machine and cut to vinyl - this collection offers a slew of samples inspired by the 60s and 70s era’s of Funk, Soul, Rare Groove and Proto-Disco Packed with broken beats, shimmering cymbal rhythms, funky hi-hat lines, drum stacks, percussion stacks and fills fills,Tape & Vinyl Drums delivers a choice selection of vintage-style drum layers, rhythms, textures and grooves primed to inject humanistic groove and retro timbres recorded and processed with a superlative level of old-school authenticity.",
       "price": 9.99,
-      "cover_art_location": "packs/Tape & Vinyl Drums/coverart.jepg",
+      "cover_art_location": "https://res.cloudinary.com/dfcg1eeap/image/upload/v1685643859/packs/Tape%20and%20Vinyl%20Drums/coverart_isekat.jpg",
       "uploader": 9,
-      "preview": "packs/Tape & Vinyl Drums/preview.wav"
+      "preview": "https://res.cloudinary.com/dfcg1eeap/video/upload/f_auto:video,q_auto/v1/packs/Tape%20and%20Vinyl%20Drums/sounds/TVD_120_drum_tape_vinyl_sunny_full_ogyxnl"
     }
   },
   {
@@ -114,9 +114,9 @@
       "name": "Tasty Loops by Mars Today",
       "description": "'Tasty Loops' is a multi-genre loop pack created by producer and songwriter Mars Today. It’s filled with stacked instrument loops, single instrument loops, song starts, programmed and live drums, and a plethora of percussion grooves. The sounds range from R&B, to Classic Soul, to Indie-Pop, to Reggae and everywhere in between. Mars’ signature sound can be heard under artists like Kyle Dion, Phabo, Destin Conrad, M.I.L.K, Aaron Childs, Ambré, Rexx Life Raj, Jahkoy, Los Rakas and more, and is well represented in this collection of samples. Working with a team of talented studio musicians, he was able to achieve a dynamic range of sounds and styles that make this pack particularly well suited for pushing genre boundaries.",
       "price": 9.99,
-      "cover_art_location": "packs/Tasty Loops by Mars Today/coverart.jepg",
+      "cover_art_location": "https://res.cloudinary.com/dfcg1eeap/image/upload/v1685642265/packs/Tasty%20Loops%20by%20Mars%20Today/coverart_mp2kgw.jpg",
       "uploader": 10,
-      "preview": "packs/Tasty Loops by Mars Today/preview.wav"
+      "preview": "https://res.cloudinary.com/dfcg1eeap/video/upload/v1685642336/packs/Tasty%20Loops%20by%20Mars%20Today/preview_nftzy2.m4a"
     }
   }
 ]
