@@ -6,6 +6,16 @@ import { useState, useEffect } from 'react';
 import Nav from '@/app/components/Layout/Nav';
 import AudioPlayer from '@/app/components/AudioPlayer';
 
+const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+
+function getCoverArtUrl(publicId) {
+  return `https://res.cloudinary.com/${cloudName}/image/upload/${publicId}.jpg`;
+}
+
+function getPreviewUrl(publicId) {
+  return `https://res.cloudinary.com/${cloudName}/video/upload/${publicId}.mp3`;
+}
+
 export default function Packs({ params }: { params: { id: number } }) {
   const [pack, setPack] = useState(null);
 
@@ -31,16 +41,16 @@ export default function Packs({ params }: { params: { id: number } }) {
           <section className=' flex flex-col md:grid grid-cols-2'>
             <div>
               <Image
-                src={pack.cover_art_location}
+                src={getCoverArtUrl(pack.cover_art_location)}
                 width={300}
                 height={300}
                 alt={pack.name}></Image>
               <span>Preview</span>
-              <audio src={pack.preview} controls></audio>
+              <audio src={getPreviewUrl(pack.preview)} controls></audio>
             </div>
             <article className='flex flex-col gap-6'>
               <div>
-                <h1>{pack.name}</h1>
+                <h1 className='font-bold'>{pack.name}</h1>
                 <h2>{pack.uploader.first_name}</h2>
                 <p>${pack.price}</p>
               </div>
