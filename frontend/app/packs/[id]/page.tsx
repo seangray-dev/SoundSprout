@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 import Nav from '@/app/components/Layout/Nav';
 import AudioPlayer from '@/app/components/AudioPlayer';
+import PackSounds from '@/app/components/Layout/PackSounds';
 
 const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
 
@@ -59,6 +60,7 @@ export default function Packs({ params }: { params: { id: number } }) {
           </section>
         )}
       </main>
+      <PackSounds packId={params.id} />
       <AudioPlayer />
     </>
   );
