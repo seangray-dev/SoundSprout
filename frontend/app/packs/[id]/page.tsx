@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 import Nav from '@/app/components/Layout/Nav';
-import AudioPlayer from '@/app/components/AudioPlayer';
+import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 import PackSounds from '@/app/components/Layout/PackSounds';
 
 const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;

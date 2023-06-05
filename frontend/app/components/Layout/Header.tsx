@@ -1,5 +1,7 @@
-import Heading from '../Utils/Heading';
 import Image from 'next/image';
+import Link from 'next/link';
+
+import Heading from '../Utils/Heading';
 import Btn_Primary from '../Buttons/Btn_Primary';
 import { RocketLaunchIcon } from '@heroicons/react/24/solid';
 import FeaturedPack from '/public/assets/images/soul-vibes-cover-art.jpeg';
@@ -20,12 +22,14 @@ const Header = () => {
           Find, purchase, and sell exceptional sound samples from creators
           worldwide. Your sonic journey begins here.
         </p>
-        <Btn_Primary>
-          <div className='mx-auto flex items-center gap-4'>
-            <RocketLaunchIcon className='text-white w-5 h-5'></RocketLaunchIcon>
-            Get Started
-          </div>
-        </Btn_Primary>
+        <Link href={'/signup'}>
+          <Btn_Primary>
+            <div className='mx-auto flex items-center gap-4'>
+              <RocketLaunchIcon className='text-white w-5 h-5'></RocketLaunchIcon>
+              Get Started
+            </div>
+          </Btn_Primary>
+        </Link>
       </div>
       <div className='place-self-end'>
         <Image

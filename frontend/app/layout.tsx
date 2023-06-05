@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={outfit.className}>{children}</body>
+      <body className={`${outfit.className} min-h-screen`}>{children}</body>
     </html>
   );
 }
