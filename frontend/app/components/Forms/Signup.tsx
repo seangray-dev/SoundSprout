@@ -32,8 +32,33 @@ const initialValues = {
 };
 
 const SignupForm = () => {
-  const handleSubmit = (values) => {
-    console.log(values);
+  const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
+    try {
+      const response = await fetch('http://localhost:8000/create-user/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success) {
+          // User creation successful
+          console.log('User created successfully');
+        } else {
+          // User creation failed
+          setFieldError('username', data.error);
+        }
+      } else {
+        throw new Error('Unable to create user');
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -41,7 +66,7 @@ const SignupForm = () => {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={handleSubmit}>
-      <Form className='mt-6 flex flex-col gap-4 mx-auto'>
+      <Form className='mt-6 flex flex-col gap-8 mx-auto'>
         <div className='relative'>
           <label htmlFor='username' className='hidden'>
             Username
@@ -57,7 +82,7 @@ const SignupForm = () => {
           <ErrorMessage
             name='username'
             component='div'
-            className='text-red-500 text-right pr-5'
+            className='absolute -top-6 right-0 text-red-500 text-right pr-5'
           />
         </div>
         <div className='relative'>
@@ -76,7 +101,7 @@ const SignupForm = () => {
           <ErrorMessage
             name='firstName'
             component='div'
-            className='text-red-500 text-right pr-5'
+            className='absolute -top-6 right-0 text-red-500 text-right pr-5'
           />
         </div>
         <div className='relative'>
@@ -94,7 +119,7 @@ const SignupForm = () => {
           <ErrorMessage
             name='lastName'
             component='div'
-            className='text-red-500 text-right pr-5'
+            className='absolute -top-6 right-0 text-red-500 text-right pr-5'
           />
         </div>
         <div className='relative'>
@@ -112,7 +137,7 @@ const SignupForm = () => {
           <ErrorMessage
             name='email'
             component='div'
-            className='text-red-500 text-right pr-5'
+            className='absolute -top-6 right-0 text-red-500 text-right pr-5'
           />
         </div>
         <div className='relative'>
@@ -130,7 +155,7 @@ const SignupForm = () => {
           <ErrorMessage
             name='password'
             component='div'
-            className='text-red-500 text-right pr-5'
+            className='absolute -top-6 right-0 text-red-500 text-right pr-5'
           />
         </div>
         <div className='relative'>
@@ -148,7 +173,7 @@ const SignupForm = () => {
           <ErrorMessage
             name='confirmPassword'
             component='div'
-            className='text-red-500 text-right pr-5'
+            className='absolute -top-6 right-0 text-red-500 text-right pr-5'
           />
         </div>
         <Btn_Primary>Sign Up</Btn_Primary>
