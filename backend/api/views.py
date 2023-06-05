@@ -3,6 +3,8 @@ from rest_framework.decorators import api_view
 from sound_sprout.models import Pack
 from .serializers import PackSerializer
 from django.http import HttpResponse
+from sound_sprout.models import Sound
+from .serializers import SoundSerializer
 
 
 @api_view(['GET'])
@@ -28,3 +30,15 @@ def get_pack_id(request, pack_id):
         return Response(serializer.data)
     except Pack.DoesNotExist:
         return Response(status=404)
+
+
+@api_view(['GET'])
+def get_pack_sounds(request, pack_id):
+    try:
+        pack = Pack.objects.get(id=pack_id)
+    except Pack.DoesNotExist:
+        return Response(status=404)
+
+    sounds = Sound.objects.filter(pack=pack)
+    serializer = SoundSerializer(sounds, many=True)
+    return Response(serializer.data)
