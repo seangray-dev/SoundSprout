@@ -23,7 +23,9 @@ export default function Packs({ params }: { params: { id: number } }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/packs/${params.id}/`);
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_BACKEND_SERVER}/packs/${params.id}/`
+        );
         const data = await res.json();
         setPack(data);
       } catch (err) {

@@ -34,13 +34,16 @@ const initialValues = {
 const SignupForm = () => {
   const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
     try {
-      const response = await fetch('http://localhost:8000/create-user/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BACKEND_SERVER}}/create-user/`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();

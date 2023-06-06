@@ -6,7 +6,7 @@ const PackSounds = ({ packId }) => {
   useEffect(() => {
     const fetchSounds = async () => {
       const response = await fetch(
-        `http://localhost:8000/packs/${packId}/sounds`
+        `${process.env.NEXT_PUBLIC_BACKEND_SERVER}/packs/${packId}/sounds`
       );
       const data = await response.json();
       setSounds(data);
