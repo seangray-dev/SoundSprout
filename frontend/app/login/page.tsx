@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Nav from '../components/Layout/Nav';
 import Footer from '../components/Layout/Footer';
 import Heading from '../components/Utils/Heading';
-import SignupForm from '../components/Forms/SignupForm';
+import LoginForm from '../components/Forms/LoginForm';
 
-const Signup = () => {
+const Login = () => {
   return (
     <>
       <Nav />
@@ -20,13 +20,13 @@ const Signup = () => {
           />
           <div className='px-8 mt-8 mb-10'>
             <Heading level={1} className='text-white text-4xl mb-5'>
-              Create Account
+              Login
             </Heading>
             <p className='text-white'>
               Welcome! Enter your details and start exploring, collecting and
               selling samples.
             </p>
-            <SignupForm />
+            <LoginForm />
           </div>
         </section>
       </main>
@@ -35,4 +35,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
