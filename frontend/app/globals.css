@@ -3,18 +3,6 @@
 @tailwind utilities;
 
 .container {
-  max-width: 315px;
   margin-inline: auto;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 690px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1050px;
-  }
+  padding: 1rem;
 }

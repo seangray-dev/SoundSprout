@@ -16,7 +16,7 @@ const TrendingCard: React.FC<TrendingCardProps> = ({
 }) => {
   const slug = `${packName}`.toLowerCase().replace(/\s+/g, '-');
   return (
-    <li className='flex flex-col gap-4'>
+    <li className='flex flex-col mx-auto md:mx-0 gap-4'>
       <Link href={`/packs/${id}`}>
         <Image
           className='hover:cursor-pointer'
