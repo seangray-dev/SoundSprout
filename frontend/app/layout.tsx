@@ -1,5 +1,6 @@
 import './globals.css';
 import { Outfit } from 'next/font/google';
+import { UserProvider } from './context/UserContext';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -18,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${outfit.className} min-h-screen`}>{children}</body>
+      <body className={`${outfit.className} min-h-screen`}>
+        <UserProvider>{children}</UserProvider>
+      </body>
     </html>
   );
 }

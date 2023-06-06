@@ -1,5 +1,9 @@
 'use client';
 
+import axios from 'axios';
+import { useContext } from 'react';
+import { useRouter } from 'next/navigation';
+import { UserContext } from '@/app/context/UserContext';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { UserIcon, LockClosedIcon } from '@heroicons/react/24/outline';
@@ -16,28 +20,32 @@ const initialValues = {
 };
 
 const LoginForm = () => {
+  const router = useRouter();
+  const { user, setUser } = useContext(UserContext);
+
   const handleSubmit = async (
     values,
     { setSubmitting, setStatus, setFieldError }
   ) => {
     try {
-      const response = await fetch(
+      const response = await axios.post(
         `${process.env.NEXT_PUBLIC_BACKEND_SERVER}/login/`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(values),
-        }
+        values
       );
 
-      const data = await response.json();
+      console.log('response', response);
 
-      if (response.ok) {
+      const data = response.data;
+
+      // status:200
+      if (response.status === 200) {
         if (data.success) {
           // Login successful
           console.log('User logged in successfully', data);
+          localStorage.setItem('token', data.access_token);
+          console.log('setting user:', data.user.username);
+          setUser(data.user.username);
+          router.push('/profile');
         }
       } else {
         console.log(data);
