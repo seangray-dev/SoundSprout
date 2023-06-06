@@ -7,7 +7,7 @@ from sound_sprout.models import Sound
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['first_name']
+        fields = ('username', 'email', 'first_name', 'last_name')
 
 
 class PackSerializer(serializers.ModelSerializer):

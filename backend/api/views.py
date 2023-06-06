@@ -3,10 +3,14 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.core.exceptions import MultipleObjectsReturned
 from rest_framework.response import Response
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import AllowAny
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound
-from .serializers import PackSerializer, SoundSerializer
+from .serializers import PackSerializer, SoundSerializer, UserSerializer
+
+import jwt
+from jwt import exceptions
 
 
 @api_view(['GET'])
@@ -94,6 +98,23 @@ def login_user(request):
 
     if user is not None:
         login(request, user)
-        return Response({'success': True})
+        serializer = UserSerializer(user)  # Serialize the user object
+
+        # Generate the access token
+        refresh = RefreshToken.for_user(user)
+        access_token = str(refresh.access_token)
+
+        # Include serialized user data and access token in the response
+        return Response({'success': True, 'user': serializer.data, 'access_token': access_token})
     else:
         return Response({'success': False, 'error': 'Username/Email and/or password is incorrect'}, status=400)
+
+
+@api_view(['GET'])
+def get_current_user(request):
+    """
+    Determine the current user by their token, and return their data
+    """
+    user = request.user
+    serializer = UserSerializer(user)
+    return Response(serializer.data)

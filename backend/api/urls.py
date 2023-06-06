@@ -8,4 +8,5 @@ urlpatterns = [
     path('packs/<int:pack_id>/sounds', views.get_pack_sounds),
     path('create-user/', views.create_user),
     path('login/', views.login_user),
+    path('profile/', views.get_current_user)
 ]
