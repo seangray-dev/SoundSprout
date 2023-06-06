@@ -9,7 +9,7 @@ const PackSounds = ({ packId }) => {
     return `https://res.cloudinary.com/${cloudName}/video/upload/packs${audio_file}`;
   }
 
-  https: useEffect(() => {
+  useEffect(() => {
     const fetchSounds = async () => {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_BACKEND_SERVER}/packs/${packId}/sounds`
@@ -21,20 +21,7 @@ const PackSounds = ({ packId }) => {
     fetchSounds();
   }, [packId]);
 
-  console.log(
-    sounds.map((sound) => {
-      return (
-        `https://res.cloudinary.com/${cloudName}/video/upload/packs` +
-        sound.audio_file
-      );
-    })
-  );
-
-  // res.cloudinary.com/dfcg1eeap/video/upload/packs/Tape%20and%20Vinyl%20Drums/sounds/TVD_snare_tape_vinyl_pong.wav
-
-  //res.cloudinary.com/dfcg1eeap/video/upload/packs/Tape%20%26%20Vinyl%20Drums/sounds/TVD_snare_tape_vinyl_pong
-
-  https: return (
+  return (
     <section className='container mt-10 mb-20'>
       <header className='border-b border-t border-black flex justify-between'>
         <div>Filename</div>
