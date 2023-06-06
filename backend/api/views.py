@@ -1,12 +1,12 @@
+from django.db import IntegrityError
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import User
+from django.core.exceptions import MultipleObjectsReturned
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
-from sound_sprout.models import Pack
-from sound_sprout.models import Sound
-from django.contrib.auth.models import User
-from .serializers import PackSerializer
-from .serializers import SoundSerializer
-from django.db import IntegrityError
+from sound_sprout.models import Pack, Sound
+from .serializers import PackSerializer, SoundSerializer
 
 
 @api_view(['GET'])
@@ -69,3 +69,31 @@ def create_user(request):
         return Response({'success': False, 'error': 'Username already exists'}, status=400)
     except Exception as e:
         return Response({'success': False, 'error': str(e)}, status=500)
+
+
+@api_view(['POST', 'OPTIONS'])
+@permission_classes([AllowAny])
+def login_user(request):
+    userIdentifier = request.data.get('userIdentifier')
+    password = request.data.get('password')
+
+    # Check if the userIdentifier is an email
+    if '@' in userIdentifier:
+        try:
+            user = User.objects.get(email=userIdentifier)
+            # Authenticate using the username associated with the email
+            user = authenticate(
+                request, username=user.username, password=password)
+        except User.DoesNotExist:
+            return Response({'success': False, 'error': 'Username/Email and/or password is incorrect'}, status=400)
+        except MultipleObjectsReturned:
+            return Response({'success': False, 'error': 'Multiple users with this email found'}, status=400)
+    else:
+        user = authenticate(
+            request, username=userIdentifier, password=password)
+
+    if user is not None:
+        login(request, user)
+        return Response({'success': True})
+    else:
+        return Response({'success': False, 'error': 'Username/Email and/or password is incorrect'}, status=400)
