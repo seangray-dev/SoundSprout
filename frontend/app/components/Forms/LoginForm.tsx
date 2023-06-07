@@ -37,18 +37,12 @@ const LoginForm = () => {
 
       const data = response.data;
 
-      // status:200
       if (response.status === 200) {
-        if (data.success) {
-          // Login successful
-          console.log('User logged in successfully', data);
-          localStorage.setItem('token', data.access_token);
-          console.log('setting user:', data.user.username);
-          setUser(data.user.username);
-          router.push('/profile');
-        }
+        // Login successful
+        localStorage.setItem('token', data.access_token);
+        setUser(data.user.username);
+        router.push('/profile');
       } else {
-        console.log(data);
         setStatus(data.error);
         throw new Error('Unable to login');
       }

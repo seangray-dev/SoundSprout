@@ -40,38 +40,38 @@ const ProfilePage = () => {
     <>
       <Nav />
       <main className='container my-10'>
-        <div className='w-1/2 mx-auto font-bold tracking-wide'>
+        <div className='w-3/4 md:w-1/2 mx-auto font-bold tracking-wide'>
           <header className='mb-4 border-b border-black flex justify-between'>
             <h1 className='font-bold text-2xl'>Profile</h1>
             <PencilSquareIcon className='w-5 hover:opacity-50 hover:cursor-pointer transition-all' />
           </header>
           <div className='flex flex-col gap-4'>
-            <p className='flex justify-between'>
+            <p className='flex flex-col md:flex-row  justify-between'>
               Username: <span className='font-normal'>{user.username}</span>
             </p>
-            <p className='flex justify-between'>
+            <p className='flex flex-col md:flex-row  justify-between'>
               Email: <span className='font-normal'>{user.email}</span>
             </p>
-            <p className='flex justify-between'>
+            <p className='flex flex-col md:flex-row  justify-between'>
               First Name: <span className='font-normal'>{user.first_name}</span>
             </p>
-            <p className='flex justify-between'>
+            <p className='flex flex-col md:flex-row  justify-between'>
               Last Name: <span className='font-normal'>{user.last_name}</span>
             </p>
-            <p className='flex justify-between'>
+            <p className='flex flex-col md:flex-row  justify-between'>
               User ID: <span className='font-normal'>{user.id}</span>
             </p>
-            <p className='flex justify-between'>
+            <p className='flex flex-col md:flex-row  justify-between'>
               Password:{' '}
-              <button className='font-normal text-purple hover:underline'>
+              <p className='font-normal text-purple hover:cursor-pointer hover:underline'>
                 Change Password
-              </button>
+              </p>
             </p>
-            <p className='flex justify-between'>
-              Delete Sound Sprout:{' '}
-              <button className='font-normal text-red-500 hover:underline'>
+            <p className='flex flex-col md:flex-row justify-between'>
+              Delete Sound Sprout Account:{' '}
+              <p className='font-normal text-red-500 hover:cursor-pointer hover:underline'>
                 Delete Account
-              </button>
+              </p>
             </p>
           </div>
         </div>
