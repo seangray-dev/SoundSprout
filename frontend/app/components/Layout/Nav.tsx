@@ -1,10 +1,15 @@
-import React from 'react';
+'use client';
+
+import React, { useContext } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Bars2Icon } from '@heroicons/react/24/solid';
+import { UserIcon } from '@heroicons/react/24/solid';
 import logo from '/public/assets/images/logo-no-background.png';
+import { UserContext } from '@/app/hooks/context/UserContext';
 
 const Nav = () => {
+  const { user } = useContext(UserContext);
+
   return (
     <nav className='bg-gray-1 py-4'>
       <div className='flex justify-between items-center container'>
@@ -15,13 +20,17 @@ const Nav = () => {
           <li className='hover:underline transition-all'>
             <Link href={'/upload'}>Upload</Link>
           </li>
-          <li className='py-1 px-4 gap-4 bg-purple rounded-full hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full'>
-            <Link href={'/login'}>Login</Link>
-          </li>
+          {user ? (
+            <li className='underline underline-offset-2 text-white flex gap-2 items-center'>
+              <Link href={'/profile'}>{user.username}</Link>
+              <UserIcon className='text-purple w-6' />
+            </li>
+          ) : (
+            <li className='py-1 px-4 gap-4 bg-purple rounded-full hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full'>
+              <Link href={'/login'}>Login</Link>
+            </li>
+          )}
         </ul>
-        {/* <button>
-          <Bars2Icon className='w-6 h-6 text-white' />
-        </button> */}
       </div>
     </nav>
   );

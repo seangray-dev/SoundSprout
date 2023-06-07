@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import Nav from '../components/Layout/Nav';
 import Footer from '../components/Layout/Footer';
 import { fetchUser } from '../components/api/api';
-import { UserContext } from '../context/UserContext';
+import { UserContext } from '../hooks/context/UserContext';
+import { PencilSquareIcon } from '@heroicons/react/24/solid';
 
 const ProfilePage = () => {
   const { user, setUser } = useContext(UserContext);
@@ -38,14 +39,43 @@ const ProfilePage = () => {
   return (
     <>
       <Nav />
-      <div className='container'>
-        <h1 className='text-font-bold'>
-          Hi, {user.first_name ? user.first_name : user.username}!
-        </h1>
-        <h2>Details:</h2>
-        <p>Username: {user.username}</p>
-        <p>Email: {user.email}</p>
-      </div>
+      <main className='container my-10'>
+        <div className='w-1/2 mx-auto font-bold tracking-wide'>
+          <header className='mb-4 border-b border-black flex justify-between'>
+            <h1 className='font-bold text-2xl'>Profile</h1>
+            <PencilSquareIcon className='w-5 hover:opacity-50 hover:cursor-pointer transition-all' />
+          </header>
+          <div className='flex flex-col gap-4'>
+            <p className='flex justify-between'>
+              Username: <span className='font-normal'>{user.username}</span>
+            </p>
+            <p className='flex justify-between'>
+              Email: <span className='font-normal'>{user.email}</span>
+            </p>
+            <p className='flex justify-between'>
+              First Name: <span className='font-normal'>{user.first_name}</span>
+            </p>
+            <p className='flex justify-between'>
+              Last Name: <span className='font-normal'>{user.last_name}</span>
+            </p>
+            <p className='flex justify-between'>
+              User ID: <span className='font-normal'>{user.id}</span>
+            </p>
+            <p className='flex justify-between'>
+              Password:{' '}
+              <button className='font-normal text-purple hover:underline'>
+                Change Password
+              </button>
+            </p>
+            <p className='flex justify-between'>
+              Delete Sound Sprout:{' '}
+              <button className='font-normal text-red-500 hover:underline'>
+                Delete Account
+              </button>
+            </p>
+          </div>
+        </div>
+      </main>
       <Footer />
     </>
   );

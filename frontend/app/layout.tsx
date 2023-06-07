@@ -1,6 +1,6 @@
 import './globals.css';
 import { Outfit } from 'next/font/google';
-import { UserProvider } from './context/UserContext';
+import { UserProvider } from './hooks/context/UserContext';
 
 const outfit = Outfit({
   subsets: ['latin'],
