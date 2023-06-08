@@ -6,15 +6,8 @@ import { useState, useEffect } from 'react';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 import PackSounds from '@/app/components/Layout/PackSounds';
 
-const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
-
-function getCoverArtUrl(publicId) {
-  return `https://res.cloudinary.com/${cloudName}/image/upload/${publicId}.jpg`;
-}
-
-function getPreviewUrl(publicId) {
-  return `https://res.cloudinary.com/${cloudName}/video/upload/${publicId}.mp3`;
-}
+import { getPackById } from '@/app/api/api';
+import { getCoverArtUrl, getPreviewUrl } from '@/app/api/cloudinary';
 
 export default function Packs({ params }: { params: { id: number } }) {
   const [pack, setPack] = useState(null);
@@ -22,10 +15,7 @@ export default function Packs({ params }: { params: { id: number } }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(
-          `${process.env.NEXT_PUBLIC_BACKEND_SERVER}/packs/${params.id}/`
-        );
-        const data = await res.json();
+        const data = await getPackById(params.id);
         setPack(data);
       } catch (err) {
         console.error(err);

@@ -32,7 +32,6 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
 
   return (
     <>
-      <Nav />
       <main>
         <h1>Genre:</h1>
         <h2>Packs:</h2>
@@ -54,7 +53,6 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
           ))}
         </ul>
       </main>
-      <Footer />
       <AudioPlayer />
     </>
   );

@@ -33,12 +33,9 @@ const LoginForm = () => {
         values
       );
 
-      console.log('response', response);
-
       const data = response.data;
 
       if (response.status === 200) {
-        // Login successful
         localStorage.setItem('token', data.access_token);
         setUser(data.user.username);
         router.push('/profile');

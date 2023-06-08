@@ -28,9 +28,17 @@ export const getPacksByGenre = async (genreId: number) => {
 };
 
 export const getSoundsByGenre = async (genreId: number) => {
-  console.log('getSoundsByGenre');
   try {
     const response = await axios.get(`${BACKEND}/genre/${genreId}/sounds/`);
+    return response.data;
+  } catch (err) {
+    throw new Error(err.response.data.error);
+  }
+};
+
+export const getPackById = async (id: number) => {
+  try {
+    const response = await axios.get(`${BACKEND}/packs/${id}/`);
     return response.data;
   } catch (err) {
     throw new Error(err.response.data.error);
