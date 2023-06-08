@@ -3,7 +3,7 @@
 import { useEffect, useContext } from 'react';
 import Nav from '../components/Layout/Nav';
 import Footer from '../components/Layout/Footer';
-import { fetchUser } from '../components/api/api';
+import { fetchUser } from '../api/api';
 import { UserContext } from '../hooks/context/UserContext';
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
 

@@ -14,6 +14,7 @@ const BrowseGenres = () => {
             key={index}
             imagePath={genre.imagePath}
             genre={genre.genre}
+            id={genre.id}
           />
         ))}
       </div>

@@ -2,35 +2,43 @@
   "genres": [
     {
       "imagePath": "/assets/images/soul-vibes-cover-art.jpeg",
-      "genre": "HIP HOP / R&B"
+      "genre": "HIP HOP / R&B",
+      "id": 1
     },
     {
       "imagePath": "/assets/images/clouds-pop.jpeg",
-      "genre": "POP / EDM"
+      "genre": "POP / EDM",
+      "id": 2
     },
     {
       "imagePath": "/assets/images/tantrum-desire.jpg",
-      "genre": "BASS MUSIC"
+      "genre": "BASS MUSIC",
+      "id": 3
     },
     {
       "imagePath": "/assets/images/latin-guitars.jpg",
-      "genre": "GLOBAL"
+      "genre": "GLOBAL",
+      "id": 4
     },
     {
       "imagePath": "/assets/images/mainroom-techno.jpg",
-      "genre": "HOUSE / TECHNO"
+      "genre": "HOUSE / TECHNO",
+      "id": 5
     },
     {
       "imagePath": "/assets/images/tape-vinyl-drums.jpg",
-      "genre": "LIVE SOUNDS"
+      "genre": "LIVE SOUNDS",
+      "id": 6
     },
     {
       "imagePath": "/assets/images/stranger-tingz.jpg",
-      "genre": "ELECTRONIC"
+      "genre": "ELECTRONIC",
+      "id": 7
     },
     {
       "imagePath": "/assets/images/shift.jpeg",
-      "genre": "CINEMATIC"
+      "genre": "CINEMATIC",
+      "id": 8
     }
   ]
 }

@@ -5,10 +5,8 @@ const PackSounds = ({ packId }) => {
   const [durations, setDurations] = useState({});
   const audioRefs = useRef([]);
 
-  const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
-
   function getPreviewUrl(audio_file) {
-    return `https://res.cloudinary.com/${cloudName}/video/upload/packs${audio_file}`;
+    return `${process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL}${audio_file}`;
   }
 
   useEffect(() => {
@@ -34,7 +32,7 @@ const PackSounds = ({ packId }) => {
     }));
   };
 
-  function formatTime(seconds) {
+  const formatTime = (seconds) => {
     if (seconds === undefined) {
       return '00:00';
     }
@@ -43,7 +41,7 @@ const PackSounds = ({ packId }) => {
     return `${minutes.toString().padStart(2, '0')}:${remainingSeconds
       .toString()
       .padStart(2, '0')}`;
-  }
+  };
 
   return (
     <section className='container mt-10 mb-20'>
@@ -59,6 +57,7 @@ const PackSounds = ({ packId }) => {
             <div>
               <div className='text-sm'>{sound.name}</div>
               <audio
+                controls
                 ref={(el) => (audioRefs.current[index] = el)}
                 src={getPreviewUrl(sound.audio_file)}
                 onLoadedMetadata={() => handleLoadedMetadata(index)}></audio>
