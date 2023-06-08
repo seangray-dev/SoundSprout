@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-import Nav from '@/app/components/Layout/Nav';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 import PackSounds from '@/app/components/Layout/PackSounds';
 
@@ -38,7 +37,6 @@ export default function Packs({ params }: { params: { id: number } }) {
 
   return (
     <>
-      <Nav />
       <main className='container mt-10'>
         {pack && (
           <section className=' flex flex-col md:grid grid-cols-2'>

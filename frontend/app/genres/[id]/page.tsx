@@ -3,8 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { getSoundsByGenre, getPacksByGenre } from '@/app/api/api';
 import { useRouter } from 'next/router';
-import Nav from '@/app/components/Layout/Nav';
-import Footer from '@/app/components/Layout/Footer';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 
 const SOUND_URL = process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL;

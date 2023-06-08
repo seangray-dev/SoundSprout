@@ -1,8 +1,6 @@
 'use client';
 
 import { useEffect, useContext } from 'react';
-import Nav from '../components/Layout/Nav';
-import Footer from '../components/Layout/Footer';
 import { fetchUser } from '../api/api';
 import { UserContext } from '../hooks/context/UserContext';
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
@@ -27,18 +25,15 @@ const ProfilePage = () => {
   if (!user) {
     return (
       <>
-        <Nav />
         <div className='mx-auto text-center min-h-[50vh] grid place-items-center'>
           Loading...
         </div>
-        <Footer />
       </>
     );
   }
 
   return (
     <>
-      <Nav />
       <main className='container my-10'>
         <div className='w-3/4 md:w-1/2 mx-auto font-bold tracking-wide'>
           <header className='mb-4 border-b border-black flex justify-between'>
@@ -76,7 +71,6 @@ const ProfilePage = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

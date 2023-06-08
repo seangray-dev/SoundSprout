@@ -1,14 +1,11 @@
 import Image from 'next/image';
 
-import Nav from '../components/Layout/Nav';
-import Footer from '../components/Layout/Footer';
 import Heading from '../components/Utils/Heading';
 import LoginForm from '../components/Forms/LoginForm';
 
 const Login = () => {
   return (
     <>
-      <Nav />
       <main className='bg-gray-1'>
         <section className='2xl:container mx-auto flex flex-col md:grid md: grid-cols-2'>
           <Image
@@ -30,7 +27,6 @@ const Login = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 };
