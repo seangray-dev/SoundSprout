@@ -2,15 +2,13 @@ from django.db import IntegrityError
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.core.exceptions import MultipleObjectsReturned
+from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
-from sound_sprout.models import Pack, Sound
-from .serializers import PackSerializer, SoundSerializer, UserSerializer
-
-import jwt
-from jwt import exceptions
+from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation
+from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer
 
 
 @api_view(['GET'])
@@ -118,3 +116,42 @@ def get_current_user(request):
     user = request.user
     serializer = UserSerializer(user)
     return Response(serializer.data)
+
+
+@api_view(['GET'])
+def get_genre(request, genre_id):
+    try:
+        genre = Genre.objects.get(id=genre_id)
+        serializer = GenreSerializer(genre)
+        return Response(serializer.data)
+    except Genre.DoesNotExist:
+        return Response({'error': 'Genre not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(['GET'])
+def get_sounds_by_genre(request, genre_id):
+    try:
+        sounds = Sound.objects.filter(
+            pack__packgenreassociation__genre_id=genre_id)
+        serializer = SoundSerializer(sounds, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    except Genre.DoesNotExist:
+        return Response({'error': 'Genre not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(['GET'])
+def get_packs_by_genre(request, genre_id):
+    try:
+        packs = Pack.objects.filter(packgenreassociation__genre_id=genre_id)
+        genre = Genre.objects.get(id=genre_id)
+        genre_name = genre.name
+
+        serializer = PackSerializer(packs, many=True)
+        packs_data = serializer.data
+
+        for pack_data in packs_data:
+            pack_data['genre'] = genre_name
+
+        return Response(packs_data, status=status.HTTP_200_OK)
+    except Genre.DoesNotExist:
+        return Response({'error': 'Genre not found'}, status=status.HTTP_404_NOT_FOUND)

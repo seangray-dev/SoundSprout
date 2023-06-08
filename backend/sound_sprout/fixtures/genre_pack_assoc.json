@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "pack": 1,
-      "genre": 2
+      "genre": 1
     }
   },
   {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
       "pack": 2,
-      "genre": 1
+      "genre": 7
     }
   },
   {
@@ -20,7 +20,7 @@
     "pk": 3,
     "fields": {
       "pack": 3,
-      "genre": 5
+      "genre": 4
     }
   },
   {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
       "pack": 4,
-      "genre": 8
+      "genre": 1
     }
   },
   {
@@ -36,7 +36,7 @@
     "pk": 5,
     "fields": {
       "pack": 5,
-      "genre": 1
+      "genre": 3
     }
   },
   {
@@ -44,7 +44,7 @@
     "pk": 6,
     "fields": {
       "pack": 6,
-      "genre": 7
+      "genre": 6
     }
   },
   {
@@ -52,7 +52,7 @@
     "pk": 7,
     "fields": {
       "pack": 7,
-      "genre": 4
+      "genre": 2
     }
   },
   {
@@ -60,7 +60,7 @@
     "pk": 8,
     "fields": {
       "pack": 8,
-      "genre": 3
+      "genre": 8
     }
   },
   {
@@ -68,7 +68,7 @@
     "pk": 9,
     "fields": {
       "pack": 9,
-      "genre": 6
+      "genre": 1
     }
   },
   {
@@ -76,7 +76,7 @@
     "pk": 10,
     "fields": {
       "pack": 10,
-      "genre": 1
+      "genre": 5
     }
   }
 ]
