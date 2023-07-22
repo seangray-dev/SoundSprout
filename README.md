@@ -26,6 +26,7 @@ This repository consists of a full stack application that uses [Next.js](https:/
 - `/backend`: This is a Django project, equipped with Django Rest Framework for creating API endpoints.
 
 ## Prerequisites
+
 1. Python 3
 2. Pip3 (Python Package Installer)
 3. PostgreSQL
