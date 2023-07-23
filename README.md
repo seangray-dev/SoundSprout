@@ -65,7 +65,7 @@ pip3 install -r requirements.txt
 
 4. Setup PostgreSQL database
 
-- Install PostgreSQL and create a database for the project.
+- Create a PostgreSQL database for the project.
 - Create a `.env` file in the root directory of the backend project. This file will hold secret keys and database configuration. Add the following lines to it, replacing the placeholder values with your database credentials:
 
 ```
@@ -76,7 +76,7 @@ DB_HOST=your_database_host
 DB_PORT=your_database_port
 ```
 
-- The `DATABASES` setting in `backend/soundsprout/settings.py` is configured to read the database credentials from the `.env` file.
+- The `DATABASES` setting in `backend/sound_sprout/settings.py` is configured to read the database credentials from the `.env` file.
 
 5. Migrate the database
 
