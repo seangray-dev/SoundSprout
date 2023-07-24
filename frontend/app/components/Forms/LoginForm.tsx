@@ -3,7 +3,7 @@
 import { UserContext } from '@/app/hooks/context/UserContext';
 import { LoginFormValues } from '@/app/types';
 import { LockClosedIcon, UserIcon } from '@heroicons/react/24/outline';
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useRouter } from 'next/navigation';
 import { useContext } from 'react';
@@ -49,11 +49,18 @@ const LoginForm = () => {
 				setUser(data.user.username);
 				router.push('/profile');
 			} else {
-				setStatus(data.error);
 				throw new Error('Unable to login');
 			}
 		} catch (error) {
-			console.error(error);
+			if (axios.isAxiosError(error)) {
+				console.error(error);
+				setStatus(
+					error.response?.data.error ||
+						'Login failed, please check your credentials.'
+				);
+			} else {
+				setStatus('Login failed, please check your credentials.');
+			}
 		} finally {
 			setSubmitting(false);
 		}
