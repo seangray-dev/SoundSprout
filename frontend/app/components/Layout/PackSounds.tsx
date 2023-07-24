@@ -1,13 +1,14 @@
 import { getCoverArtUrl } from '@/app/api/cloudinary';
+import { Pack, PackSoundsProps, Sound } from '@/app/types';
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 
-const PackSounds = ({ packId, coverArtLocation }) => {
-	const [sounds, setSounds] = useState([]);
-	const [durations, setDurations] = useState({});
-	const audioRefs = useRef([]);
+const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
+	const [sounds, setSounds] = useState<Sound[]>([]);
+	const [durations, setDurations] = useState<Record<number, number>>({});
+	const audioRefs = useRef<HTMLAudioElement[]>([]);
 
-	function getPreviewUrl(audio_file) {
+	function getPreviewUrl(audio_file: string) {
 		return `${process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL}${audio_file}`;
 	}
 
@@ -27,14 +28,14 @@ const PackSounds = ({ packId, coverArtLocation }) => {
 		audioRefs.current = audioRefs.current.slice(0, sounds.length);
 	}, [sounds]);
 
-	const handleLoadedMetadata = (index) => {
+	const handleLoadedMetadata = (index: number) => {
 		setDurations((durations) => ({
 			...durations,
 			[index]: audioRefs.current[index].duration,
 		}));
 	};
 
-	const formatTime = (seconds) => {
+	const formatTime = (seconds: number) => {
 		if (seconds === undefined) {
 			return '00:00';
 		}
@@ -69,7 +70,11 @@ const PackSounds = ({ packId, coverArtLocation }) => {
 						</div>
 						<audio
 							// controls
-							ref={(el) => (audioRefs.current[index] = el)}
+							ref={(el) => {
+								if (el) {
+									audioRefs.current[index] = el;
+								}
+							}}
 							src={getPreviewUrl(sound.audio_file)}
 							onLoadedMetadata={() => handleLoadedMetadata(index)}></audio>
 

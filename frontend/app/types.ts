@@ -62,3 +62,22 @@ export interface SoundTagAssociation {
 	sound: Sound;
 	tag: Tag;
 }
+
+export interface PackSoundsProps {
+	packId: string;
+	coverArtLocation: string;
+}
+
+export interface LoginFormValues {
+	userIdentifier: string;
+	password: string;
+}
+
+export interface SignUpFormValues {
+	username: string;
+	firstName: string;
+	lastName: string;
+	email: string;
+	password: string;
+	confirmPassword: string;
+}

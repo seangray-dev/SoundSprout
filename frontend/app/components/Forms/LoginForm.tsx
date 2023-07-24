@@ -1,6 +1,7 @@
 'use client';
 
 import { UserContext } from '@/app/hooks/context/UserContext';
+import { LoginFormValues } from '@/app/types';
 import { LockClosedIcon, UserIcon } from '@heroicons/react/24/outline';
 import axios from 'axios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
@@ -24,8 +25,16 @@ const LoginForm = () => {
 	const { user, setUser } = useContext(UserContext);
 
 	const handleSubmit = async (
-		values,
-		{ setSubmitting, setStatus, setFieldError }
+		values: LoginFormValues,
+		{
+			setSubmitting,
+			setStatus,
+			setFieldError,
+		}: {
+			setSubmitting: (isSubmitting: boolean) => void;
+			setStatus: (status: string) => void;
+			setFieldError: (field: string, message: string) => void;
+		}
 	) => {
 		try {
 			const response = await axios.post(

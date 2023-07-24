@@ -1,5 +1,6 @@
 'use client';
 
+import { SignUpFormValues } from '@/app/types';
 import {
 	EnvelopeIcon,
 	LockClosedIcon,
@@ -18,7 +19,7 @@ const validationSchema = Yup.object({
 		.min(6, 'Password must be at least 6 characters')
 		.required('Password is required'),
 	confirmPassword: Yup.string()
-		.oneOf([Yup.ref('password'), null], 'Passwords must match')
+		.oneOf([Yup.ref('password'), ''], 'Passwords must match')
 		.required('Confirm password is required'),
 });
 
@@ -32,7 +33,16 @@ const initialValues = {
 };
 
 const SignupForm = () => {
-	const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
+	const handleSubmit = async (
+		values: SignUpFormValues,
+		{
+			setSubmitting,
+			setFieldError,
+		}: {
+			setSubmitting: (isSubmitting: boolean) => void;
+			setFieldError: (field: string, message: string) => void;
+		}
+	) => {
 		try {
 			const response = await fetch(
 				`${process.env.NEXT_PUBLIC_BACKEND_SERVER}}/create-user/`,

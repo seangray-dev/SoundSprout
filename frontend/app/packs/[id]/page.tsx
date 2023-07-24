@@ -53,7 +53,7 @@ export default function Packs({ params }: { params: { id: number } }) {
 							</article>
 						</section>
 						<PackSounds
-							packId={params.id}
+							packId={params.id.toString()}
 							coverArtLocation={pack.cover_art_location}
 						/>
 					</>
