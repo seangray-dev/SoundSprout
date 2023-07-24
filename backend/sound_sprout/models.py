@@ -43,6 +43,8 @@ class Sound(models.Model):
 class Transaction(models.Model):
     """A Transaction records the purchase of a Pack or Sound by a User."""
     buyer = models.ForeignKey(User, on_delete=models.CASCADE)
+    seller = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='sales', null=True)
     pack = models.ForeignKey(Pack, on_delete=models.CASCADE, null=True)
     sound = models.ForeignKey(Sound, on_delete=models.CASCADE, null=True)
     date = models.DateTimeField(auto_now_add=True)
