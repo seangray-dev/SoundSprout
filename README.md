@@ -110,7 +110,7 @@ npm install
 npm run dev
 ```
 
-10. Now, open your browser and navigate to http://localhost:3000 for the frontend and http://localhost:8000/admin for the Django admin interface.
+10. Now, open your browser and navigate to http://localhost:3000 for the frontend and http://localhost:8000/admin/ for the Django admin interface.
 
 ## Backend API and Cloudinary Integration
 
