@@ -1,3 +1,4 @@
+import { Pack } from '@/app/types';
 import axios from 'axios';
 
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_SERVER;
@@ -42,9 +43,9 @@ export const getSoundsByGenre = async (genreId: number) => {
 	}
 };
 
-export const getPackById = async (id: number) => {
+export const getPackById = async (id: number): Promise<Pack> => {
 	try {
-		const response = await axios.get(`${BACKEND}/packs/${id}/`);
+		const response = await axios.get<Pack>(`${BACKEND}/packs/${id}/`);
 		return response.data;
 	} catch (error) {
 		if (axios.isAxiosError(error)) {

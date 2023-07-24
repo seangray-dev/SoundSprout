@@ -1,16 +1,15 @@
 'use client';
 
+import { getPackById } from '@/app/api/api';
+import { getCoverArtUrl, getPreviewUrl } from '@/app/api/cloudinary';
+import AudioPlayer from '@/app/components/Layout/AudioPlayer';
+import PackSounds from '@/app/components/Layout/PackSounds';
+import { Pack } from '@/app/types';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-import AudioPlayer from '@/app/components/Layout/AudioPlayer';
-import PackSounds from '@/app/components/Layout/PackSounds';
-
-import { getPackById } from '@/app/api/api';
-import { getCoverArtUrl, getPreviewUrl } from '@/app/api/cloudinary';
-
 export default function Packs({ params }: { params: { id: number } }) {
-	const [pack, setPack] = useState(null);
+	const [pack, setPack] = useState<Pack | null>(null);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -39,7 +38,10 @@ export default function Packs({ params }: { params: { id: number } }) {
 									alt={pack.name}
 								/>
 								<span>Preview</span>
-								<audio src={getPreviewUrl(pack.preview)} controls />
+								<audio
+									src={pack.preview ? getPreviewUrl(pack.preview) : ''}
+									controls
+								/>
 							</div>
 							<article className='flex flex-col gap-6'>
 								<div>

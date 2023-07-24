@@ -4,6 +4,7 @@ import { getPacksByGenre, getSoundsByGenre } from '@/app/api/api';
 import { getCoverArtUrl } from '@/app/api/cloudinary';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 import Heading from '@/app/components/Utils/Heading';
+import { Pack, Sound } from '@/app/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
@@ -11,22 +12,9 @@ import React, { useEffect, useState } from 'react';
 const SOUND_URL = process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL;
 
 const GenrePage = ({ params }: { params: { id: number } }) => {
-	type PackType = {
-		id: number;
-		cover_art_location: string;
-		name: string;
-	};
-
-	type SoundType = {
-		id: number;
-		pack: number;
-		name: string;
-		audio_file: string;
-	};
-
 	const id = params.id;
-	const [packs, setPacks] = useState<PackType[]>([]);
-	const [sounds, setSounds] = useState<SoundType[]>([]);
+	const [packs, setPacks] = useState<Pack[]>([]);
+	const [sounds, setSounds] = useState<Sound[]>([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -46,12 +34,8 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
 		}
 	}, [id]);
 
-	function getCoverArtFromPack(packId: number) {
-		// Retrieve the pack information based on the packId
-		const pack = packs.find((pack) => pack.id === packId);
-
-		// Return the cover art URL if the pack is found
-		return pack ? getCoverArtUrl(pack.cover_art_location) : null;
+	function getCoverArtFromPack(pack: Pack) {
+		return getCoverArtUrl(pack.cover_art_location);
 	}
 
 	return (
@@ -87,7 +71,7 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
 							<Image
 								src={
 									getCoverArtFromPack(sound.pack) ||
-									'frontend/public/assets/images/logos/logo-color.png'
+									'/public/assets/images/logos/logo-color.png'
 								}
 								width={36}
 								height={36}

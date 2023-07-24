@@ -1,10 +1,14 @@
 'use client';
 
-import React, { createContext } from 'react';
+import React, { createContext, ReactNode } from 'react';
 
 export const UserContext = createContext({});
 
-export const UserProvider = ({ children }) => {
+interface UserProviderProps {
+	children: ReactNode;
+}
+
+export const UserProvider = ({ children }: UserProviderProps) => {
 	const [user, setUser] = React.useState(null);
 	console.log('Context User:', user);
 
