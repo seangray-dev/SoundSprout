@@ -4,6 +4,7 @@ out/
 node_modules/
 *.log
 
+
 # Django / Python
 *.py[cod]
 *.pyo
@@ -30,6 +31,7 @@ media
 env/
 venv/
 ENV/
+myenv/
 
 # PyCharm / IntelliJ IDEA related
 .idea/
