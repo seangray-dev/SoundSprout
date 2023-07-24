@@ -24,6 +24,9 @@ class Pack(models.Model):
     cover_art_location = models.CharField(max_length=255)
     uploader = models.ForeignKey(User, on_delete=models.CASCADE)
     preview = models.CharField(max_length=255, blank=True, null=True)
+    purchase_count = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    modified_at = models.DateTimeField(auto_now=True)
 
 
 class Sound(models.Model):
@@ -32,6 +35,9 @@ class Sound(models.Model):
     audio_file = models.FileField(upload_to='sounds/')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     pack = models.ForeignKey(Pack, on_delete=models.CASCADE)
+    purchase_count = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    modified_at = models.DateTimeField(auto_now=True)
 
 
 class Transaction(models.Model):
@@ -41,6 +47,8 @@ class Transaction(models.Model):
     sound = models.ForeignKey(Sound, on_delete=models.CASCADE, null=True)
     date = models.DateTimeField(auto_now_add=True)
     total_price = models.DecimalField(max_digits=6, decimal_places=2)
+    created_at = models.DateTimeField(auto_now_add=True)
+    modified_at = models.DateTimeField(auto_now=True)
 
 
 class Genre(models.Model):
