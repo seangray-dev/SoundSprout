@@ -1,122 +1,142 @@
 [
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 1,
-    "fields": {
-      "name": "SOUL VIBES - Trap & RNB FEEL",
-      "description": "Soul Vibes provides fresh soul & RnB flavours with a tasteful focus on sensual music loops, perfect for inspiring song ideas or resampling & chopping into your next hit. This Library is laden with emotive melodies and sexy chords. It’s clear to see that lot of thought has gone into each loop, really giving this pack character. Have a browse and find the next piece to your puzzle in Soul Vibes.",
-      "price": 9.99,
-      "cover_art_location": "packs/SOUL VIBES/sould-vibes-cover-art",
-      "uploader": 5,
-      "preview": "packs/SOUL VIBES/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 2,
-    "fields": {
-      "name": "Stranger Tingz",
-      "description": "Stranger Tingz is a hybrid sample pack taking equal parts 80’s spooky and synth driven melodies and textures and combining it with modern trap music production styles, composition and drums. Inside this pack you will find expressive synth loops provided with and without bass for maximum flexibility as well as a variety of 80’s inspired trap drum loops and one shot sounds.Created by Komorebi Audio mainstay FreshKidBlaze this pack takes influence from 80’s movie soundtracks, video game OST’s and modern trap music. ",
-      "price": 9.99,
-      "cover_art_location": "packs/Stranger Tingz/coverart",
-      "uploader": 6,
-      "preview": "packs/Stranger Tingz/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 3,
-    "fields": {
-      "name": "Striking Latin Guitars",
-      "description": "Imagine yourself walking down a beach and you hear some amazing Latin style music while you sip an ice cold cocktail in the blazing hot sun; welcome to Striking Latin Guitar! This pack brings the HEAT with some guitar focused samples and loops that will help inject some Latin spice into any of your new productions! But we didn’t stop there! Alongside these high quality guitar recordings are full song starters, full ensembles, big bad bass loops, playful percussion loops, and caliente vocals. Striking Latin Guitars can easily become your go-to pack for anything Latin infused to help you stay inspired! This is perfect for any genre of music that needs that Latin twist, such as House, Reggaeton, Dancehall, Tech House, Tropical House, Pop, Brazilian style Bossa beats, Afrobeat, etc. Grab Striking Latin Guitars today!",
-      "price": 9.99,
-      "cover_art_location": "packs/Striking Latin Guitars/coverart",
-      "uploader": 7,
-      "preview": "packs/Striking Latin Guitars/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 4,
-    "fields": {
-      "name": "Tasty Loops by Mars Today",
-      "description": "'Tasty Loops' is a multi-genre loop pack created by producer and songwriter Mars Today. It’s filled with stacked instrument loops, single instrument loops, song starts, programmed and live drums, and a plethora of percussion grooves. The sounds range from R&B, to Classic Soul, to Indie-Pop, to Reggae and everywhere in between. Mars’ signature sound can be heard under artists like Kyle Dion, Phabo, Destin Conrad, M.I.L.K, Aaron Childs, Ambré, Rexx Life Raj, Jahkoy, Los Rakas and more, and is well represented in this collection of samples. Working with a team of talented studio musicians, he was able to achieve a dynamic range of sounds and styles that make this pack particularly well suited for pushing genre boundaries.",
-      "price": 9.99,
-      "cover_art_location": "packs/Tasty Loops by Mars Today/coverart",
-      "uploader": 10,
-      "preview": "packs/Tasty Loops by Mars Today/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 5,
-    "fields": {
-      "name": "Tantrum Desire - Technique Essential",
-      "description": "Tantrum Desire is undoubtedly one of the biggest names in DnB. With some of the most rotated singles on channels such as UKF and remixes under their belt for Laidback Luke, Rusko, Skrillex, Utah Saints and more, it is no secret that they are on top of their game. In this 'Tantrum Desire - Technique Essential' sample and Xfer Serum preset pack you can expect their signature sound, at arms reach. In this mind boggling, groundbreaking monster of a DnB sample pack, Tantrum Desire created an enormous collection of explosive basses, epic leads, energizing synths, extra tight drums and unbelievably versatile drum loops and over 100 presets for Xfer Serum to instantly spice up your drum and bass productions.Punchy drums: Hard kicks, relentless snares, crisp cymbals and creative percussion sounds are ready to set fire to your tracks. These unavoidable drum loops, jungle breaks, driving top loops and energetic drum fills are drag & drop ready and will shake the foundations of any dancefloor.Aggressive Basses: Are you craving serious bass powered madness? Tantrum Desire personally tailored every bass and sub bass to perfection. You can expect destructive low frequency weaponry such as punchy sub basses, crazy reeses and steady bass stabs to deliver a definitive knockout.Over 100 absolutely crazy presets for Xfer Serum: Full of hard, dense bass stabs, smooth yet aggressive sub basses, moving reeses, energizing risers, crazy arpeggios and even punchy drum one shots, so you can build a whole track using only these presets! Fully macroed and ready to go mental, these presets will never let you down!All of the content in this pack is completely royalty-free and fully customizable in any DAW or sampler.Grab 'Tantrum Desire - Technique Essential' NOW!",
-      "price": 9.99,
-      "cover_art_location": "packs/Tantrum Desire - Technique Essential/coverart",
-      "uploader": 8,
-      "preview": "packs/Tantrum Desire - Technique Essential/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 6,
-    "fields": {
-      "name": "Tape & Vinyl Drums",
-      "description": "Raw breaks, rare grooves and resampled beats. Tape & Vinyl Drums is a digital crate diggers dream for all things drums. Ran through a vintage Ampex tape machine and cut to vinyl - this collection offers a slew of samples inspired by the 60s and 70s era’s of Funk, Soul, Rare Groove and Proto-Disco Packed with broken beats, shimmering cymbal rhythms, funky hi-hat lines, drum stacks, percussion stacks and fills fills,Tape & Vinyl Drums delivers a choice selection of vintage-style drum layers, rhythms, textures and grooves primed to inject humanistic groove and retro timbres recorded and processed with a superlative level of old-school authenticity.",
-      "price": 9.99,
-      "cover_art_location": "packs/Tape and Vinyl Drums/coverart",
-      "uploader": 9,
-      "preview": "packs/Tape and Vinyl Drums/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 7,
-    "fields": {
-      "name": "Clouds - Indie Pop",
-      "description": "Samplestar are very proud to present Clouds! A production pack creatively inspired by bands like 2 Door Cinema Club, Bombay Bicycle Club, Foals, Friendly Fires, Metric, Phoenix, The Wombats - to name but a few. This pack is a must-have for any alternative indie pop enthusiasts. Clouds provides the perfect balance between nostalgic indie sounds and fresh modern pop sensibilities. From the infectious grooves of danceable indie pop to the introspective atmospheres of bedroom pop, Clouds has everything you need to start crafting your very own unique indie pop gems today! While suitable for a broad range of musical genres this library will be especially useful for media producers / composers within the Games, Film, TV and Radio advertising industry. Expect to hear - Hook laden jangly guitars, dreamy keys, lush vintage synths, tight and punchy drums, solid bass grooves and much more! All content has been carefully mixed and eq’d for optimum sonic balance while allowing plenty of extra headroom for further processing and also final mastering stages.",
-      "price": 9.99,
-      "cover_art_location": "packs/Clouds - Indie Pop/coverart",
-      "uploader": 1,
-      "preview": "packs/Clouds - Indie Pop/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 8,
-    "fields": {
-      "name": "SHIFT",
-      "description": "We are here with our latest release 'SHIFT' bringing over 800Mb of content with cutting-edge loops, samples and kits fusing elements of future Electronica and Foley Sounds. This forward thinking sample pack offers more than 600 finely crafted sounds to give you a fresh and yet rough approach on intelligent music. Containing a huge range of useful, creative and inspiring materials and a wide variety of foley elements. From foley-infused drum loops to organic-electronic beats, top-loops, found sounds and one shot samples and more. In detail this pack includes more than 250 Loops range from 72bpm to 140bpm and 315 Oneshots. All main loops include full mix and individual stems. Dock 'SHIFT' with your preferred major DAW and you’ll unlock 800Mb+ of highly organic sounds, layered up into super-individual Drum Hit one-shots divided into folders of Foley, Hats, Kicks, Percussion and more.. All loops were then mangled, chopped, stretched and twisted into unique loops ready to be dragged straight into your chosen DAW.All loops & samples are key and tempo-labelled for flexibility. All loops and samples are 100% royalty free and come in 24 Bit Wav file format.",
-      "price": 9.99,
-      "cover_art_location": "packs/SHIFT/coverart",
-      "uploader": 4,
-      "preview": "packs/SHIFT/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 9,
-    "fields": {
-      "name": "maak - Carnaval",
-      "description": "The maak producers team that conquered the beats, song and service market for artists and musicians are expanding their boundaries right now to introduce to your attention the first signature Carnaval Sample Pack, which includes 328 unique loops and 27 unique sound sets. maak® — universe for artists, creators, bloggers and brands. The 'maak'® ecosystem includes a song, beat and cover store, digital goods and NFT, recording studio, sound producers, ghostwriters and sound engineers team, distribution and graphic design services, marketing and advertising, promotion, targeting services, educational platform and more.",
-      "price": 9.99,
-      "cover_art_location": "packs/maak - Carnaval/coverart",
-      "uploader": 2,
-      "preview": "packs/maak - Carnaval/preview"
-    }
-  },
-  {
-    "model": "sound_sprout.Pack",
-    "pk": 10,
-    "fields": {
-      "name": "Mainroom Melodic House & Techno",
-      "description": "Dancefloor grooves, mainroom aesthetics, and techno-inspired beats unite in Mainroom Melodic House & Techno - a heavy hitter collection featuring a range of elements primed for seasoned and novice producers seeking to create their next dancefloor hit.",
-      "price": 9.99,
-      "cover_art_location": "packs/Mainroom Melodic/coverart",
-      "uploader": 3,
-      "preview": "packs/Mainroom Melodic/preview"
-    }
-  }
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 1,
+		"fields": {
+			"name": "SOUL VIBES - Trap & RNB FEEL",
+			"description": "Soul Vibes provides fresh soul & RnB flavours with a tasteful focus on sensual music loops, perfect for inspiring song ideas or resampling & chopping into your next hit. This Library is laden with emotive melodies and sexy chords. It’s clear to see that lot of thought has gone into each loop, really giving this pack character. Have a browse and find the next piece to your puzzle in Soul Vibes.",
+			"price": 9.99,
+			"cover_art_location": "packs/SOUL VIBES/sould-vibes-cover-art",
+			"uploader": 5,
+			"preview": "packs/SOUL VIBES/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 2,
+		"fields": {
+			"name": "Stranger Tingz",
+			"description": "Stranger Tingz is a hybrid sample pack taking equal parts 80’s spooky and synth driven melodies and textures and combining it with modern trap music production styles, composition and drums. Inside this pack you will find expressive synth loops provided with and without bass for maximum flexibility as well as a variety of 80’s inspired trap drum loops and one shot sounds.Created by Komorebi Audio mainstay FreshKidBlaze this pack takes influence from 80’s movie soundtracks, video game OST’s and modern trap music. ",
+			"price": 9.99,
+			"cover_art_location": "packs/Stranger Tingz/coverart",
+			"uploader": 6,
+			"preview": "packs/Stranger Tingz/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 3,
+		"fields": {
+			"name": "Striking Latin Guitars",
+			"description": "Imagine yourself walking down a beach and you hear some amazing Latin style music while you sip an ice cold cocktail in the blazing hot sun; welcome to Striking Latin Guitar! This pack brings the HEAT with some guitar focused samples and loops that will help inject some Latin spice into any of your new productions! But we didn’t stop there! Alongside these high quality guitar recordings are full song starters, full ensembles, big bad bass loops, playful percussion loops, and caliente vocals. Striking Latin Guitars can easily become your go-to pack for anything Latin infused to help you stay inspired! This is perfect for any genre of music that needs that Latin twist, such as House, Reggaeton, Dancehall, Tech House, Tropical House, Pop, Brazilian style Bossa beats, Afrobeat, etc. Grab Striking Latin Guitars today!",
+			"price": 9.99,
+			"cover_art_location": "packs/Striking Latin Guitars/coverart",
+			"uploader": 7,
+			"preview": "packs/Striking Latin Guitars/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 4,
+		"fields": {
+			"name": "Tasty Loops by Mars Today",
+			"description": "'Tasty Loops' is a multi-genre loop pack created by producer and songwriter Mars Today. It’s filled with stacked instrument loops, single instrument loops, song starts, programmed and live drums, and a plethora of percussion grooves. The sounds range from R&B, to Classic Soul, to Indie-Pop, to Reggae and everywhere in between. Mars’ signature sound can be heard under artists like Kyle Dion, Phabo, Destin Conrad, M.I.L.K, Aaron Childs, Ambré, Rexx Life Raj, Jahkoy, Los Rakas and more, and is well represented in this collection of samples. Working with a team of talented studio musicians, he was able to achieve a dynamic range of sounds and styles that make this pack particularly well suited for pushing genre boundaries.",
+			"price": 9.99,
+			"cover_art_location": "packs/Tasty Loops by Mars Today/coverart",
+			"uploader": 10,
+			"preview": "packs/Tasty Loops by Mars Today/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 5,
+		"fields": {
+			"name": "Tantrum Desire - Technique Essential",
+			"description": "Tantrum Desire is undoubtedly one of the biggest names in DnB. With some of the most rotated singles on channels such as UKF and remixes under their belt for Laidback Luke, Rusko, Skrillex, Utah Saints and more, it is no secret that they are on top of their game. In this 'Tantrum Desire - Technique Essential' sample and Xfer Serum preset pack you can expect their signature sound, at arms reach. In this mind boggling, groundbreaking monster of a DnB sample pack, Tantrum Desire created an enormous collection of explosive basses, epic leads, energizing synths, extra tight drums and unbelievably versatile drum loops and over 100 presets for Xfer Serum to instantly spice up your drum and bass productions.Punchy drums: Hard kicks, relentless snares, crisp cymbals and creative percussion sounds are ready to set fire to your tracks. These unavoidable drum loops, jungle breaks, driving top loops and energetic drum fills are drag & drop ready and will shake the foundations of any dancefloor.Aggressive Basses: Are you craving serious bass powered madness? Tantrum Desire personally tailored every bass and sub bass to perfection. You can expect destructive low frequency weaponry such as punchy sub basses, crazy reeses and steady bass stabs to deliver a definitive knockout.Over 100 absolutely crazy presets for Xfer Serum: Full of hard, dense bass stabs, smooth yet aggressive sub basses, moving reeses, energizing risers, crazy arpeggios and even punchy drum one shots, so you can build a whole track using only these presets! Fully macroed and ready to go mental, these presets will never let you down!All of the content in this pack is completely royalty-free and fully customizable in any DAW or sampler.Grab 'Tantrum Desire - Technique Essential' NOW!",
+			"price": 9.99,
+			"cover_art_location": "packs/Tantrum Desire - Technique Essential/coverart",
+			"uploader": 8,
+			"preview": "packs/Tantrum Desire - Technique Essential/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 6,
+		"fields": {
+			"name": "Tape & Vinyl Drums",
+			"description": "Raw breaks, rare grooves and resampled beats. Tape & Vinyl Drums is a digital crate diggers dream for all things drums. Ran through a vintage Ampex tape machine and cut to vinyl - this collection offers a slew of samples inspired by the 60s and 70s era’s of Funk, Soul, Rare Groove and Proto-Disco Packed with broken beats, shimmering cymbal rhythms, funky hi-hat lines, drum stacks, percussion stacks and fills fills,Tape & Vinyl Drums delivers a choice selection of vintage-style drum layers, rhythms, textures and grooves primed to inject humanistic groove and retro timbres recorded and processed with a superlative level of old-school authenticity.",
+			"price": 9.99,
+			"cover_art_location": "packs/Tape and Vinyl Drums/coverart",
+			"uploader": 9,
+			"preview": "packs/Tape and Vinyl Drums/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 7,
+		"fields": {
+			"name": "Clouds - Indie Pop",
+			"description": "Samplestar are very proud to present Clouds! A production pack creatively inspired by bands like 2 Door Cinema Club, Bombay Bicycle Club, Foals, Friendly Fires, Metric, Phoenix, The Wombats - to name but a few. This pack is a must-have for any alternative indie pop enthusiasts. Clouds provides the perfect balance between nostalgic indie sounds and fresh modern pop sensibilities. From the infectious grooves of danceable indie pop to the introspective atmospheres of bedroom pop, Clouds has everything you need to start crafting your very own unique indie pop gems today! While suitable for a broad range of musical genres this library will be especially useful for media producers / composers within the Games, Film, TV and Radio advertising industry. Expect to hear - Hook laden jangly guitars, dreamy keys, lush vintage synths, tight and punchy drums, solid bass grooves and much more! All content has been carefully mixed and eq’d for optimum sonic balance while allowing plenty of extra headroom for further processing and also final mastering stages.",
+			"price": 9.99,
+			"cover_art_location": "packs/Clouds - Indie Pop/coverart",
+			"uploader": 1,
+			"preview": "packs/Clouds - Indie Pop/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 8,
+		"fields": {
+			"name": "SHIFT",
+			"description": "We are here with our latest release 'SHIFT' bringing over 800Mb of content with cutting-edge loops, samples and kits fusing elements of future Electronica and Foley Sounds. This forward thinking sample pack offers more than 600 finely crafted sounds to give you a fresh and yet rough approach on intelligent music. Containing a huge range of useful, creative and inspiring materials and a wide variety of foley elements. From foley-infused drum loops to organic-electronic beats, top-loops, found sounds and one shot samples and more. In detail this pack includes more than 250 Loops range from 72bpm to 140bpm and 315 Oneshots. All main loops include full mix and individual stems. Dock 'SHIFT' with your preferred major DAW and you’ll unlock 800Mb+ of highly organic sounds, layered up into super-individual Drum Hit one-shots divided into folders of Foley, Hats, Kicks, Percussion and more.. All loops were then mangled, chopped, stretched and twisted into unique loops ready to be dragged straight into your chosen DAW.All loops & samples are key and tempo-labelled for flexibility. All loops and samples are 100% royalty free and come in 24 Bit Wav file format.",
+			"price": 9.99,
+			"cover_art_location": "packs/SHIFT/coverart",
+			"uploader": 4,
+			"preview": "packs/SHIFT/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 9,
+		"fields": {
+			"name": "maak - Carnaval",
+			"description": "The maak producers team that conquered the beats, song and service market for artists and musicians are expanding their boundaries right now to introduce to your attention the first signature Carnaval Sample Pack, which includes 328 unique loops and 27 unique sound sets. maak® — universe for artists, creators, bloggers and brands. The 'maak'® ecosystem includes a song, beat and cover store, digital goods and NFT, recording studio, sound producers, ghostwriters and sound engineers team, distribution and graphic design services, marketing and advertising, promotion, targeting services, educational platform and more.",
+			"price": 9.99,
+			"cover_art_location": "packs/maak - Carnaval/coverart",
+			"uploader": 2,
+			"preview": "packs/maak - Carnaval/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	},
+	{
+		"model": "sound_sprout.Pack",
+		"pk": 10,
+		"fields": {
+			"name": "Mainroom Melodic House & Techno",
+			"description": "Dancefloor grooves, mainroom aesthetics, and techno-inspired beats unite in Mainroom Melodic House & Techno - a heavy hitter collection featuring a range of elements primed for seasoned and novice producers seeking to create their next dancefloor hit.",
+			"price": 9.99,
+			"cover_art_location": "packs/Mainroom Melodic/coverart",
+			"uploader": 3,
+			"preview": "packs/Mainroom Melodic/preview",
+			"created_at": "2023-07-24T00:00:00Z",
+			"modified_at": "2023-07-24T00:00:00Z"
+		}
+	}
 ]

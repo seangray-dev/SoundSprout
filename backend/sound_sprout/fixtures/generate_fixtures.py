@@ -42,7 +42,9 @@ for pack_name in os.listdir(base_dir):
                     "pack": pack_id_counter,
                     "name": name,
                     "audio_file": audio_file,
-                    "price": 0.99
+                    "price": 0.99,
+                    "created_at": "2023-07-24T00:00:00Z",
+                    "modified_at": "2023-07-24T00:00:00Z"
                 }
             })
 
