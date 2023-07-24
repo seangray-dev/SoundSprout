@@ -19,6 +19,8 @@ class PackSerializer(serializers.ModelSerializer):
 
 
 class SoundSerializer(serializers.ModelSerializer):
+    pack = PackSerializer()
+
     class Meta:
         model = Sound
         fields = ['id', 'pack', 'name', 'audio_file', 'price']
