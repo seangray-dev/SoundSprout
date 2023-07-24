@@ -11,9 +11,22 @@ import React, { useEffect, useState } from 'react';
 const SOUND_URL = process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL;
 
 const GenrePage = ({ params }: { params: { id: number } }) => {
+	type PackType = {
+		id: number;
+		cover_art_location: string;
+		name: string;
+	};
+
+	type SoundType = {
+		id: number;
+		pack: number;
+		name: string;
+		audio_file: string;
+	};
+
 	const id = params.id;
-	const [packs, setPacks] = useState([]);
-	const [sounds, setSounds] = useState([]);
+	const [packs, setPacks] = useState<PackType[]>([]);
+	const [sounds, setSounds] = useState<SoundType[]>([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -33,7 +46,7 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
 		}
 	}, [id]);
 
-	function getCoverArtFromPack(packId) {
+	function getCoverArtFromPack(packId: number) {
 		// Retrieve the pack information based on the packId
 		const pack = packs.find((pack) => pack.id === packId);
 
@@ -72,7 +85,10 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
 					{sounds.map((sound) => (
 						<li key={sound.id} className='flex items-center gap-2'>
 							<Image
-								src={getCoverArtFromPack(sound.pack)}
+								src={
+									getCoverArtFromPack(sound.pack) ||
+									'frontend/public/assets/images/logos/logo-color.png'
+								}
 								width={36}
 								height={36}
 								alt=''

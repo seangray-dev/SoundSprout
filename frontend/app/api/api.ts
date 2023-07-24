@@ -22,8 +22,11 @@ export const getPacksByGenre = async (genreId: number) => {
 	try {
 		const response = await axios.get(`${BACKEND}/genre/${genreId}/packs/`);
 		return response.data;
-	} catch (err) {
-		throw new Error(err.response.data.error);
+	} catch (error) {
+		if (axios.isAxiosError(error)) {
+			throw new Error(error?.response?.data?.error || 'Unknown error');
+		}
+		throw error;
 	}
 };
 
@@ -31,8 +34,11 @@ export const getSoundsByGenre = async (genreId: number) => {
 	try {
 		const response = await axios.get(`${BACKEND}/genre/${genreId}/sounds/`);
 		return response.data;
-	} catch (err) {
-		throw new Error(err.response.data.error);
+	} catch (error) {
+		if (axios.isAxiosError(error)) {
+			throw new Error(error?.response?.data?.error || 'Unknown error');
+		}
+		throw error;
 	}
 };
 
@@ -40,7 +46,10 @@ export const getPackById = async (id: number) => {
 	try {
 		const response = await axios.get(`${BACKEND}/packs/${id}/`);
 		return response.data;
-	} catch (err) {
-		throw new Error(err.response.data.error);
+	} catch (error) {
+		if (axios.isAxiosError(error)) {
+			throw new Error(error?.response?.data?.error || 'Unknown error');
+		}
+		throw error;
 	}
 };
