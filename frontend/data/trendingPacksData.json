@@ -1,22 +1,22 @@
 {
-  "trendingPacks": [
-    {
-      "imagePath": "/assets/images/carnaval.jpg",
-      "uploader": "Trak Train",
-      "packName": "Maak - Carnaval",
-      "id": 9
-    },
-    {
-      "imagePath": "/assets/images/tastyloops.jpeg",
-      "uploader": "One Stop Shop",
-      "packName": "Tasty Loops by Mars Today",
-      "id": 4
-    },
-    {
-      "imagePath": "/assets/images/tape-vinyl-drums.jpg",
-      "uploader": "Sample Magic",
-      "packName": "Tape & Vinyl Drums",
-      "id": 6
-    }
-  ]
+	"trendingPacks": [
+		{
+			"imagePath": "/assets/images/carnaval.jpg",
+			"uploader": "Trak Train",
+			"packName": "Maak - Carnaval",
+			"id": 9
+		},
+		{
+			"imagePath": "/assets/images/tastyloops.jpeg",
+			"uploader": "One Stop Shop",
+			"packName": "Tasty Loops by Mars Today",
+			"id": 4
+		},
+		{
+			"imagePath": "/assets/images/tape-vinyl-drums.jpg",
+			"uploader": "Sample Magic",
+			"packName": "Tape & Vinyl Drums",
+			"id": 6
+		}
+	]
 }
