@@ -54,9 +54,11 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 				<div>Key</div>
 				<div>BPM</div>
 			</header>
-			<ul className='flex flex-col gap-4'>
+			<ul className='flex flex-col'>
 				{sounds.map((sound, index) => (
-					<li className='grid grid-cols-[3fr_1fr_1fr_1fr]' key={index}>
+					<li
+						className='grid grid-cols-[3fr_1fr_1fr_1fr] border-b py-2 items-center'
+						key={index}>
 						<div className='flex gap-2 items-center'>
 							<Image
 								src={getCoverArtUrl(coverArtLocation)}
