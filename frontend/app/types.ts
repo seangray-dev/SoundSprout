@@ -23,6 +23,8 @@ export interface Sound {
 	id: number;
 	name: string;
 	audio_file: string;
+	bpm: number;
+	key: string;
 	price: number;
 	pack: Pack;
 	purchase_count: number;

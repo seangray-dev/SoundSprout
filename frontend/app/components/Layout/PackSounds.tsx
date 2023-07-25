@@ -68,7 +68,7 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 								{sound.name}
 							</div>
 						</div>
-						<audio
+						{/* <audio
 							// controls
 							ref={(el) => {
 								if (el) {
@@ -76,9 +76,11 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 								}
 							}}
 							src={getPreviewUrl(sound.audio_file)}
-							onLoadedMetadata={() => handleLoadedMetadata(index)}></audio>
+							onLoadedMetadata={() => handleLoadedMetadata(index)}></audio> */}
 
 						<div>{formatTime(durations[index])}</div>
+						<div>{sound.key}</div>
+						<div>{sound.bpm}</div>
 					</li>
 				))}
 			</ul>
