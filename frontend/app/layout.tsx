@@ -21,13 +21,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${outfit.className} flex flex-col min-h-screen`}>
-				<UserProvider>
+			<UserProvider>
+				<body className={`${outfit.className} flex flex-col min-h-screen`}>
 					<Nav />
 					<main className='flex-grow'>{children}</main>
 					<Footer />
-				</UserProvider>
-			</body>
+				</body>
+			</UserProvider>
 		</html>
 	);
 }
