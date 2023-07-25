@@ -23,7 +23,7 @@ class SoundSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Sound
-        fields = ['id', 'pack', 'name', 'audio_file', 'price']
+        fields = ['id', 'pack', 'name', 'audio_file', 'price', 'bpm', 'key']
 
 
 class GenreSerializer(serializers.ModelSerializer):
