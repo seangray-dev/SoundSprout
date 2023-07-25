@@ -81,8 +81,8 @@ DB_PORT=your_database_port
 5. Migrate the database
 
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 ```
 
 6. Create a superuser for the Django admin interface
@@ -91,26 +91,38 @@ python3 manage.py migrate
 python manage.py createsuperuser
 ```
 
-7. Run the Django server
+7. Load the fixture data into the database
 
 ```
-python3 manage.py runserver
+python manage.py loaddata sound_sprout/fixtures/users.json
+python manage.py loaddata sound_sprout/fixtures/packs.json
+python manage.py loaddata sound_sprout/fixtures/sounds.json
+python manage.py loaddata sound_sprout/fixtures/tags.json
+python manage.py loaddata sound_sprout/fixtures/genres.json
+python manage.py loaddata sound_sprout/fixtures/genre_pack_assoc.json
+python manage.py loaddata sound_sprout/fixtures/sound_tag_assoc.json
 ```
 
-8. Install frontend dependencies
+8. Run the Django server
+
+```
+python manage.py runserver
+```
+
+9. Install frontend dependencies
 
 ```
 cd ../frontend
 npm install
 ```
 
-9. Run the Next.js development server
+10. Run the Next.js development server
 
 ```
 npm run dev
 ```
 
-10. Now, open your browser and navigate to http://localhost:3000 for the frontend and http://localhost:8000/admin/ for the Django admin interface.
+11. Now, open your browser and navigate to http://localhost:3000 for the frontend and http://localhost:8000/admin/ for the Django admin interface.
 
 ## Backend API and Cloudinary Integration
 
