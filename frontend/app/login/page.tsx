@@ -1,13 +1,12 @@
 import Image from 'next/image';
-
 import LoginForm from '../components/Forms/LoginForm';
 import Heading from '../components/Utils/Heading';
 
 const Login = () => {
 	return (
 		<>
-			<main className='bg-gray-1'>
-				<section className='2xl:container mx-auto flex flex-col md:grid md: grid-cols-2'>
+			<section className='bg-gray-1'>
+				<div className='2xl:container mx-auto flex flex-col md:grid md: grid-cols-2'>
 					<Image
 						src={'/assets/images/login-signup-header.jpeg'}
 						width={1000}
@@ -25,8 +24,8 @@ const Login = () => {
 						</p>
 						<LoginForm />
 					</div>
-				</section>
-			</main>
+				</div>
+			</section>
 		</>
 	);
 };
