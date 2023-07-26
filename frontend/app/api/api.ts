@@ -57,16 +57,21 @@ export const getPackById = async (id: number): Promise<Pack> => {
 
 export const logoutUser = async () => {
 	const token = localStorage.getItem('token');
-	if (!token) {
-		throw new Error('Token not found');
+
+	// Only make the request if the token exists
+	if (token) {
+		try {
+			await axios.post(`${BACKEND}/logout/`, {}, {
+				headers: { 'Authorization': `Bearer ${token}` } // or `Token ${token}` if using TokenAuthentication
+			});
+		} catch (error) {
+			console.error('Failed to log out on the server:', error);
+		}
+	} else {
+		console.error('No token found, cannot log out');
 	}
 
-	await axios.post(`${BACKEND}/logout/`, {}, {
-		headers: {
-			Authorization: `Bearer ${token}`,
-		},
-	});
-
+	// Always remove the token
 	localStorage.removeItem('token');
-	console.log('User logged out');
 };
+

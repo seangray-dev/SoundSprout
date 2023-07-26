@@ -4,11 +4,26 @@ import { UserContext } from '@/app/hooks/context/UserContext';
 import { UserIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation'; // import useRouter here
 import React, { useContext } from 'react';
 import logo from '/public/assets/images/logo-no-background.png';
 
 const Nav = () => {
-    const { user, logout } = useContext(UserContext);
+    
+    const { user, logout: logoutUser } = useContext(UserContext);  // rename the context logout function to avoid conflict with our new function
+    const router = useRouter();  // initialize router
+
+    // define logout function
+    const logout = async () => {
+        try {
+            await logoutUser();  // call your logout function
+            console.log('User logged out successfully');
+            router.push('/');  // redirect to homepage after successful logout
+        } catch (error: any) {
+            console.log(error.message);
+            // handle error, maybe show a notification to the user
+        }
+    };
 
     return (
         <nav className='bg-gray-1 py-4'>

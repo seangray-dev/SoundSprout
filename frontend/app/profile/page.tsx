@@ -6,7 +6,7 @@ import { fetchUser } from '../api/api';
 import { UserContext } from '../hooks/context/UserContext';
 
 const ProfilePage = () => {
-	const { user, setUser } = useContext(UserContext);
+	const { user, setUser, logout } = useContext(UserContext);
 
 	useEffect(() => {
 		const getUser = async () => {
@@ -16,6 +16,7 @@ const ProfilePage = () => {
 				setUser(data);
 			} catch (error) {
 				console.error('Failed to fetch user:', error);
+				logout(); // User data failed to fetch, user not authenticated, trigger logout
 			}
 		};
 
