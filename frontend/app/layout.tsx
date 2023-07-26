@@ -22,7 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<UserProvider>
-				<body className={`${outfit.className} flex flex-col min-h-screen`}>
+				<body className={`${outfit.className} flex flex-col h-screen`}>
 					<Nav />
 					<main className='flex-grow'>{children}</main>
 					<Footer />
