@@ -6,7 +6,7 @@ import { UserProvider } from './hooks/context/UserContext';
 
 const outfit = Outfit({
 	subsets: ['latin'],
-	weight: ['300', '700'],
+	weight: ['300', '400', '700'],
 });
 
 export const metadata = {
