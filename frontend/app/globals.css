@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .container {
-  margin-inline: auto;
-  padding: 1rem;
+	margin-inline: auto;
+	padding: 1rem;
 }
 
 .hide-scroll-bar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 .hide-scroll-bar::-webkit-scrollbar {
-  display: none;
+	display: none;
 }

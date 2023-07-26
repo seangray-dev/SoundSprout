@@ -56,7 +56,7 @@ export interface PackGenreAssociation {
 
 export interface Tag {
 	id: number;
-	name: string;
+	tag_name: string;
 }
 
 export interface SoundTagAssociation {
