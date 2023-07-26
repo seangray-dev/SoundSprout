@@ -117,6 +117,10 @@ def get_current_user(request):
     serializer = UserSerializer(user)
     return Response(serializer.data)
 
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def logout_user(request):
+    return Response({"detail": "Logout Successful"}, status=status.HTTP_200_OK)
 
 @api_view(['GET'])
 def get_genre(request, genre_id):
