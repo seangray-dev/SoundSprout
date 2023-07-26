@@ -7,8 +7,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
-from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation
-from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer
+from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
+from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
 
 
 @api_view(['GET'])
@@ -155,3 +155,15 @@ def get_packs_by_genre(request, genre_id):
         return Response(packs_data, status=status.HTTP_200_OK)
     except Genre.DoesNotExist:
         return Response({'error': 'Genre not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(['GET'])
+def get_sound_tags(request, sound_id):
+    try:
+        sound_tags_associations = SoundTagAssociation.objects.filter(
+            sound__id=sound_id)
+        serializer = SoundTagAssociationSerializer(
+            sound_tags_associations, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    except Sound.DoesNotExist:
+        return Response({'error': 'Sound not found'}, status=status.HTTP_404_NOT_FOUND)
