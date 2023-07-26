@@ -44,7 +44,9 @@ export default function Packs({ params }: { params: { id: number } }) {
 							<article className='flex flex-col gap-6 mt-4 md:mt-0'>
 								<div className='text-center md:text-left'>
 									<div className='flex flex-col gap-2'>
-										<h2 className='text-xl'>{pack.uploader.first_name}</h2>
+										<h2 className='text-xl font-light'>
+											{pack.uploader.first_name}
+										</h2>
 										<h1 className='font-bold text-3xl'>{pack.name}</h1>
 										<p>${pack.price}</p>
 									</div>
@@ -63,7 +65,9 @@ export default function Packs({ params }: { params: { id: number } }) {
 										</button>
 									</div>
 								</div>
-								<p className='text-center md:text-left'>{pack.description}</p>
+								<p className='font-light text-center md:text-left'>
+									{pack.description}
+								</p>
 							</article>
 						</section>
 						<PackSounds
