@@ -1,16 +1,46 @@
 import { getCoverArtUrl } from '@/app/api/cloudinary';
-import { Pack, PackSoundsProps, Sound } from '@/app/types';
+import { Pack, PackSoundsProps, Sound, Tag } from '@/app/types';
 import {
 	ChevronUpDownIcon,
 	PlayIcon,
 	StopIcon,
 } from '@heroicons/react/24/solid';
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import React, { useEffect, useReducer, useRef, useState } from 'react';
+
+type State = {
+	sounds: Sound[];
+	soundTags: Record<number, Tag[]>;
+	durations: Record<number, number>;
+};
+
+type Action =
+	| { type: 'setSounds'; payload: Sound[] }
+	| { type: 'setSoundTags'; payload: Record<number, Tag[]> }
+	| { type: 'setDurations'; payload: Record<number, number> };
+
+const reducer = (state: State, action: Action): State => {
+	switch (action.type) {
+		case 'setSounds':
+			return { ...state, sounds: action.payload };
+		case 'setSoundTags':
+			return { ...state, soundTags: action.payload };
+		case 'setDurations':
+			return { ...state, durations: action.payload };
+		default:
+			return state;
+	}
+};
 
 const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
-	const [sounds, setSounds] = useState<Sound[]>([]);
-	const [durations, setDurations] = useState<Record<number, number>>({});
+	const initialState: State = {
+		sounds: [],
+		soundTags: {},
+		durations: {},
+	};
+	const [state, dispatch] = useReducer(reducer, initialState);
+	const { sounds, soundTags, durations } = state;
 	const [playingSoundIndex, setPlayingSoundIndex] = useState<number | null>(
 		null
 	);
@@ -21,31 +51,55 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 		'name' | 'duration' | 'key' | 'bpm'
 	>('name');
 
-	function getPreviewUrl(audio_file: string) {
-		return `${process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL}${audio_file}`;
-	}
-
 	useEffect(() => {
-		const fetchSounds = async () => {
+		const fetchSoundsAndTags = async () => {
 			const response = await fetch(
 				`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/packs/${packId}/sounds`
 			);
-			const data = await response.json();
-			setSounds(data);
+			const soundsData = await response.json();
+
+			// Fetch the tags for each sound concurrently using Promise.all
+			const tagsPromises = soundsData.map(async (sound: Sound) => {
+				const tagResponse = await fetch(
+					`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/sounds/${sound.id}/tags/`
+				);
+				const tags = await tagResponse.json();
+				return { soundId: sound.id, tags };
+			});
+
+			const tagsForSounds = await Promise.all(tagsPromises);
+
+			const soundTags: { [key: number]: Tag[] } = {};
+			tagsForSounds.forEach(({ soundId, tags }) => {
+				soundTags[soundId] = tags;
+			});
+
+			console.log('Tags for sounds', tagsForSounds);
+			console.log('Sound tags object', soundTags);
+
+			dispatch({ type: 'setSounds', payload: soundsData });
+			dispatch({ type: 'setSoundTags', payload: soundTags });
 		};
 
-		fetchSounds();
+		fetchSoundsAndTags();
 	}, [packId]);
 
 	useEffect(() => {
 		audioRefs.current = audioRefs.current.slice(0, sounds.length);
 	}, [sounds]);
 
+	function getPreviewUrl(audio_file: string) {
+		return `${process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL}${audio_file}`;
+	}
+
 	const handleLoadedMetadata = (index: number) => {
-		setDurations((durations) => ({
-			...durations,
-			[index]: audioRefs.current[index].duration,
-		}));
+		dispatch({
+			type: 'setDurations',
+			payload: {
+				...durations,
+				[index]: audioRefs.current[index].duration,
+			},
+		});
 	};
 
 	const formatTime = (seconds: number) => {
@@ -59,7 +113,6 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 			.padStart(2, '0')}`;
 	};
 
-	// Function to sort the sounds
 	const handleSort = (field: 'name' | 'duration' | 'key' | 'bpm') => {
 		if (field !== sortField) {
 			setSortField(field);
@@ -94,7 +147,7 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 			}
 		});
 
-		setSounds(sortedSounds);
+		dispatch({ type: 'setSounds', payload: sortedSounds });
 	};
 
 	return (
@@ -103,7 +156,7 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 				<div className='ml-10'>Pack</div>
 				<div>
 					<button
-						className='flex items-center'
+						className='flex items-center ml-10 md:ml-0'
 						onClick={() => handleSort('name')}>
 						Filename <ChevronUpDownIcon className='w-4 h-4' />
 					</button>
@@ -142,6 +195,7 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 						onMouseLeave={() => setHoveredIndex(null)}>
 						<div className='flex items-center'>
 							<input
+								className='ml-2'
 								type='checkbox'
 								name=''
 								id=''
@@ -171,12 +225,25 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 								/>
 							</div>
 						</div>
-						<div className='flex gap-2 items-center'>
-							<div className='text-sm font-normal overflow-x-scroll hide-scroll-bar'>
-								{sound.name}
+
+						<div className='flex flex-col gap-2 overflow-x-auto hide-scroll-bar ml-10 md:ml-0 mr-4'>
+							<div className='text-sm font-normal'>{sound.name}</div>
+							<div className='flex gap-2'>
+								{soundTags[sound.id]?.map((tag) => {
+									return (
+										<span key={tag.id}>
+											<Link
+												className='text-gray-500 hover:text-purple hover:underline transition-all duration-300'
+												href={`/search?query=${tag.tag_name}`}>
+												{tag.tag_name}
+											</Link>
+										</span>
+									);
+								})}
 							</div>
 						</div>
-						<audio
+
+						{/* <audio
 							// controls
 							ref={(el) => {
 								if (el) {
@@ -184,7 +251,7 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 								}
 							}}
 							src={getPreviewUrl(sound.audio_file)}
-							onLoadedMetadata={() => handleLoadedMetadata(index)}></audio>
+							onLoadedMetadata={() => handleLoadedMetadata(index)}></audio> */}
 
 						<div className='text-gray-500'>{formatTime(durations[index])}</div>
 						<div className='text-gray-500'>{sound.key}</div>
