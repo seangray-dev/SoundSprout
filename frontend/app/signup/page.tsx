@@ -5,7 +5,7 @@ import Heading from '../components/Utils/Heading';
 const Signup = () => {
 	return (
 		<>
-			<section className='bg-gray-1'>
+			<section className='bg-gray-1 h-full flex items-center justify-center'>
 				<div className='2xl:container mx-auto flex flex-col md:grid md: grid-cols-2'>
 					<Image
 						src={'/assets/images/login-signup-header.jpeg'}
