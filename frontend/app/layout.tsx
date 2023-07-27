@@ -1,8 +1,8 @@
+import { ReduxProvider } from '@/redux/provider';
 import { Outfit } from 'next/font/google';
 import Footer from './components/Layout/Footer';
 import Nav from './components/Layout/Nav';
 import './globals.css';
-import { UserProvider } from './hooks/context/UserContext';
 
 const outfit = Outfit({
 	subsets: ['latin'],
@@ -21,13 +21,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<UserProvider>
-				<body className={`${outfit.className} flex flex-col h-screen`}>
+			<body className={`${outfit.className} flex flex-col h-screen`}>
+				<ReduxProvider>
 					<Nav />
 					<main className='flex-grow'>{children}</main>
 					<Footer />
-				</body>
-			</UserProvider>
+				</ReduxProvider>
+			</body>
 		</html>
 	);
 }
