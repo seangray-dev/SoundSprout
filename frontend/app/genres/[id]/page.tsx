@@ -3,6 +3,8 @@
 import { getPacksByGenre, getSoundsByGenre } from '@/app/api/api';
 import { getCoverArtUrl } from '@/app/api/cloudinary';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
+import PackSounds from '@/app/components/Layout/PackSounds/PackSounds';
+import PackSoundsHeader from '@/app/components/Layout/PackSounds/PackSoundsHeader';
 import Heading from '@/app/components/Utils/Heading';
 import { Pack, Sound } from '@/app/types';
 import Image from 'next/image';
@@ -39,8 +41,8 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
 	}
 
 	return (
-		<>
-			<main className='container'>
+		<section className='container my-10'>
+			<header className='my-4'>
 				<h1>Genre:</h1>
 				<Heading level={2} className='text-xl'>
 					Packs
@@ -63,29 +65,19 @@ const GenrePage = ({ params }: { params: { id: number } }) => {
 						</Link>
 					))}
 				</ul>
-
-				<h2>Sounds:</h2>
-				<ul className='flex flex-col gap-2'>
-					{sounds.map((sound) => (
-						<li key={sound.id} className='flex items-center gap-2'>
-							<Image
-								src={
-									getCoverArtFromPack(sound.pack) ||
-									'/public/assets/images/logos/logo-color.png'
-								}
-								width={36}
-								height={36}
-								alt=''
-								aria-label='none'
-							/>
-							<p className='text-sm'>{sound.name}</p>
-							{/* <audio controls src={`${SOUND_URL}/${sound.audio_file}`}></audio> */}
-						</li>
-					))}
-				</ul>
-			</main>
+			</header>
+			<div>
+				<PackSoundsHeader />
+				{packs.map((pack) => (
+					<PackSounds
+						key={pack.id}
+						packId={pack.id.toString()}
+						coverArtLocation={pack.cover_art_location}
+					/>
+				))}
+			</div>
 			<AudioPlayer />
-		</>
+		</section>
 	);
 };
 
