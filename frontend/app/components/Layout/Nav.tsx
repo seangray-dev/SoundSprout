@@ -1,14 +1,16 @@
 'use client';
 
-import { UserContext } from '@/app/hooks/context/UserContext';
+import { RootState } from '@/redux/store'; // import your Redux store or the file where RootState is defined
 import { UserIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useContext } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import logo from '/public/assets/images/logo-no-background.png';
 
 const Nav = () => {
-	const { user } = useContext(UserContext);
+	const { user, isAuth } = useSelector((state: RootState) => state.authReducer);
+	const username = user?.username || '';
 
 	return (
 		<nav className='bg-gray-1 py-4'>
@@ -20,9 +22,9 @@ const Nav = () => {
 					<li className='hover:underline transition-all'>
 						<Link href={'/upload'}>Upload</Link>
 					</li>
-					{user ? (
+					{isAuth ? (
 						<li className='underline underline-offset-2 text-white flex gap-2 items-center'>
-							<Link href={'/profile'}>{user.username}</Link>
+							<Link href={'/profile'}>{user?.username}</Link>
 							<UserIcon className='text-purple w-6' />
 						</li>
 					) : (

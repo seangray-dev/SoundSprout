@@ -1,12 +1,13 @@
 'use client';
 
-import { UserContext } from '@/app/hooks/context/UserContext';
 import { LoginFormValues } from '@/app/types';
+import { login, logout } from '@/redux/features/auth-slice';
+import { AppDispatch } from '@/redux/store';
 import { LockClosedIcon, UserIcon } from '@heroicons/react/24/outline';
 import axios, { AxiosError } from 'axios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useRouter } from 'next/navigation';
-import { useContext } from 'react';
+import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import Btn_Primary from '../Buttons/Btn_Primary';
 
@@ -22,7 +23,7 @@ const initialValues = {
 
 const LoginForm = () => {
 	const router = useRouter();
-	const { user, setUser } = useContext(UserContext);
+	const dispatch = useDispatch<AppDispatch>();
 
 	const handleSubmit = async (
 		values: LoginFormValues,
@@ -46,7 +47,7 @@ const LoginForm = () => {
 
 			if (response.status === 200) {
 				localStorage.setItem('token', data.access_token);
-				setUser(data.user.username);
+				dispatch(login(data.user));
 				router.push('/profile');
 			} else {
 				throw new Error('Unable to login');
