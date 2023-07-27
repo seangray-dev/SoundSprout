@@ -4,7 +4,7 @@
 
 .container {
 	margin-inline: auto;
-	padding: 1rem;
+	padding: 0rem 1rem;
 }
 
 .hide-scroll-bar {
