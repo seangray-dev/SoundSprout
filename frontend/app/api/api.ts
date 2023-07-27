@@ -19,6 +19,34 @@ export const fetchUser = async () => {
 	return response.data;
 };
 
+interface UpdateUserProps {
+  username: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+}
+
+export const updateUser = async ({ username, email, firstName, lastName }: UpdateUserProps) => {
+  const response = await fetch('/api/user', {
+    method: 'PATCH', // Or use 'PUT' if your backend uses it for updating resources
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username,
+      email,
+      first_name: firstName,
+      last_name: lastName,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to update user: ${response.statusText}`);
+  }
+
+  return await response.json();
+};
+
 export const getPacksByGenre = async (genreId: number) => {
 	try {
 		const response = await axios.get(`${BACKEND}/genre/${genreId}/packs/`);
