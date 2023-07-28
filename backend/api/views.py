@@ -118,6 +118,13 @@ def get_current_user(request):
     return Response(serializer.data)
 
 
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def logout_user(request):
+    request.user.auth_token.delete()  # assuming you are using the built-in Token model
+    return Response(status=status.HTTP_200_OK)
+
+
 @api_view(['GET'])
 def get_genre(request, genre_id):
     try:

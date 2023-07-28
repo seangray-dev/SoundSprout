@@ -2,6 +2,7 @@
 
 import { RootState } from '@/redux/store';
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { fetchUser } from '../api/api';
@@ -11,6 +12,7 @@ const ProfilePage = () => {
 	const auth = useSelector((state: RootState) => state.authReducer);
 	const { isAuth } = auth;
 	const [user, setUser] = useState<User>();
+	const router = useRouter();  // Initialize router
 
 	useEffect(() => {
 		const getUser = async () => {
@@ -26,20 +28,22 @@ const ProfilePage = () => {
 		if (isAuth) {
 			// If user is authenticated, fetch the user data
 			getUser();
+		} else {
+			// If user is not authenticated, redirect them to login
+			router.push('/login');
 		}
-	}, [isAuth]); // Run the effect whenever isAuth changes
+	}, [isAuth, router]);  // Add router as a dependency
 
 	if (!isAuth) {
 		// If user is not authenticated, show an error message
 		return (
 			<>
-				<div className='mx-auto text-center min-h-[50vh] grid place-items-center'>
-					Please Log In...
+				<div className='mx-auto text-center min-h-[50vh] grid place-items-center text-[28px] mb-10 uppercase'>
+					Redirecting...
 				</div>
 			</>
 		);
 	}
-
 	return (
 		<>
 			<main className='container my-10'>
