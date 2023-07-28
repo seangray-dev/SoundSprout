@@ -4,7 +4,8 @@ import { getPackById } from '@/app/api/api';
 import { getCoverArtUrl, getPreviewUrl } from '@/app/api/cloudinary';
 import Btn_Primary_Small from '@/app/components/Buttons/Btn_Purple_Small';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
-import PackSounds from '@/app/components/Layout/PackSounds';
+import PackSounds from '@/app/components/Layout/PackSounds/PackSounds';
+import PackSoundsHeader from '@/app/components/Layout/PackSounds/PackSoundsHeader';
 import { Pack } from '@/app/types';
 import { PlayIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
@@ -28,10 +29,10 @@ export default function Packs({ params }: { params: { id: number } }) {
 
 	return (
 		<>
-			<main className='container mt-10'>
+			<section className='container my-10'>
 				{pack && (
 					<>
-						<section className='flex flex-col md:grid grid-cols-2'>
+						<header className='flex flex-col md:grid grid-cols-2 mb-4'>
 							<div>
 								<Image
 									src={getCoverArtUrl(pack.cover_art_location)}
@@ -60,7 +61,6 @@ export default function Packs({ params }: { params: { id: number } }) {
 											<span>Preview</span>
 											<audio
 												src={pack.preview ? getPreviewUrl(pack.preview) : ''}
-												// controls
 											/>
 										</button>
 									</div>
@@ -69,14 +69,17 @@ export default function Packs({ params }: { params: { id: number } }) {
 									{pack.description}
 								</p>
 							</article>
-						</section>
-						<PackSounds
-							packId={params.id.toString()}
-							coverArtLocation={pack.cover_art_location}
-						/>
+						</header>
+						<div>
+							<PackSoundsHeader />
+							<PackSounds
+								packId={params.id.toString()}
+								coverArtLocation={pack.cover_art_location}
+							/>
+						</div>
 					</>
 				)}
-			</main>
+			</section>
 			<AudioPlayer />
 		</>
 	);
