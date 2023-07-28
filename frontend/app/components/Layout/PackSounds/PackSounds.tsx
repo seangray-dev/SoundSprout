@@ -33,7 +33,6 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 			);
 			const soundsData = await response.json();
 
-			// Sorting logic based on Redux state
 			const sortedSoundsData = [...soundsData].sort((a, b) => {
 				// Here, we consider that field is either 'name', 'duration', 'key', or 'bpm'
 				if (a[field] < b[field]) {
@@ -84,18 +83,26 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 		if (isCurrentPackPlaying && currentSound.soundIndex === index) {
 			dispatch(resetCurrentSound());
 		} else {
-			dispatch(setCurrentSound({ packId, soundIndex: index }));
+			dispatch(
+				setCurrentSound({
+					packId,
+					soundIndex: index,
+					coverArt: getCoverArtUrl(coverArtLocation),
+					name: sounds[index].name,
+					key: sounds[index].key,
+					bpm: sounds[index].bpm,
+					audioFile: getPreviewUrl(sounds[index].audio_file),
+					isPlaying: true,
+				})
+			);
 		}
 	};
 
 	const handleLoadedMetadata = (index: number) => {
-		dispatch({
-			type: 'setDurations',
-			payload: {
-				...durations,
-				[index]: audioRefs.current[index].duration,
-			},
-		});
+		setDurations((durations) => ({
+			...durations,
+			[index]: audioRefs.current[index].duration,
+		}));
 	};
 
 	const formatTime = (seconds: number) => {
@@ -176,15 +183,14 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 								</div>
 							</div>
 
-							{/* <audio
-							// controls
-							ref={(el) => {
-								if (el) {
-									audioRefs.current[index] = el;
-								}
-							}}
-							src={getPreviewUrl(sound.audio_file)}
-							onLoadedMetadata={() => handleLoadedMetadata(index)}></audio> */}
+							<audio
+								ref={(el) => {
+									if (el) {
+										audioRefs.current[index] = el;
+									}
+								}}
+								src={getPreviewUrl(sound.audio_file)}
+								onLoadedMetadata={() => handleLoadedMetadata(index)}></audio>
 
 							<div className='text-gray-500'>
 								{formatTime(durations[index])}
