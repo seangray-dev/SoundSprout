@@ -44,6 +44,7 @@ const ProfilePage = () => {
 			</>
 		);
 	}
+	
 	return (
 		<>
 			<main className='container my-10'>
