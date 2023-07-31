@@ -8,6 +8,7 @@ import { RootState } from '@/redux/store';
 import {
 	ChevronUpDownIcon,
 	PlayIcon,
+	PlusIcon,
 	StopIcon,
 } from '@heroicons/react/24/solid';
 import Image from 'next/image';
@@ -118,25 +119,16 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 
 	return (
 		<>
-			<section className='container font-light'>
+			<section className='font-light'>
 				<ul className='flex flex-col'>
 					{sounds.map((sound, index) => (
 						<li
-							className='group grid grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center border-b py-2 text-sm hover:bg-gray-50'
+							className='group grid grid-cols-[1fr_3fr_1fr_1fr_1fr_1fr] items-center border-b py-2 text-sm hover:bg-gray-50'
 							key={index}
 							onClick={() => handlePlay(index)}
 							onMouseEnter={() => setHoveredIndex(index)}
 							onMouseLeave={() => setHoveredIndex(null)}>
 							<div className='flex items-center'>
-								<input
-									className='ml-2'
-									type='checkbox'
-									name=''
-									id=''
-									onClick={(e) => {
-										e.stopPropagation();
-									}}
-								/>
 								<Image
 									className='ml-6'
 									src={getCoverArtUrl(coverArtLocation)}
@@ -197,6 +189,9 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 							</div>
 							<div className='text-gray-500'>{sound.key}</div>
 							<div className='text-gray-500'>{sound.bpm}</div>
+							<div className=' flex justify-center'>
+								<PlusIcon className='text-gray-500 w-5 h-5 -ml-8 hover:text-purple hover:cursor-pointer transition-all duration-300' />
+							</div>
 						</li>
 					))}
 				</ul>

@@ -76,6 +76,10 @@
 		@apply bg-background text-foreground;
 	}
 
+	.container {
+		padding: 0 2rem;
+	}
+
 	.hide-scroll-bar {
 		-ms-overflow-style: none;
 		scrollbar-width: none;
