@@ -24,7 +24,6 @@ const ProfilePage = () => {
   });
 
   // Change Password Dialog
-  const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -111,7 +110,7 @@ const ProfilePage = () => {
 			alert("New passwords don't match!");
 		} else {
 			try {
-				await changeUserPassword(oldPassword, newPassword);
+				await changeUserPassword(newPassword);
 			} catch (error) {
 				console.error('Failed to change password:', error);
 			}

@@ -59,7 +59,7 @@ export const deleteUser = async () => {
 	});
 };
 
-export const changeUserPassword = async (oldPassword: string, newPassword: string) => {
+export const changeUserPassword = async (newPassword: string) => {
 	const token = localStorage.getItem('token');
 	if (!token) {
 		throw new Error('Token not found');
@@ -68,8 +68,7 @@ export const changeUserPassword = async (oldPassword: string, newPassword: strin
 	console.log('Token:', token);  // For debugging
 
 	try {
-		const response = await axios.patch(`${BACKEND}/profile`, {
-			old_password: oldPassword,
+		const response = await axios.patch(`${BACKEND}/profile/`, {
 			new_password: newPassword,
 		}, {
 			headers: {
