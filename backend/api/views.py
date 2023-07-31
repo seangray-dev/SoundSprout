@@ -1,7 +1,7 @@
 from django.db import IntegrityError
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
-from django.core.exceptions import MultipleObjectsReturned
+from django.core.exceptions import MultipleObjectsReturned, ObjectDoesNotExist
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -10,6 +10,59 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
 from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
 
+from django.contrib.auth import get_user_model
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
+from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
+
+User = get_user_model()
+
+@api_view(['GET', 'PUT', 'PATCH'])
+@permission_classes([IsAuthenticated])
+def profile(request):
+    user = request.user
+
+    if request.method == 'GET':
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        try:
+            serializer = UserSerializer(instance=user, data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            else:
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except User.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+    elif request.method == 'PATCH':
+        old_password = request.data.get('old_password')
+        new_password = request.data.get('new_password')
+
+        if not user.check_password(old_password):
+            return Response({"old_password": ["Wrong password."]}, 
+                            status=status.HTTP_400_BAD_REQUEST)
+
+        user.set_password(new_password)
+        user.save()
+
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+#unused        
+@api_view(['GET'])
+def get_current_user(request):
+    """
+    Determine the current user by their token, and return their data
+    """
+    user = request.user
+    serializer = UserSerializer(user)
+    return Response(serializer.data)
 
 @api_view(['GET'])
 def get_packs(request):
@@ -106,17 +159,6 @@ def login_user(request):
         return Response({'success': True, 'user': serializer.data, 'access_token': access_token})
     else:
         return Response({'success': False, 'error': 'Username/Email and/or password is incorrect'}, status=400)
-
-
-@api_view(['GET'])
-def get_current_user(request):
-    """
-    Determine the current user by their token, and return their data
-    """
-    user = request.user
-    serializer = UserSerializer(user)
-    return Response(serializer.data)
-
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
