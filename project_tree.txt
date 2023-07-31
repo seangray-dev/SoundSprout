@@ -1,0 +1,155 @@
+"""SoundSprout: A sound sample marketplace.
+
+Uses Next.js for the frontend, and Python Django with Django Rest Framework for the backend API, all backed by a PostgreSQL database. Also uses Redux.
+
+Project tree:[
+C:
+|   
++---backend
+|   |   .env
+|   |   manage.py
+|   |   requirements.txt
+|   |   
+|   +---api
+|   |   |   serializers.py
+|   |   |   urls.py
+|   |   |   views.py
+|   |   |   __init__.py
+|   |   |   
+|   \---sound_sprout
+|       |   admin.py
+|       |   asgi.py
+|       |   models.py
+|       |   settings.py
+|       |   urls.py
+|       |   wsgi.py
+|       |   __init__.py
+|       |   
+|       +---fixtures
+|       |       generate_fixtures.py
+|       |       genres.json
+|       |       genre_pack_assoc.json
+|       |       packs.json
+|       |       sounds.json
+|       |       sound_tag_assoc.json
+|       |       tags.json
+|       |       transactions.json
+|       |       users.json
+|       |       
+|       +---management
+|       |   \---commands
+|       |       |   add_bpm_and_key_to_sounds.py
+|       |               
+|       +---migrations
+|       |   |   0001_initial.py
+|       |   |   __init__.py
+|       |           0006_alter_genre_id_alter_pack_id_and_more.cpython-310.pyc
+|       |           0006_transaction_seller.cpython-310.pyc
+|       |           0007_alter_genre_id_alter_pack_id_and_more.cpython-310.pyc
+|       |           0007_sound_bpm_sound_key.cpython-310.pyc             
++---frontend
+|   |   .env.local
+|   |   .eslintrc.json
+|   |   .gitignore
+|   |   components.json
+|   |   next-env.d.ts
+|   |   next.config.js
+|   |   package-lock.json
+|   |   package.json
+|   |   postcss.config.js
+|   |   tailwind.config.js
+|   |   tsconfig.json
+|   |   
+|   +---.next
+|   +---app
+|   |   |   favicon.ico
+|   |   |   globals.css
+|   |   |   layout.tsx
+|   |   |   page.tsx
+|   |   |   types.ts
+|   |   |   
+|   |   +---api
+|   |   |       api.ts
+|   |   |       cloudinary.ts
+|   |   |       
+|   |   +---components
+|   |   |   +---Buttons
+|   |   |   |       Btn_Primary.tsx
+|   |   |   |       Btn_Purple_Small.tsx
+|   |   |   |       
+|   |   |   +---Forms
+|   |   |   |       LoginForm.tsx
+|   |   |   |       SignupForm.tsx
+|   |   |   |       
+|   |   |   +---Layout
+|   |   |   |   |   AudioPlayer.tsx
+|   |   |   |   |   BrowseGenres.tsx
+|   |   |   |   |   Footer.tsx
+|   |   |   |   |   GenreCard.tsx
+|   |   |   |   |   Header.tsx
+|   |   |   |   |   HowItWorks.tsx
+|   |   |   |   |   HowItWorksItem.tsx
+|   |   |   |   |   Nav.tsx
+|   |   |   |   |   TrendingCard.tsx
+|   |   |   |   |   TrendingPacks.tsx
+|   |   |   |   |   
+|   |   |   |   \---PackSounds
+|   |   |   |           PackSounds.tsx
+|   |   |   |           PackSoundsHeader.tsx
+|   |   |   |           
+|   |   |   +---ui
+|   |   |   |       dialog.tsx
+|   |   |   |       progress.tsx
+|   |   |   |       slider.tsx
+|   |   |   |       
+|   |   |   \---Utils
+|   |   |           Heading.tsx
+|   |   |           
+|   |   +---genres
+|   |   |   \---[id]
+|   |   |           page.tsx
+|   |   |           
+|   |   +---login
+|   |   |       page.tsx
+|   |   |       
+|   |   +---packs
+|   |   |   \---[id]
+|   |   |           page.tsx
+|   |   |           
+|   |   +---profile
+|   |   |       page.tsx
+|   |   |       
+|   |   \---signup
+|   |           page.tsx
+|   |           
+|   +---data
+|   |       genresData.json
+|   |       trendingPacksData.json
+|   |       
+|   +---lib
+|   |       utils.ts
+|   |       
+|   +---node_modules
+|   +---public
+|   |   |   next.svg
+|   |   |   vercel.svg
+|   |   |   
+|   |   \---assets
+|   |       \---images
+|   \---redux
+|       |   provider.tsx
+|       |   store.ts
+|       |   
+|       \---features
+|               auth-slice.ts
+|               currentSound-slice.ts
+|               sortSounds.ts
+|               
+\---myenv
+    |   pyvenv.cfg
+    |   
+    +---Include
+    +---Lib
+    |   \---site-packages
+    \---Scripts
+]
