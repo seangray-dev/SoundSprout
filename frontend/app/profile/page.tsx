@@ -64,13 +64,14 @@ const ProfilePage = () => {
 	const handleFormSubmit = async (e: any) => {
     console.log("Submit button was clicked");
     e.preventDefault();
+		console.log('l')
     try {
 				const data = {
 					username: formData.username,
 					email: formData.email,
 					first_name: formData.firstName,
 					last_name: formData.lastName
-			};
+			}; 
 		
         const response = await updateUser(data);
         console.log(response); // Debugging line
