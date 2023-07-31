@@ -26,6 +26,7 @@ const ProfilePage = () => {
   // Change Password Dialog
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+	const [openPasswordDialog, setOpenPasswordDialog] = useState(false);
 
 	// Delete Account Dialog
 	const [deleteConfirm, setDeleteConfirm] = useState(false);
@@ -105,17 +106,19 @@ const ProfilePage = () => {
 	};
 	
 	const handlePasswordSubmit = async (e: any) => {
-		e.preventDefault();
-		if (newPassword !== confirmPassword) {
-			alert("New passwords don't match!");
-		} else {
-			try {
-				await changeUserPassword(newPassword);
-			} catch (error) {
-				console.error('Failed to change password:', error);
-			}
-		}
-	};
+    e.preventDefault();
+    if (newPassword !== confirmPassword) {
+        alert("New passwords don't match!");
+    } else {
+        try {
+            await changeUserPassword(newPassword);
+            setOpenPasswordDialog(false); // Close the dialog
+        } catch (error) {
+            console.error('Failed to change password:', error);
+        }
+    }
+};
+
 
   useEffect(() => {
 
@@ -144,46 +147,60 @@ const ProfilePage = () => {
 							<DialogTrigger onClick={handleDialogOpen}>
 								<PencilSquareIcon className='w-5 hover:opacity-50 hover:cursor-pointer transition-all' />
 							</DialogTrigger>
-								<DialogContent>
-									<DialogHeader>
-										<DialogTitle>Edit Profile</DialogTitle>
-									</DialogHeader>
-									<form onSubmit={handleFormSubmit}>
+							<DialogContent>
+								<DialogHeader>
+									<DialogTitle>Edit Profile</DialogTitle>
+								</DialogHeader>
+								<form className="space-y-4" onSubmit={handleFormSubmit}>
+									<div className="flex flex-col">
+										<label className="text-gray-600 font-bold">Username</label>
 										<input
+											className="px-4 py-2 border rounded-lg focus:outline-none focus:border-black transition duration-300"
 											type="text"
 											name="username"
 											value={formData.username}
 											onChange={handleInputChange}
-											placeholder="Username"
 										/>
-										<br />
+									</div>
+									<div className="flex flex-col">
+										<label className="text-gray-600 font-bold">Email</label>
 										<input
+											className="px-4 py-2 border rounded-lg focus:outline-none focus:border-black transition duration-300"
 											type="email"
 											name="email"
 											value={formData.email}
 											onChange={handleInputChange}
-											placeholder="Email"
 										/>
-										<br />
+									</div>
+									<div className="flex flex-col">
+										<label className="text-gray-600 font-bold">First Name</label>
 										<input
+											className="px-4 py-2 border rounded-lg focus:outline-none focus:border-black transition duration-300"
 											type="text"
 											name="firstName"
 											value={formData.firstName}
 											onChange={handleInputChange}
-											placeholder="First Name"
 										/>
-										<br />
+									</div>
+									<div className="flex flex-col">
+										<label className="text-gray-600 font-bold">Last Name</label>
 										<input
+											className="px-4 py-2 border rounded-lg focus:outline-none focus:border-black transition duration-300"
 											type="text"
 											name="lastName"
 											value={formData.lastName}
 											onChange={handleInputChange}
-											placeholder="Last Name"
 										/>
-										<br />
-										<button type="submit">Save Changes</button>
-									</form>
-								</DialogContent>
+									</div>
+									<button
+										className="w-full py-2 px-4 rounded-lg bg-purple rounded-full text-white font-bold hover:opacity-70 transition-opacity duration-300 w-full"
+										type="submit"
+									>
+										Save Changes
+									</button>
+								</form>
+							</DialogContent>
+
 							</Dialog>
 						</header>
 						<div className='flex flex-col gap-4'>
@@ -206,26 +223,43 @@ const ProfilePage = () => {
 							<p className='flex flex-col md:flex-row  justify-between'>
 								Password:{' '}
 								
-							<Dialog>
+								<Dialog open={openPasswordDialog} onOpenChange={setOpenPasswordDialog}>
 								<DialogTrigger>
 									<span className='font-normal text-purple hover:cursor-pointer hover:underline'>
-									Change Password
+										Change Password
 									</span>
 								</DialogTrigger>
 								<DialogContent>
-									<DialogTitle>Change Password</DialogTitle>
-									<form onSubmit={handlePasswordSubmit}>
-										<label>
-											New Password
-											<input type="password" value={newPassword} onChange={e => setNewPassword(e.target.value)} required />
-										</label>
-										<br />
-										<label>
-											Confirm New Password
-											<input type="password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required />
-										</label>
-										<br />
-										<button type="submit">Submit</button>
+									<DialogHeader>
+										<DialogTitle>Change Password</DialogTitle>
+									</DialogHeader>
+									<form className="space-y-4" onSubmit={handlePasswordSubmit}>
+										<div className="flex flex-col">
+											<label className="text-gray-600 font-bold">New Password</label>
+											<input
+												className="px-4 py-2 border rounded-lg focus:outline-none focus:border-black transition duration-300"
+												type="password"
+												value={newPassword}
+												onChange={e => setNewPassword(e.target.value)}
+												required
+											/>
+										</div>
+										<div className="flex flex-col">
+											<label className="text-gray-600 font-bold">Confirm New Password</label>
+											<input
+												className="px-4 py-2 border rounded-lg focus:outline-none focus:border-black transition duration-300"
+												type="password"
+												value={confirmPassword}
+												onChange={e => setConfirmPassword(e.target.value)}
+												required
+											/>
+										</div>
+										<button
+											className="w-full py-2 px-4 rounded-lg bg-purple rounded-full text-white font-bold hover:opacity-70 transition-opacity duration-300 w-full"
+											type="submit"
+										>
+											Submit
+										</button>
 									</form>
 								</DialogContent>
 							</Dialog>
