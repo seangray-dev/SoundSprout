@@ -2,6 +2,7 @@ import { ReduxProvider } from '@/redux/provider';
 import { Outfit } from 'next/font/google';
 import Footer from './components/Layout/Footer';
 import Nav from './components/Layout/Nav';
+import { Toaster } from './components/ui/toaster';
 import './globals.css';
 
 const outfit = Outfit({
@@ -25,6 +26,7 @@ export default function RootLayout({
 				<ReduxProvider>
 					<Nav />
 					<main className='flex-grow'>{children}</main>
+					<Toaster />
 					<Footer />
 				</ReduxProvider>
 			</body>

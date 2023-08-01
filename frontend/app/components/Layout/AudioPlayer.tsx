@@ -1,5 +1,6 @@
 import { Progress } from '@/app/components/ui/progress';
 import { Slider } from '@/app/components/ui/slider';
+import { addToCart } from '@/redux/features/cartSlice';
 import {
 	playNext,
 	playPrevious,
@@ -16,8 +17,12 @@ import {
 } from '@heroicons/react/24/solid';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { handleAddToCart } from '../Utils/cartActions';
+import { Button } from '../ui/button';
+import { useToast } from '../ui/use-toast';
 
 const AudioPlayer: React.FC = (props) => {
+	const { toast } = useToast();
 	const audioRef = useRef<HTMLAudioElement>(null);
 	const currentSound = useSelector((state: RootState) => state.currentSound);
 	const [progress, setProgress] = useState(0);
@@ -26,7 +31,7 @@ const AudioPlayer: React.FC = (props) => {
 	const isPlaying = useSelector(
 		(state: RootState) => state.currentSound.isPlaying
 	);
-
+	const isSoundLoaded = currentSound.soundIndex !== null;
 	useEffect(() => {
 		if (currentSound.soundIndex !== null && audioRef.current) {
 			audioRef.current.play();
@@ -41,7 +46,7 @@ const AudioPlayer: React.FC = (props) => {
 			audioRef.current.pause();
 			audioRef.current.currentTime = 0;
 			if (currentSound.soundIndex !== null) {
-				audioRef.current.src = currentSound.audioFile as string;
+				audioRef.current.src = currentSound.audio_file as string;
 				audioRef.current.loop = true;
 				audioRef.current.play();
 				audioRef.current.ontimeupdate = () => {
@@ -114,7 +119,15 @@ const AudioPlayer: React.FC = (props) => {
 							<span className='text-sm'>BPM</span>
 						</div>
 						<div className='flex items-center'>
-							<PlusIcon className='w-6 h-6 hover:cursor-pointer hover:text-purple transition-all duration-300'></PlusIcon>
+							<Button
+								asChild
+								variant='ghost'
+								onClick={(event) =>
+									isSoundLoaded &&
+									handleAddToCart(dispatch, toast, event, currentSound)
+								}>
+								<PlusIcon className='w-6 h-6 hover:cursor-pointer hover:bg-purple transition-all duration-300'></PlusIcon>
+							</Button>
 						</div>
 					</div>
 				</div>

@@ -1,11 +1,15 @@
 'use client';
 
-import { RootState } from '@/redux/store'; // import your Redux store or the file where RootState is defined
+import { RootState } from '@/redux/store';
+import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { UserIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Button } from '../ui/button';
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
+import CartPopover from './CartPopover';
 import logo from '/public/assets/images/logo-no-background.png';
 
 const Nav = () => {
@@ -13,7 +17,7 @@ const Nav = () => {
 	const username = user?.username || '';
 
 	return (
-		<nav className='bg-gray-1 py-4'>
+		<nav className='bg-gray-1 py-8'>
 			<div className='flex justify-between items-center container'>
 				<Link href={'/'}>
 					<Image src={logo} width={150} alt='sound-sprout-logo' />
@@ -32,6 +36,18 @@ const Nav = () => {
 							<Link href={'/login'}>Login</Link>
 						</li>
 					)}
+					<li className='flex item-center text-white'>
+						<Popover>
+							<PopoverTrigger asChild>
+								<Button variant={'ghost'}>
+									<ShoppingCartIcon className='text-white w-6 h-6 hover:text-purple transition-all duration-300' />
+								</Button>
+							</PopoverTrigger>
+							<PopoverContent className='w-[500px] mr-4 bg-gray-1 border-none'>
+								<CartPopover />
+							</PopoverContent>
+						</Popover>
+					</li>
 				</ul>
 			</div>
 		</nav>

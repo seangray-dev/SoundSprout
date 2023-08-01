@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import authReducer from './features/auth-slice';
+import cartReducer from './features/cartSlice';
 import currentSound from './features/currentSound-slice';
 import sortSounds from './features/sortSounds';
 
@@ -8,6 +9,7 @@ export const store = configureStore({
 		authReducer,
 		sortSounds,
 		currentSound,
+		cartReducer,
 	},
 });
 
