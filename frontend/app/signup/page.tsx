@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import SignupForm from '../components/Forms/SignupForm';
 import Heading from '../components/Utils/Heading';
+import SignupForm from './SignupForm';
 
 const Signup = () => {
 	return (
