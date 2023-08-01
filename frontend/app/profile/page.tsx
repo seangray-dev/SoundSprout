@@ -29,6 +29,7 @@ const ProfilePage = () => {
 	const [openPasswordDialog, setOpenPasswordDialog] = useState(false);
 
 	// Delete Account Dialog
+	const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
 	const [deleteConfirm, setDeleteConfirm] = useState(false);
 
 	const getUser = async () => {
@@ -217,18 +218,15 @@ const ProfilePage = () => {
 							<p className='flex flex-col md:flex-row  justify-between'>
 								Last Name: <span className='font-normal'>{user?.last_name}</span>
 							</p>
-							<p className='flex flex-col md:flex-row  justify-between'>
-								User ID: <span className='font-normal'>{user?.id}</span>
-							</p>
-							<p className='flex flex-col md:flex-row  justify-between'>
-								Password:{' '}
-								
+
 								<Dialog open={openPasswordDialog} onOpenChange={setOpenPasswordDialog}>
 								<DialogTrigger>
-									<span className='font-normal text-purple hover:cursor-pointer hover:underline'>
-										Change Password
-									</span>
-								</DialogTrigger>
+									<button 
+											className='font-normal text-white bg-purple hover:bg-purple-dark py-1 px-2 rounded transition-colors duration-200'>
+											Change Password
+									</button>
+							</DialogTrigger>
+
 								<DialogContent>
 									<DialogHeader>
 										<DialogTitle>Change Password</DialogTitle>
@@ -262,27 +260,40 @@ const ProfilePage = () => {
 										</button>
 									</form>
 								</DialogContent>
-							</Dialog>
-							</p>
-							<p className='flex flex-col md:flex-row justify-between'>
-								Delete Sound Sprout Account:
-								
-								<Dialog>
+							</Dialog>													
+								<Dialog open={openDeleteDialog} onOpenChange={setOpenDeleteDialog}>
 									<DialogTrigger>
-										<span className='font-normal text-red-500 hover:cursor-pointer hover:underline'>
-											Delete Account
-										</span>
+											<button 
+													className='font-normal text-white bg-red-600 hover:bg-red-700 py-1 px-2 rounded transition-colors duration-200'>
+													Delete Account
+											</button>
 									</DialogTrigger>
 									<DialogContent>
-										<DialogTitle>Confirm Account Deletion</DialogTitle>
-										<DialogDescription>
+										<DialogHeader>
+											<DialogTitle>Confirm Account Deletion</DialogTitle>
+										</DialogHeader>
+										<DialogDescription className="text-gray-600 font-bold">
 											Are you sure you want to delete your account? This action cannot be undone.
 										</DialogDescription>
-										<button onClick={() => setDeleteConfirm(true)}>Yes, Delete</button>
-										<button onClick={() => setDeleteConfirm(false)}>No, Cancel</button>
+										<div className="flex space-x-4 mt-4">
+											<button 
+												onClick={() => setDeleteConfirm(true)}
+												className="w-full py-2 px-4 rounded-lg bg-red-500 rounded-full text-white font-bold hover:opacity-70 transition-opacity duration-300 w-full"
+											>
+												Yes, Delete
+											</button>
+											<button 
+												onClick={() => {setDeleteConfirm(false); setOpenDeleteDialog(false);}}
+												className="w-full py-2 px-4 rounded-lg bg-gray-300 rounded-full text-black font-bold hover:opacity-70 transition-opacity duration-300 w-full"
+												
+											>
+												No, Cancel
+											</button>
+										</div>
 									</DialogContent>
 								</Dialog>
-							</p>
+
+							
 						</div>
 					</div>
 				</main>
