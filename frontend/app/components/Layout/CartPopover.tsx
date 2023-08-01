@@ -7,9 +7,13 @@ import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../ui/button';
 
-const CartPopover = () => {
+const CartPopover = ({ setIsOpen }: { setIsOpen: (open: boolean) => void }) => {
 	const dispatch = useDispatch();
 	const cartItems = useSelector((state: RootState) => state.cartReducer.items);
+
+	const proceedToCheckout = () => {
+		setIsOpen(false);
+	};
 
 	const handleRemoveFromCart = (id: number) => {
 		dispatch(removeFromCart(id));
@@ -50,7 +54,9 @@ const CartPopover = () => {
 						))}
 					</ul>
 					<div className='flex justify-center w-full'>
-						<Button className='w-full text-base bg-purple py-4 hover:bg-white hover:text-purple transition-all duration-300'>
+						<Button
+							onClick={proceedToCheckout}
+							className='w-full text-base bg-purple py-4 hover:bg-white hover:text-purple transition-all duration-300'>
 							<Link href={'/checkout'}>Proceed To Checkout</Link>
 						</Button>
 					</div>
