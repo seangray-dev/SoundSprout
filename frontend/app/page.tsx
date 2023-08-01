@@ -7,11 +7,9 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<main>
-				<TrendingPacks />
-				<BrowseGenres />
-				<HowItWorks />
-			</main>
+			<TrendingPacks />
+			<BrowseGenres />
+			<HowItWorks />
 		</>
 	);
 }
