@@ -16,7 +16,7 @@ const Summary: React.FC<SummaryProps> = ({ subtotal, hst, total }) => {
 			<div className='flex flex-col gap-4'>
 				<div className='flex justify-between items-center border-b pb-2'>
 					<span>Subtotal</span>
-					<span className='font-bold'>${subtotal}</span>
+					<span className='font-bold'>${subtotal.toFixed(2)}</span>
 				</div>
 				<div className='flex justify-between items-center border-b pb-2'>
 					<span>HST(13%)</span>
