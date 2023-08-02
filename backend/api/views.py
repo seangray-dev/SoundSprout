@@ -1,7 +1,11 @@
-from django.db import IntegrityError
+import stripe
+import os
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.core.exceptions import MultipleObjectsReturned
+from django.db import IntegrityError
+from django.http import HttpResponse, JsonResponse
+from dotenv import load_dotenv
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -9,6 +13,8 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
 from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
+
+load_dotenv()
 
 
 @api_view(['GET'])
@@ -167,3 +173,33 @@ def get_sound_tags(request, sound_id):
         return Response(serializer.data, status=status.HTTP_200_OK)
     except Sound.DoesNotExist:
         return Response({'error': 'Sound not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
+stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
+
+
+@api_view(['POST'])
+def create_payment_intent(request):
+    try:
+        amount = request.data.get('amount', 10)
+        # Assuming the amount is passed in dollars
+        amount_in_dollars = request.data.get('amount', 10.00)
+
+        # Convert to cents
+        amount_in_cents = int(amount_in_dollars * 100)
+
+        payment_intent = stripe.PaymentIntent.create(
+            amount=amount_in_cents,
+            currency='usd',
+        )
+        client_secret = payment_intent.client_secret
+        print('Amount in $:', amount_in_dollars)
+        print('Amount in cents:', amount_in_cents)
+        print('Client secret:', client_secret)
+
+        if not client_secret:
+            return JsonResponse({'error': 'Client secret is missing'}, status=500)
+
+        return JsonResponse({'clientSecret': client_secret})
+    except stripe.error.StripeError as e:
+        return JsonResponse({'error': str(e)}, status=400)

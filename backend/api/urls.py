@@ -13,5 +13,7 @@ urlpatterns = [
     path('genre/<int:genre_id>/sounds/', views.get_sounds_by_genre),
     path('genre/<int:genre_id>/packs/', views.get_packs_by_genre),
     path('sounds/<int:sound_id>/tags/',
-         views.get_sound_tags, name='sound_tags')
+         views.get_sound_tags, name='sound_tags'),
+    path('create-payment-intent/', views.create_payment_intent,
+         name='create-payment-intent'),
 ]

@@ -2,5 +2,7 @@ Django==4.2.3
 djangorestframework==3.14.0
 djangorestframework_simplejwt==5.2.2
 django-cors-headers==4.2.0
+psycopg2-binary==2.9.6
+python-dotenv==1.0.0
 python-decouple==3.8
-psycopg2-binary==2.9.6 
+stripe>=5.0.0
