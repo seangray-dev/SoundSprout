@@ -44,8 +44,6 @@ def profile(request):
         
         new_password = request.data.get('new_password')
 
-        
-
         user.set_password(new_password)
         user.save()
 
