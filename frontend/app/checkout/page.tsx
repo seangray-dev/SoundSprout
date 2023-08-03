@@ -45,22 +45,22 @@ const Checkout = () => {
 			});
 	}, [total, cartItems]);
 
-	useEffect(() => {
-		axios
-			.post(`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/download-files/`, {
-				publicIds,
-			})
-			.then((res) => {
-				console.log(
-					'setting download links to local storage',
-					res.data.downloadLinks
-				);
-				localStorage.setItem(
-					'downloadLinks',
-					JSON.stringify(res.data.downloadLinks)
-				);
-			});
-	}, []);
+	// useEffect(() => {
+	// 	axios
+	// 		.post(`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/download-files/`, {
+	// 			publicIds,
+	// 		})
+	// 		.then((res) => {
+	// 			console.log(
+	// 				'setting download links to local storage',
+	// 				res.data.downloadLinks
+	// 			);
+	// 			localStorage.setItem(
+	// 				'downloadLinks',
+	// 				JSON.stringify(res.data.downloadLinks)
+	// 			);
+	// 		});
+	// }, []);
 
 	return (
 		<section className='container my-6'>

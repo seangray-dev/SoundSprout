@@ -3,8 +3,9 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 type CurrentSoundState = Sound & {
 	coverArt: string | null;
-	soundIndex: number | null;
+	soundIndex?: number | null;
 	isPlaying: boolean;
+	isPack: boolean;
 };
 
 const initialState: CurrentSoundState = {
@@ -21,6 +22,7 @@ const initialState: CurrentSoundState = {
 	coverArt: null,
 	soundIndex: null,
 	isPlaying: false,
+	isPack: false,
 };
 
 export const currentSound = createSlice({
@@ -33,9 +35,10 @@ export const currentSound = createSlice({
 			state.coverArt = action.payload.coverArt;
 			state.name = action.payload.name;
 			state.key = action.payload.key;
-			state.price = action.payload.price;
 			state.bpm = action.payload.bpm;
+			state.price = action.payload.price;
 			state.audio_file = action.payload.audio_file;
+			state.isPack = action.payload.isPack;
 		},
 		resetCurrentSound: (state) => {
 			state.pack = null as any;
@@ -44,7 +47,9 @@ export const currentSound = createSlice({
 			state.name = null as any;
 			state.key = null as any;
 			state.bpm = null as any;
+			state.price = null as any;
 			state.audio_file = null as any;
+			state.isPack = null as any;
 		},
 		togglePlay: (state) => {
 			state.isPlaying = !state.isPlaying;

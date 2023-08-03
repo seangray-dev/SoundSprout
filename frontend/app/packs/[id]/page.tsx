@@ -6,13 +6,23 @@ import Btn_Primary_Small from '@/app/components/Buttons/Btn_Purple_Small';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 import PackSounds from '@/app/components/Layout/PackSounds/PackSounds';
 import PackSoundsHeader from '@/app/components/Layout/PackSounds/PackSoundsHeader';
+import { handleAddPackToCart } from '@/app/components/Utils/cartActions';
+import { Button } from '@/app/components/ui/button';
+import { useToast } from '@/app/components/ui/use-toast';
 import { Pack } from '@/app/types';
+import {
+	setCurrentSound,
+	togglePlay,
+} from '@/redux/features/currentSound-slice';
 import { PlayIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 export default function Packs({ params }: { params: { id: number } }) {
 	const [pack, setPack] = useState<Pack | null>(null);
+	const dispatch = useDispatch();
+	const { toast } = useToast();
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -26,6 +36,32 @@ export default function Packs({ params }: { params: { id: number } }) {
 
 		fetchData();
 	}, [params.id]);
+
+	const handlePreviewClick = () => {
+		console.log('Preview clicked', pack);
+
+		if (pack) {
+			const previewUrl = pack.preview ? getPreviewUrl(pack.preview) : '';
+			dispatch(
+				setCurrentSound({
+					audio_file: `${previewUrl}`,
+					coverArt: getCoverArtUrl(pack.cover_art_location),
+					name: pack.name,
+					price: pack.price,
+					id: 0,
+					bpm: 0,
+					key: '',
+					pack: pack,
+					purchase_count: 0,
+					created_at: '',
+					modified_at: '',
+					isPlaying: true,
+					isPack: true,
+				})
+			);
+			dispatch(togglePlay());
+		}
+	};
 
 	return (
 		<>
@@ -52,17 +88,20 @@ export default function Packs({ params }: { params: { id: number } }) {
 										<p>${pack.price}</p>
 									</div>
 									<div className='flex gap-2 mt-4 justify-center md:justify-normal'>
-										<Btn_Primary_Small>
+										<Button
+											onClick={(event) =>
+												handleAddPackToCart(dispatch, toast, event, pack)
+											}
+											className='flex items-center gap-2 py-1 px-4 border bg-purple text-white border-purple hover:bg-purple hover:opacity-80 rounded-full transition-all duration-300'>
 											<PlusSmallIcon className='w-6 h-6'></PlusSmallIcon>
 											Get Pack
-										</Btn_Primary_Small>
-										<button className='flex items-center gap-2 py-1 px-4 border border-black rounded-full hover:opacity-30 transition-all duration-300'>
+										</Button>
+										<Button
+											onClick={handlePreviewClick}
+											className='flex items-center gap-2 py-1 px-4 border bg-white text-black border-black rounded-full hover:text-purple hover:bg-white hover:border-purple transition-all duration-300'>
 											<PlayIcon className='w-6 h-6' />
 											<span>Preview</span>
-											<audio
-												src={pack.preview ? getPreviewUrl(pack.preview) : ''}
-											/>
-										</button>
+										</Button>
 									</div>
 								</div>
 								<p className='font-light text-center md:text-left'>

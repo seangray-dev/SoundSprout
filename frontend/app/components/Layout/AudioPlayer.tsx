@@ -1,6 +1,5 @@
 import { Progress } from '@/app/components/ui/progress';
 import { Slider } from '@/app/components/ui/slider';
-import { addToCart } from '@/redux/features/cartSlice';
 import {
 	playNext,
 	playPrevious,
@@ -17,7 +16,10 @@ import {
 } from '@heroicons/react/24/solid';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleAddToCart } from '../Utils/cartActions';
+import {
+	handleAddPackToCart,
+	handleAddSoundToCart,
+} from '../Utils/cartActions';
 import { Button } from '../ui/button';
 import { useToast } from '../ui/use-toast';
 
@@ -66,6 +68,18 @@ const AudioPlayer: React.FC = (props) => {
 		}
 
 		setIsMuted(volumeValue === 0);
+	};
+
+	const isPack = currentSound.isPack;
+
+	const handleAddToCartClick = (event: React.MouseEvent) => {
+		if (isSoundLoaded) {
+			if (isPack) {
+				handleAddPackToCart(dispatch, toast, event, currentSound.pack);
+			} else {
+				handleAddSoundToCart(dispatch, toast, event, currentSound);
+			}
+		}
 	};
 
 	return (
@@ -119,13 +133,7 @@ const AudioPlayer: React.FC = (props) => {
 							<span className='text-sm'>BPM</span>
 						</div>
 						<div className='flex items-center'>
-							<Button
-								asChild
-								variant='ghost'
-								onClick={(event) =>
-									isSoundLoaded &&
-									handleAddToCart(dispatch, toast, event, currentSound)
-								}>
+							<Button asChild variant='ghost' onClick={handleAddToCartClick}>
 								<PlusIcon className='w-6 h-6 hover:cursor-pointer hover:bg-purple transition-all duration-300'></PlusIcon>
 							</Button>
 						</div>

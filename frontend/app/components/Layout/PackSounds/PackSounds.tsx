@@ -15,7 +15,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleAddToCart } from '../../Utils/cartActions';
+import { handleAddSoundToCart } from '../../Utils/cartActions';
 import { Button } from '../../ui/button';
 import { useToast } from '../../ui/use-toast';
 
@@ -100,6 +100,7 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 					purchase_count: sounds[index].purchase_count,
 					created_at: sounds[index].created_at,
 					modified_at: sounds[index].modified_at,
+					isPack: false,
 				})
 			);
 		}
@@ -200,7 +201,7 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 									asChild
 									variant='ghost'
 									onClick={(event) =>
-										handleAddToCart(dispatch, toast, event, sound)
+										handleAddSoundToCart(dispatch, toast, event, sound)
 									}>
 									<PlusIcon className='text-gray-500 w-5 h-5 -ml-8  hover:cursor-pointer hover:bg-purple hover:text-white transition-all duration-300' />
 								</Button>

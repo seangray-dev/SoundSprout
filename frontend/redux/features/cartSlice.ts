@@ -1,8 +1,13 @@
-import { Sound } from '@/app/types';
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Pack, Sound } from '@/app/types';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+
+interface CartItem {
+	type: 'sound' | 'pack';
+	item: Sound | Pack;
+}
 
 interface CartState {
-	items: Sound[];
+	items: CartItem[];
 }
 
 const initialState: CartState = {
@@ -13,12 +18,17 @@ export const cartSlice = createSlice({
 	name: 'cart',
 	initialState,
 	reducers: {
-		addToCart: (state, action: PayloadAction<Sound>) => {
-			state.items.push(action.payload);
+		addSoundToCart: (state, action: PayloadAction<Sound>) => {
+			state.items.push({ type: 'sound', item: action.payload });
+		},
+		addPackToCart: (state, action: PayloadAction<Pack>) => {
+			state.items.push({ type: 'pack', item: action.payload });
 		},
 		removeFromCart: (state, action: PayloadAction<number>) => {
 			const index = state.items.findIndex(
-				(sound) => sound.id === action.payload
+				(cartItem) =>
+					(cartItem.item as Sound).id === action.payload ||
+					(cartItem.item as Pack).id === action.payload
 			);
 			if (index > -1) {
 				state.items.splice(index, 1);
@@ -27,6 +37,7 @@ export const cartSlice = createSlice({
 	},
 });
 
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addSoundToCart, addPackToCart, removeFromCart } =
+	cartSlice.actions;
 
 export default cartSlice.reducer;

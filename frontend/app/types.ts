@@ -26,7 +26,7 @@ export interface Sound {
 	bpm: number;
 	key: string;
 	price: number;
-	pack: Pack;
+	pack?: Pack;
 	purchase_count: number;
 	created_at: string;
 	modified_at: string;

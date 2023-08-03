@@ -1,4 +1,5 @@
 import { getCoverArtUrl } from '@/app/api/cloudinary';
+import { Pack, Sound } from '@/app/types';
 import { removeFromCart } from '@/redux/features/cartSlice';
 import { RootState } from '@/redux/store';
 import { XCircleIcon } from '@heroicons/react/24/solid';
@@ -27,31 +28,45 @@ const CartPopover = ({ setIsOpen }: { setIsOpen: (open: boolean) => void }) => {
 			) : (
 				<div>
 					<ul className='flex flex-col gap-4 mb-6'>
-						{cartItems.map((sound, index) => (
-							<li
-								className='flex flex-col gap-2 pb-2 border-b border-b-gray-2'
-								key={index}>
-								<Image
-									src={getCoverArtUrl(sound.pack.cover_art_location)}
-									width={40}
-									height={40}
-									alt={sound.pack.name}
-								/>
-								<div className='flex items-center justify-between'>
-									<p className='text-sm truncate w-[300px]'>{sound.name}</p>
-									<div className='flex gap-4 items-center justify-between'>
-										<p>${sound.price}</p>
-										<Button
-											onClick={() => handleRemoveFromCart(sound.id)}
-											title='Remove Item'
-											asChild
-											variant='ghost'>
-											<XCircleIcon className='w-6 h-6 hover:cursor-pointer hover:text-red-500' />
-										</Button>
+						{cartItems.map((cartItem, index) => {
+							const item = cartItem.item;
+							let coverArtLocation: string | undefined;
+
+							if (cartItem.type === 'pack') {
+								coverArtLocation = (item as Pack).cover_art_location;
+							} else {
+								coverArtLocation = (item as Sound).pack?.cover_art_location;
+							}
+
+							return (
+								<li
+									className='flex flex-col gap-2 pb-2 border-b border-b-gray-2'
+									key={index}>
+									<Image
+										src={getCoverArtUrl(
+											coverArtLocation ||
+												'/assets/images/default-audiofile.jpeg'
+										)}
+										width={40}
+										height={40}
+										alt={item.name}
+									/>
+									<div className='flex items-center justify-between'>
+										<p className='text-sm truncate w-[300px]'>{item.name}</p>
+										<div className='flex gap-4 items-center justify-between'>
+											<p>${item.price}</p>
+											<Button
+												onClick={() => handleRemoveFromCart(item.id)}
+												title='Remove Item'
+												asChild
+												variant='ghost'>
+												<XCircleIcon className='w-6 h-6 hover:cursor-pointer hover:text-red-500' />
+											</Button>
+										</div>
 									</div>
-								</div>
-							</li>
-						))}
+								</li>
+							);
+						})}
 					</ul>
 					<div className='flex justify-center w-full'>
 						<Button
