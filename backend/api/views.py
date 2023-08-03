@@ -1,3 +1,6 @@
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, permission_classes
+from django.contrib.auth import get_user_model
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -29,15 +32,9 @@ CLOUDINARY_CLOUD_NAME = os.getenv('CLOUDINARY_CLOUD_NAME')
 CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
-from django.contrib.auth import get_user_model
-from rest_framework import status
-from rest_framework.response import Response
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated
-from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
-from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
 
 User = get_user_model()
+
 
 @api_view(['GET', 'PUT', 'PATCH'])
 @permission_classes([IsAuthenticated])
@@ -60,10 +57,8 @@ def profile(request):
             return Response(status=status.HTTP_404_NOT_FOUND)
 
     elif request.method == 'PATCH':
-        
-        new_password = request.data.get('new_password')
 
-        
+        new_password = request.data.get('new_password')
 
         user.set_password(new_password)
         user.save()
@@ -71,7 +66,7 @@ def profile(request):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-#unused        
+# unused
 @api_view(['GET'])
 def get_current_user(request):
     """
@@ -80,6 +75,7 @@ def get_current_user(request):
     user = request.user
     serializer = UserSerializer(user)
     return Response(serializer.data)
+
 
 @api_view(['GET'])
 def get_packs(request):
@@ -176,6 +172,7 @@ def login_user(request):
         return Response({'success': True, 'user': serializer.data, 'access_token': access_token})
     else:
         return Response({'success': False, 'error': 'Username/Email and/or password is incorrect'}, status=400)
+
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
