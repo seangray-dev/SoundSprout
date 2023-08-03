@@ -37,7 +37,7 @@ const PackTab = () => {
     <Tabs defaultValue="pack">
       <TabsContent value="pack">
         <div className="mb-4">
-          <label htmlFor="pack-name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="pack-name">
             Pack Name
           </label>
           <Input 
@@ -52,7 +52,7 @@ const PackTab = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="pack-description" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="pack-description">
             Pack Description
           </label>
           <Textarea
@@ -66,7 +66,7 @@ const PackTab = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="pack-description" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="pack-description" className="block">
             Pack Genre
           </label>
           <PackGenreCombobox

@@ -13,6 +13,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '../../ui/popover';
+import { ScrollArea } from '../../ui/scroll';
 
 interface BPMComboboxProps {
   onChange: (selectedBpm: number) => void;
@@ -48,19 +49,23 @@ const BPMCombobox: React.FC<BPMComboboxProps> = ({ onChange }) => {
         <Command>
           <CommandInput placeholder="Search BPM..." />
           <CommandEmpty>No BPM found.</CommandEmpty>
-          <CommandGroup>
-            {bpmValues.map((bpm) => (
-              <CommandItem
-                key={bpm}
-                onSelect={() => handleSelect(bpm)}
-              >
-                <Check
-                  className={String(value) === String(bpm) ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
-                />
-                {bpm}
-              </CommandItem>
-            ))}
-          </CommandGroup>
+          <ScrollArea className="h-[200px] w-[200px] rounded-md border">
+            <div className="p-4">
+              <CommandGroup>
+                {bpmValues.map((bpm) => (
+                  <CommandItem
+                    key={bpm}
+                    onSelect={() => handleSelect(bpm)}
+                  >
+                    <Check
+                      className={String(value) === String(bpm) ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
+                    />
+                    {bpm}
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </div>
+          </ScrollArea>
         </Command>
       </PopoverContent>
     </Popover>

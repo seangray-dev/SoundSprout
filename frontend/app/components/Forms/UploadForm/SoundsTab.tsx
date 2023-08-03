@@ -37,14 +37,14 @@ const SoundsTab = () => {
       </div>
 
       <div className="mb-4">
-        <label htmlFor="pack-key">
+        <label htmlFor="pack-key" className="block">
           Key
         </label>
         <KeyCombobox onChange={handleKeyChange} />
       </div>
 
       <div className="mb-4">
-        <label htmlFor="pack-bpm">
+        <label htmlFor="pack-bpm" className="block">
           BPM
         </label>
         <BPMCombobox onChange={handleBPMChange} />
