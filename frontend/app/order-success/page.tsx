@@ -1,12 +1,19 @@
 'use client';
 
-import Heading from '../components/Utils/Heading';
+import Heading from '@/app/components/Utils/Heading';
+import { useEffect, useState } from 'react';
 
 const OrderSuccess = () => {
-	const downloadLinksJSON = localStorage.getItem('downloadLinks') || '[]';
-	const downloadLinks = JSON.parse(downloadLinksJSON);
+	const [downloadLinks, setDownloadLinks] = useState<string[]>([]);
 
-	console.log(downloadLinks);
+	useEffect(() => {
+		// Retrieve the download links from local storage on the client side
+		const downloadLinksJSON = localStorage.getItem('downloadLinks') || '[]';
+		setDownloadLinks(JSON.parse(downloadLinksJSON));
+
+		// Reset the downloadLinks item in local storage
+		localStorage.removeItem('downloadLinks');
+	}, []);
 
 	return (
 		<section className='container h-full grid place-items-center'>
@@ -16,9 +23,9 @@ const OrderSuccess = () => {
 				</Heading>
 				<div className='mt-6 flex flex-col gap-4 text-center'>
 					<p>Thanks for your purchase!</p>
-					<p>Your download links:</p>
+					<p>Here are your download links:</p>
 					<ul>
-						{downloadLinks.map((link: string, index: number) => (
+						{downloadLinks.map((link, index) => (
 							<li key={index}>
 								<a
 									target='_blank'
