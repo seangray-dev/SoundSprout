@@ -3,10 +3,10 @@
 import { logout } from '@/redux/features/auth-slice';
 import { RootState } from '@/redux/store';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
-import { UserIcon } from '@heroicons/react/24/solid';
+import { UserIcon, } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
@@ -23,7 +23,7 @@ const Nav = () => {
 		console.log('Logout button clicked');
 		dispatch(logout());
 	};
-
+  
 	return (
 		<nav className='bg-gray-1 py-8'>
 			<div className='flex justify-between items-center container'>
