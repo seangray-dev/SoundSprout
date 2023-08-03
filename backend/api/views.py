@@ -13,6 +13,7 @@ from django.http import HttpResponse, JsonResponse, FileResponse
 from mimetypes import guess_extension
 from dotenv import load_dotenv
 from requests import get as http_get
+from django.core.exceptions import MultipleObjectsReturned, ObjectDoesNotExist
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -28,6 +29,57 @@ CLOUDINARY_CLOUD_NAME = os.getenv('CLOUDINARY_CLOUD_NAME')
 CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
+from django.contrib.auth import get_user_model
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
+from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
+
+User = get_user_model()
+
+@api_view(['GET', 'PUT', 'PATCH'])
+@permission_classes([IsAuthenticated])
+def profile(request):
+    user = request.user
+
+    if request.method == 'GET':
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        try:
+            serializer = UserSerializer(instance=user, data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            else:
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except User.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+    elif request.method == 'PATCH':
+        
+        new_password = request.data.get('new_password')
+
+        
+
+        user.set_password(new_password)
+        user.save()
+
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+#unused        
+@api_view(['GET'])
+def get_current_user(request):
+    """
+    Determine the current user by their token, and return their data
+    """
+    user = request.user
+    serializer = UserSerializer(user)
+    return Response(serializer.data)
 
 @api_view(['GET'])
 def get_packs(request):
@@ -125,15 +177,11 @@ def login_user(request):
     else:
         return Response({'success': False, 'error': 'Username/Email and/or password is incorrect'}, status=400)
 
-
-@api_view(['GET'])
-def get_current_user(request):
-    """
-    Determine the current user by their token, and return their data
-    """
-    user = request.user
-    serializer = UserSerializer(user)
-    return Response(serializer.data)
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def logout_user(request):
+    request.user.auth_token.delete()  # assuming you are using the built-in Token model
+    return Response(status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])

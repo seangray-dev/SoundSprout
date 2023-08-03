@@ -1,1214 +1,1202 @@
 [
     {
-        "model": "sound_sprout.Sound",
-        "pk": 1,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_125_synth_songstarter_loop_ethereal_enterprise_no_bass_Dm",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_125_synth_songstarter_loop_ethereal_enterprise_no_bass_Dm.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 2,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_145_synth_songstarter_loop_starship_inc_F#maj",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_145_synth_songstarter_loop_starship_inc_F#maj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 3,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_103_synth_songstarter_loop_later_gator_C#m",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_103_synth_songstarter_loop_later_gator_C#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 4,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_125_full_drum_loop_space_naut",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_125_full_drum_loop_space_naut.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 5,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_103_synth_bass_loop_later_gator_C#m",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_103_synth_bass_loop_later_gator_C#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 6,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_120_kick_snare_loop_sketchy",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_120_kick_snare_loop_sketchy.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 7,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_140_synth_songstarter_loop_mars_Bmaj",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_140_synth_songstarter_loop_mars_Bmaj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 8,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_145_synth_songstarter_loop_galactic_mamba_no_baass_Bbm",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_145_synth_songstarter_loop_galactic_mamba_no_baass_Bbm.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 9,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_snare_one_shot_skreetz",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_snare_one_shot_skreetz.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 10,
-        "fields": {
-            "pack": 1,
-            "name": "KMRBI_ST_kick_one_shot_the_edge",
-            "audio_file": "Stranger Tingz/sounds/KMRBI_ST_kick_one_shot_the_edge.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 11,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Loop_10_Merengueton_CG_Ensemble_Em",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_10_Merengueton_CG_Ensemble_Em.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 12,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Songstarter_02_Calipso_Drums_Full_G#m",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Songstarter_02_Calipso_Drums_Full_G#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 13,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Loop_09_Merengue_Bass_D#",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_09_Merengue_Bass_D#.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 14,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Loop_03_Calipso_Cuatro_Em",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_03_Calipso_Cuatro_Em.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 15,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Songstarter_01_Reggaeton_Lead_1_D#",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Songstarter_01_Reggaeton_Lead_1_D#.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 16,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Loop_03_Calipso_Ensemble_Em",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_03_Calipso_Ensemble_Em.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 17,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Loop_08_Son_Cubano_Tres_Em",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_08_Son_Cubano_Tres_Em.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 18,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Loop_13_Bolero_CG_Ensemble_Cm",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_13_Bolero_CG_Ensemble_Cm.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 19,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Songstarter_01_Reggaeton_Drums_Claps_D#",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Songstarter_01_Reggaeton_Drums_Claps_D#.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 20,
-        "fields": {
-            "pack": 2,
-            "name": "LS_122_Loop_11_Cha_Cha_Cha_Guitar_A#m",
-            "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_11_Cha_Cha_Cha_Guitar_A#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 21,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_fx_loop_windup",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_fx_loop_windup.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 22,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_atmosphere_loop_glassy_Amin",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_atmosphere_loop_glassy_Amin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 23,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_synth_loop_mood_Amin",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_synth_loop_mood_Amin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 24,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_percussion_loop_crisp",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_percussion_loop_crisp.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 25,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_synth_breakdown_Amin",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_synth_breakdown_Amin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 26,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_drum_loop_higher_percussion",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_higher_percussion.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 27,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_kit_loop_who_vocal_Cmin",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_kit_loop_who_vocal_Cmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 28,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_drum_loop_letsgo_hats",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_letsgo_hats.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 29,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_drum_loop_feels_hat",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_feels_hat.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 30,
-        "fields": {
-            "pack": 3,
-            "name": "ff_mmht_128_drum_loop_keepon_hat",
-            "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_keepon_hat.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 31,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_91_drum_top_loop_open_snare",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_91_drum_top_loop_open_snare.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 32,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_95_drum_loop_full_issa_world",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_95_drum_loop_full_issa_world.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 33,
-        "fields": {
-            "pack": 4,
-            "name": ".DS_Store",
-            "audio_file": "Tasty Loops by Mars Today/sounds/.DS_Store",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 34,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_114__electric_guitar_loop_simple_sail_Abmaj",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_114__electric_guitar_loop_simple_sail_Abmaj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 35,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_84_electric_guitar_loop_sparkly_sauce_Cmin",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_84_electric_guitar_loop_sparkly_sauce_Cmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 36,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_100_electric_guitar_loop_with_flavor_Fmin",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_100_electric_guitar_loop_with_flavor_Fmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 37,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_141_drum_loop_hats_high_hyped",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_141_drum_loop_hats_high_hyped.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 38,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_130_drum_loop_full_loose_and_snappy",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_130_drum_loop_full_loose_and_snappy.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 39,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_90_drum_loop_breaks_funkier_than_you",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_90_drum_loop_breaks_funkier_than_you.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 40,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_75_drum_loop_full_reggae_rocka",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_75_drum_loop_full_reggae_rocka.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 41,
-        "fields": {
-            "pack": 4,
-            "name": "OSS_TL_110_melodic_stack_loop_getting_emotional_Dmaj",
-            "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_110_melodic_stack_loop_getting_emotional_Dmaj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 42,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Top_Loop_174_35",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Top_Loop_174_35.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 43,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Full_Drum_Loop_174_01",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Full_Drum_Loop_174_01.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 44,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Bass_Loop_174_F_23",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Bass_Loop_174_F_23.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 45,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Sub_F_07",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Sub_F_07.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 46,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Kick_15",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Kick_15.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 47,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Bass_&_Synth_Hit_F_02",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Bass_&_Synth_Hit_F_02.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 48,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Snare_16",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Snare_16.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 49,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Bass_Loop_174_F_15",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Bass_Loop_174_F_15.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 50,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_Snare_14",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Snare_14.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 51,
-        "fields": {
-            "pack": 5,
-            "name": "PMTD_FX_Riser_174_07",
-            "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_FX_Riser_174_07.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 52,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_115_hats_one_shot_phonic",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_115_hats_one_shot_phonic.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 53,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_120_songstarter_loop_bass_fleet_Fmaj",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_120_songstarter_loop_bass_fleet_Fmaj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 54,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_130_kit_01_loop_cinema_drums_fill",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_01_loop_cinema_drums_fill.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 55,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_130_kit_05_loop_yellow_drums_kick",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_05_loop_yellow_drums_kick.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 56,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_130_hats_open_one_shot_yellow",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_hats_open_one_shot_yellow.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 57,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_120_songstarter_loop_full_foalz_Fmaj",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_120_songstarter_loop_full_foalz_Fmaj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 58,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_115_kick_one_shot_phonic",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_115_kick_one_shot_phonic.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 59,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_120_songstarter_loop_full_positive_Cmaj",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_120_songstarter_loop_full_positive_Cmaj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 60,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_130_kit_04_loop_bombay_guitar_electric_rhythm_layer_Bmaj",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_04_loop_bombay_guitar_electric_rhythm_layer_Bmaj.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 61,
-        "fields": {
-            "pack": 6,
-            "name": "SS_CLDS_130_kit_05_loop_yellow_drums_hats_closed",
-            "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_05_loop_yellow_drums_hats_closed.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 62,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_FanHeater_Scrapes",
-            "audio_file": "SHIFT/sounds/AM_SFT_FanHeater_Scrapes.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 63,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_76BPM_-_4",
-            "audio_file": "SHIFT/sounds/AM_SFT_76BPM_-_4.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 64,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_107BPM_-_2",
-            "audio_file": "SHIFT/sounds/AM_SFT_107BPM_-_2.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 65,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_76BPM",
-            "audio_file": "SHIFT/sounds/AM_SFT_76BPM.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 66,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_88BPM_-_4",
-            "audio_file": "SHIFT/sounds/AM_SFT_88BPM_-_4.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 67,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_120BPM",
-            "audio_file": "SHIFT/sounds/AM_SFT_120BPM.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 68,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_BikeBell_Spoon_02",
-            "audio_file": "SHIFT/sounds/AM_SFT_BikeBell_Spoon_02.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 69,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_Branches",
-            "audio_file": "SHIFT/sounds/AM_SFT_Branches.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 70,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_80BPM_-_4",
-            "audio_file": "SHIFT/sounds/AM_SFT_80BPM_-_4.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 71,
-        "fields": {
-            "pack": 7,
-            "name": "AM_SFT_85BPM_-_2",
-            "audio_file": "SHIFT/sounds/AM_SFT_85BPM_-_2.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 72,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_75_percussion_tape_vinyl_blocky_hooves",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_75_percussion_tape_vinyl_blocky_hooves.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 73,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_120_drum_tape_vinyl_sunny_full",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_120_drum_tape_vinyl_sunny_full.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 74,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_75_hat_tape_vinyl_almost",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_75_hat_tape_vinyl_almost.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 75,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_90_resampled_break_ooh",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_90_resampled_break_ooh.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 76,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_110_hat_tape_vinyl_disky",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_110_hat_tape_vinyl_disky.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 77,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_110_drum_fill_tape_vinyl_dard",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_110_drum_fill_tape_vinyl_dard.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 78,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_hat_tape_vinyl_closed_basicbreak",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_hat_tape_vinyl_closed_basicbreak.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 79,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_snare_tape_vinyl_pong",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_snare_tape_vinyl_pong.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 80,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_110_percussion_tape_vinyl_soulstice_bongo",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_110_percussion_tape_vinyl_soulstice_bongo.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 81,
-        "fields": {
-            "pack": 8,
-            "name": "TVD_120_hat_tape_vinyl_fever",
-            "audio_file": "Tape and Vinyl Drums/sounds/TVD_120_hat_tape_vinyl_fever.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 82,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_147_kit_loop_brat_drums_kicks_Cmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_147_kit_loop_brat_drums_kicks_Cmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 83,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_150_kit_loop_chronicle_drums_tops_snares_Gmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_150_kit_loop_chronicle_drums_tops_snares_Gmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 84,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_130_kit_loop_lchp_brass_flute_Cmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_130_kit_loop_lchp_brass_flute_Cmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 85,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_110_kit_loop_blackhole_drums_tops_snares_Dmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_110_kit_loop_blackhole_drums_tops_snares_Dmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 86,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_130_kit_loop_revolution_synth_stabs_Dmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_130_kit_loop_revolution_synth_stabs_Dmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 87,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_150_kit_loop_westside_drums_tops_Amin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_150_kit_loop_westside_drums_tops_Amin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 88,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_110_kit_loop_blackhole_full_Dmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_110_kit_loop_blackhole_full_Dmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 89,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_131_kit_loop_fallen_synth_plucks_Dmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_131_kit_loop_fallen_synth_plucks_Dmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 90,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_130_kit_loop_revolution_full_Dmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_130_kit_loop_revolution_full_Dmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 91,
-        "fields": {
-            "pack": 9,
-            "name": "TRKTRN_MC_128_kit_loop_butterfly_full_Bmin",
-            "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_128_kit_loop_butterfly_full_Bmin.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 92,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_148_808_thick_A#m",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_148_808_thick_A#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 93,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_91_synth_chords_morning_A#m",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_91_synth_chords_morning_A#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 94,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_160_songstarter_reverse_C#m",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_reverse_C#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 95,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_160_songstarter_vibe_Bm",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_vibe_Bm.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 96,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_148_808_movie_Gm",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_148_808_movie_Gm.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 97,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_160_songstarter_pop_Cm",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_pop_Cm.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 98,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_108_sine_synth_chords_single_Bm",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_108_sine_synth_chords_single_Bm.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 99,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_160_songstarter_ether_voice_C#m",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_ether_voice_C#m.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 100,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_130_synth_melody_leading_Am",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_130_synth_melody_leading_Am.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
-    },
-    {
-        "model": "sound_sprout.Sound",
-        "pk": 101,
-        "fields": {
-            "pack": 10,
-            "name": "OS_SV_kick_door",
-            "audio_file": "SOUL VIBES/sounds/OS_SV_kick_door.wav",
-            "price": 0.99,
-            "created_at": "2023-07-24T00:00:00Z",
-            "modified_at": "2023-07-24T00:00:00Z"
-        }
+      "model": "sound_sprout.Sound",
+      "pk": 1,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_148_808_thick_A#m",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_148_808_thick_A_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 2,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_91_synth_chords_morning_A#m",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_91_synth_chords_morning_A_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 3,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_160_songstarter_reverse_C#m",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_reverse_C_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 4,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_160_songstarter_vibe_Bm",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_vibe_Bm",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 5,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_148_808_movie_Gm",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_148_808_movie_Gm",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 6,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_160_songstarter_pop_Cm",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_pop_Cm",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 7,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_108_sine_synth_chords_single_Bm",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_108_sine_synth_chords_single_Bm",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 8,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_160_songstarter_ether_voice_C#m",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_160_songstarter_ether_voice_C_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 9,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_130_synth_melody_leading_Am",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_130_synth_melody_leading_Am",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 10,
+      "fields": {
+        "pack": 1,
+        "name": "OS_SV_kick_door",
+        "audio_file": "SOUL VIBES/sounds/OS_SV_kick_door",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 11,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_125_synth_songstarter_loop_ethereal_enterprise_no_bass_Dm",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_125_synth_songstarter_loop_ethereal_enterprise_no_bass_Dm",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 12,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_145_synth_songstarter_loop_starship_inc_F#maj",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_145_synth_songstarter_loop_starship_inc_F_maj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 13,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_103_synth_songstarter_loop_later_gator_C#m",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_103_synth_songstarter_loop_later_gator_C_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 14,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_125_full_drum_loop_space_naut",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_125_full_drum_loop_space_naut",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 15,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_103_synth_bass_loop_later_gator_C#m",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_103_synth_bass_loop_later_gator_C_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 16,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_120_kick_snare_loop_sketchy",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_120_kick_snare_loop_sketchy",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 17,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_140_synth_songstarter_loop_mars_Bmaj",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_140_synth_songstarter_loop_mars_Bmaj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 18,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_145_synth_songstarter_loop_galactic_mamba_no_baass_Bbm",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_145_synth_songstarter_loop_galactic_mamba_no_baass_Bbm",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 19,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_snare_one_shot_skreetz",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_snare_one_shot_skreetz",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 20,
+      "fields": {
+        "pack": 2,
+        "name": "KMRBI_ST_kick_one_shot_the_edge",
+        "audio_file": "Stranger Tingz/sounds/KMRBI_ST_kick_one_shot_the_edge",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 21,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Loop_10_Merengueton_CG_Ensemble_Em",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_10_Merengueton_CG_Ensemble_Em",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 22,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Songstarter_02_Calipso_Drums_Full_G#m",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Songstarter_02_Calipso_Drums_Full_G_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 23,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Loop_09_Merengue_Bass_D#",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_09_Merengue_Bass_D",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 24,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Loop_03_Calipso_Cuatro_Em",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_03_Calipso_Cuatro_Em",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 25,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Songstarter_01_Reggaeton_Lead_1_D#",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Songstarter_01_Reggaeton_Lead_1_D",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 26,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Loop_03_Calipso_Ensemble_Em",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_03_Calipso_Ensemble_Em",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 27,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Loop_08_Son_Cubano_Tres_Em",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_08_Son_Cubano_Tres_Em",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 28,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Loop_13_Bolero_CG_Ensemble_Cm",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_13_Bolero_CG_Ensemble_Cm",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 29,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Songstarter_01_Reggaeton_Drums_Claps_D#",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Songstarter_01_Reggaeton_Drums_Claps_D",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 30,
+      "fields": {
+        "pack": 3,
+        "name": "LS_122_Loop_11_Cha_Cha_Cha_Guitar_A#m",
+        "audio_file": "Striking Latin Guitars/sounds/LS_122_Loop_11_Cha_Cha_Cha_Guitar_A_m",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 31,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_91_drum_top_loop_open_snare",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_91_drum_top_loop_open_snare",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 32,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_95_drum_loop_full_issa_world",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_95_drum_loop_full_issa_world",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 33,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_114__electric_guitar_loop_simple_sail_Abmaj",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_114__electric_guitar_loop_simple_sail_Abmaj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 34,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_84_electric_guitar_loop_sparkly_sauce_Cmin",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_84_electric_guitar_loop_sparkly_sauce_Cmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 35,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_100_electric_guitar_loop_with_flavor_Fmin",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_100_electric_guitar_loop_with_flavor_Fmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 36,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_141_drum_loop_hats_high_hyped",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_141_drum_loop_hats_high_hyped",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 37,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_130_drum_loop_full_loose_and_snappy",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_130_drum_loop_full_loose_and_snappy",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 38,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_90_drum_loop_breaks_funkier_than_you",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_90_drum_loop_breaks_funkier_than_you",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 39,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_75_drum_loop_full_reggae_rocka",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_75_drum_loop_full_reggae_rocka",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 40,
+      "fields": {
+        "pack": 4,
+        "name": "OSS_TL_110_melodic_stack_loop_getting_emotional_Dmaj",
+        "audio_file": "Tasty Loops by Mars Today/sounds/OSS_TL_110_melodic_stack_loop_getting_emotional_Dmaj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 41,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Top_Loop_174_35",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Top_Loop_174_35",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 42,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Full_Drum_Loop_174_01",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Full_Drum_Loop_174_01",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 43,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Bass_Loop_174_F_23",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Bass_Loop_174_F_23",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 44,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Sub_F_07",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Sub_F_07",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 45,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Kick_15",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Kick_15",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 46,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Bass_&_Synth_Hit_F_02",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Bass___Synth_Hit_F_02",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 47,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Snare_16",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Snare_16",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 48,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Bass_Loop_174_F_15",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Bass_Loop_174_F_15",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 49,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_Snare_14",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_Snare_14",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 50,
+      "fields": {
+        "pack": 5,
+        "name": "PMTD_FX_Riser_174_07",
+        "audio_file": "Tantrum Desire - Technique Essential/sounds/PMTD_FX_Riser_174_07",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 51,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_75_percussion_tape_vinyl_blocky_hooves",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_75_percussion_tape_vinyl_blocky_hooves",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 52,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_120_drum_tape_vinyl_sunny_full",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_120_drum_tape_vinyl_sunny_full",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 53,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_75_hat_tape_vinyl_almost",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_75_hat_tape_vinyl_almost",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 54,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_90_resampled_break_ooh",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_90_resampled_break_ooh",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 55,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_110_hat_tape_vinyl_disky",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_110_hat_tape_vinyl_disky",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 56,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_110_drum_fill_tape_vinyl_dard",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_110_drum_fill_tape_vinyl_dard",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 57,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_hat_tape_vinyl_closed_basicbreak",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_hat_tape_vinyl_closed_basicbreak",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 58,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_snare_tape_vinyl_pong",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_snare_tape_vinyl_pong",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 59,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_110_percussion_tape_vinyl_soulstice_bongo",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_110_percussion_tape_vinyl_soulstice_bongo",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 60,
+      "fields": {
+        "pack": 6,
+        "name": "TVD_120_hat_tape_vinyl_fever",
+        "audio_file": "Tape and Vinyl Drums/sounds/TVD_120_hat_tape_vinyl_fever",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 61,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_115_hats_one_shot_phonic",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_115_hats_one_shot_phonic",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 62,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_120_songstarter_loop_bass_fleet_Fmaj",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_120_songstarter_loop_bass_fleet_Fmaj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 63,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_130_kit_01_loop_cinema_drums_fill",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_01_loop_cinema_drums_fill",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 64,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_130_kit_05_loop_yellow_drums_kick",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_05_loop_yellow_drums_kick",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 65,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_130_hats_open_one_shot_yellow",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_hats_open_one_shot_yellow",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 66,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_120_songstarter_loop_full_foalz_Fmaj",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_120_songstarter_loop_full_foalz_Fmaj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 67,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_115_kick_one_shot_phonic",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_115_kick_one_shot_phonic",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 68,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_120_songstarter_loop_full_positive_Cmaj",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_120_songstarter_loop_full_positive_Cmaj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 69,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_130_kit_04_loop_bombay_guitar_electric_rhythm_layer_Bmaj",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_04_loop_bombay_guitar_electric_rhythm_layer_Bmaj",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 70,
+      "fields": {
+        "pack": 7,
+        "name": "SS_CLDS_130_kit_05_loop_yellow_drums_hats_closed",
+        "audio_file": "Clouds - Indie Pop/sounds/SS_CLDS_130_kit_05_loop_yellow_drums_hats_closed",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 71,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_FanHeater_Scrapes",
+        "audio_file": "SHIFT/sounds/AM_SFT_FanHeater_Scrapes",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 72,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_76BPM_-_4",
+        "audio_file": "SHIFT/sounds/AM_SFT_76BPM_-_4",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 73,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_107BPM_-_2",
+        "audio_file": "SHIFT/sounds/AM_SFT_107BPM_-_2",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 74,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_76BPM",
+        "audio_file": "SHIFT/sounds/AM_SFT_76BPM",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 75,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_88BPM_-_4",
+        "audio_file": "SHIFT/sounds/AM_SFT_88BPM_-_4",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 76,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_120BPM",
+        "audio_file": "SHIFT/sounds/AM_SFT_120BPM",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 77,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_BikeBell_Spoon_02",
+        "audio_file": "SHIFT/sounds/AM_SFT_BikeBell_Spoon_02",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 78,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_Branches",
+        "audio_file": "SHIFT/sounds/AM_SFT_Branches",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 79,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_80BPM_-_4",
+        "audio_file": "SHIFT/sounds/AM_SFT_80BPM_-_4",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 80,
+      "fields": {
+        "pack": 8,
+        "name": "AM_SFT_85BPM_-_2",
+        "audio_file": "SHIFT/sounds/AM_SFT_85BPM_-_2",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 81,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_147_kit_loop_brat_drums_kicks_Cmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_147_kit_loop_brat_drums_kicks_Cmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 82,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_150_kit_loop_chronicle_drums_tops_snares_Gmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_150_kit_loop_chronicle_drums_tops_snares_Gmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 83,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_130_kit_loop_lchp_brass_flute_Cmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_130_kit_loop_lchp_brass_flute_Cmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 84,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_110_kit_loop_blackhole_drums_tops_snares_Dmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_110_kit_loop_blackhole_drums_tops_snares_Dmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 85,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_130_kit_loop_revolution_synth_stabs_Dmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_130_kit_loop_revolution_synth_stabs_Dmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 86,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_150_kit_loop_westside_drums_tops_Amin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_150_kit_loop_westside_drums_tops_Amin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 87,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_110_kit_loop_blackhole_full_Dmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_110_kit_loop_blackhole_full_Dmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 88,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_131_kit_loop_fallen_synth_plucks_Dmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_131_kit_loop_fallen_synth_plucks_Dmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 89,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_130_kit_loop_revolution_full_Dmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_130_kit_loop_revolution_full_Dmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 90,
+      "fields": {
+        "pack": 9,
+        "name": "TRKTRN_MC_128_kit_loop_butterfly_full_Bmin",
+        "audio_file": "maak - Carnaval/sounds/TRKTRN_MC_128_kit_loop_butterfly_full_Bmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 91,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_fx_loop_windup",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_fx_loop_windup",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 92,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_atmosphere_loop_glassy_Amin",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_atmosphere_loop_glassy_Amin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 93,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_synth_loop_mood_Amin",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_synth_loop_mood_Amin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 94,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_percussion_loop_crisp",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_percussion_loop_crisp",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 95,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_synth_breakdown_Amin",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_synth_breakdown_Amin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 96,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_drum_loop_higher_percussion",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_higher_percussion",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 97,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_kit_loop_who_vocal_Cmin",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_kit_loop_who_vocal_Cmin",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 98,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_drum_loop_letsgo_hats",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_letsgo_hats",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 99,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_drum_loop_feels_hat",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_feels_hat",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
+    },
+    {
+      "model": "sound_sprout.Sound",
+      "pk": 100,
+      "fields": {
+        "pack": 10,
+        "name": "ff_mmht_128_drum_loop_keepon_hat",
+        "audio_file": "Mainroom Melodic/sounds/ff_mmht_128_drum_loop_keepon_hat",
+        "price": 0.99,
+        "created_at": "2023-07-24T00:00:00Z",
+        "modified_at": "2023-07-24T00:00:00Z"
+      }
     }
-]
+  ]
