@@ -1,21 +1,28 @@
 'use client';
 
+import { logout } from '@/redux/features/auth-slice';
 import { RootState } from '@/redux/store';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { UserIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import CartPopover from './CartPopover';
 import logo from '/public/assets/images/logo-no-background.png';
 
 const Nav = () => {
+	const dispatch = useDispatch();
 	const { user, isAuth } = useSelector((state: RootState) => state.authReducer);
 	const [isOpen, setIsOpen] = useState(false);
 	const username = user?.username || '';
+
+	const onLogout = () => {
+		console.log('Logout button clicked');
+		dispatch(logout());
+	};
 
 	return (
 		<nav className='bg-gray-1 py-8'>
@@ -28,10 +35,19 @@ const Nav = () => {
 						<Link href={'/upload'}>Upload</Link>
 					</li>
 					{isAuth ? (
-						<li className='underline underline-offset-2 text-white flex gap-2 items-center'>
-							<Link href={'/profile'}>{user?.username}</Link>
-							<UserIcon className='text-purple w-6' />
-						</li>
+						<>
+							<li className='underline underline-offset-2 text-white flex gap-2 items-center'>
+								<Link href={'/profile'}>{user?.username}</Link>
+								<UserIcon className='text-purple w-6' />
+							</li>
+							<li>
+								<button
+									onClick={onLogout}
+									className='py-1 px-4 gap-4 bg-purple rounded-full hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full'>
+									Logout
+								</button>
+							</li>
+						</>
 					) : (
 						<li className='py-1 px-4 gap-4 bg-purple rounded-full hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full'>
 							<Link href={'/login'}>Login</Link>
@@ -45,7 +61,7 @@ const Nav = () => {
 								</Button>
 							</PopoverTrigger>
 							<PopoverContent className='w-[500px] mr-4 bg-gray-1 border-none'>
-								<CartPopover setIsOpen={(setIsOpen)} />
+								<CartPopover setIsOpen={setIsOpen} />
 							</PopoverContent>
 						</Popover>
 					</li>

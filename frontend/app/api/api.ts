@@ -19,6 +19,71 @@ export const fetchUser = async () => {
 	return response.data;
 };
 
+export const updateUser = async (userData: any) => {
+	const token = localStorage.getItem('token');
+	if (!token) {
+			throw new Error('Token not found');
+	}
+
+	try {
+			const response = await axios.put(`${BACKEND}/profile/`, userData, {
+					headers: {
+							Authorization: `Bearer ${token}`,
+					},
+			});
+
+			console.log('Update User:', response.data);
+			if (response.status === 200) {
+					return { success: true, user: response.data };
+			} else {
+					return { success: false, message: response.data.message };
+			}
+	} catch (error) {
+			if (axios.isAxiosError(error)) {
+					throw new Error(error?.response?.data?.error || 'Unknown error');
+			}
+			throw error;
+	}
+};
+
+export const deleteUser = async () => {
+	const token = localStorage.getItem('token');
+	if (!token) {
+		throw new Error('Token not found');
+	}
+
+	await axios.delete(`${BACKEND}/profile/`, {
+		headers: {
+			Authorization: `Bearer ${token}`,
+		},
+	});
+};
+
+export const changeUserPassword = async (newPassword: string) => {
+	const token = localStorage.getItem('token');
+	if (!token) {
+		throw new Error('Token not found');
+	}
+
+	console.log('Token:', token);  // For debugging
+
+	try {
+		const response = await axios.patch(`${BACKEND}/profile/`, {
+			new_password: newPassword,
+		}, {
+			headers: {
+				Authorization: `Bearer ${token}`,
+			},
+		});
+
+		console.log('Response:', response);  // For debugging
+		return response;
+	} catch (error) {
+		console.error('Error changing password:', error);  // Logs the error
+		throw error;
+	}
+};
+
 export const getPacksByGenre = async (genreId: number) => {
 	try {
 		const response = await axios.get(`${BACKEND}/genre/${genreId}/packs/`);
