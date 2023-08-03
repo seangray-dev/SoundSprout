@@ -16,4 +16,5 @@ urlpatterns = [
          views.get_sound_tags, name='sound_tags'),
     path('create-payment-intent/', views.create_payment_intent,
          name='create-payment-intent'),
+    path('download-files/', views.download_files, name='download-files'),
 ]

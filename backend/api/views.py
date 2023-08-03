@@ -1,11 +1,18 @@
-import stripe
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 import os
+import tempfile
+import stripe
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.core.exceptions import MultipleObjectsReturned
+from django.core.files.storage import default_storage
 from django.db import IntegrityError
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, FileResponse
+from mimetypes import guess_extension
 from dotenv import load_dotenv
+from requests import get as http_get
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -13,8 +20,13 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
 from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
+from zipfile import ZipFile
 
 load_dotenv()
+CLOUDINARY_BASE_URL = os.getenv('CLOUDINARY_BASE_URL')
+CLOUDINARY_CLOUD_NAME = os.getenv('CLOUDINARY_CLOUD_NAME')
+CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
+stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
 
 @api_view(['GET'])
@@ -175,14 +187,9 @@ def get_sound_tags(request, sound_id):
         return Response({'error': 'Sound not found'}, status=status.HTTP_404_NOT_FOUND)
 
 
-stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
-
-
 @api_view(['POST'])
 def create_payment_intent(request):
     try:
-        amount = request.data.get('amount', 10)
-        # Assuming the amount is passed in dollars
         amount_in_dollars = request.data.get('amount', 10.00)
 
         # Convert to cents
@@ -193,9 +200,6 @@ def create_payment_intent(request):
             currency='usd',
         )
         client_secret = payment_intent.client_secret
-        print('Amount in $:', amount_in_dollars)
-        print('Amount in cents:', amount_in_cents)
-        print('Client secret:', client_secret)
 
         if not client_secret:
             return JsonResponse({'error': 'Client secret is missing'}, status=500)
@@ -203,3 +207,15 @@ def create_payment_intent(request):
         return JsonResponse({'clientSecret': client_secret})
     except stripe.error.StripeError as e:
         return JsonResponse({'error': str(e)}, status=400)
+
+
+def generate_download_links(public_id):
+    return CLOUDINARY_AUDIO_BASE_URL + public_id
+
+
+@api_view(['POST'])
+def download_files(request):
+    public_ids = request.data.get('publicIds', [])
+    download_links = [generate_download_links(
+        public_id) for public_id in public_ids]
+    return JsonResponse({'downloadLinks': download_links})

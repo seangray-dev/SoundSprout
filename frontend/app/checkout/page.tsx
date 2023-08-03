@@ -4,14 +4,12 @@ import { RootState } from '@/redux/store';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import axios from 'axios';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getCoverArtUrl } from '../api/cloudinary';
 import Heading from '../components/Utils/Heading';
 import PaymentInfoForm from './PaymentInfoForm';
 import Summary from './Summary';
-import { CartItem, columns } from './columns';
+import { columns } from './columns';
 import { DataTable } from './data-table';
 
 const Checkout = () => {
@@ -20,13 +18,16 @@ const Checkout = () => {
 		`${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`
 	);
 	const cartItems = useSelector((state: RootState) => state.cartReducer.items);
+
+	const publicIds = cartItems.map((item) => item.audio_file);
+
 	const subtotal = cartItems.reduce(
 		(total, item) => total + Number(item.price),
 		0
 	);
 	const HST_RATE = 0.13;
 	const hst = subtotal * HST_RATE;
-	const total = subtotal + hst;
+	const total = Number((subtotal + hst).toFixed(2));
 
 	useEffect(() => {
 		axios
@@ -37,11 +38,27 @@ const Checkout = () => {
 				}
 			)
 			.then((res) => {
-				console.log(res.data.clientSecret);
 				setClientSecret(res.data.clientSecret);
 			})
 			.catch((err) => {
 				console.error('Checkout: Error fetching client secret', err);
+			});
+	}, [total, cartItems]);
+
+	useEffect(() => {
+		axios
+			.post(`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/download-files/`, {
+				publicIds,
+			})
+			.then((res) => {
+				console.log(
+					'setting download links to local storage',
+					res.data.downloadLinks
+				);
+				localStorage.setItem(
+					'downloadLinks',
+					JSON.stringify(res.data.downloadLinks)
+				);
 			});
 	}, []);
 
