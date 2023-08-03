@@ -18,7 +18,7 @@ const OrderSuccess = () => {
 					<p>Thanks for your purchase!</p>
 					<p>Your download links:</p>
 					<ul>
-						{downloadLinks.map((link, index) => (
+						{downloadLinks.map((link: string, index: number) => (
 							<li key={index}>
 								<a
 									target='_blank'
