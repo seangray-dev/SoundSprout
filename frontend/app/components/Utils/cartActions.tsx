@@ -10,10 +10,10 @@ import { useToast } from '../ui/use-toast';
 
 export const handleUndoAddToCart = (
 	dispatch: ReturnType<typeof useDispatch>,
-	sound: Sound
+	item: Sound | Pack
 ) => {
-	console.log('Undo adding sound to cart', sound);
-	dispatch(removeFromCart(sound.id));
+	console.log('Undo adding sound to cart', item);
+	dispatch(removeFromCart(item.id));
 };
 
 export const handleAddPackToCart = (
@@ -25,8 +25,15 @@ export const handleAddPackToCart = (
 	event.stopPropagation();
 	dispatch(addPackToCart(pack));
 	toast({
-		title: `Pack: ${pack.name}`,
+		title: pack.name,
 		description: `has been added to cart.`,
+		action: (
+			<ToastAction
+				altText='Undo'
+				onClick={() => handleUndoAddToCart(dispatch, pack)}>
+				Undo
+			</ToastAction>
+		),
 	});
 };
 

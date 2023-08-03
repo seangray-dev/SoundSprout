@@ -38,8 +38,6 @@ export default function Packs({ params }: { params: { id: number } }) {
 	}, [params.id]);
 
 	const handlePreviewClick = () => {
-		console.log('Preview clicked', pack);
-
 		if (pack) {
 			const previewUrl = pack.preview ? getPreviewUrl(pack.preview) : '';
 			dispatch(
