@@ -25,6 +25,14 @@ const PackTab = () => {
     setPackDescription(e.target.value);
   };
 
+  const handlePackImageChange = (e: any) => {
+    setPackImage(e.target.files[0]);
+  };
+
+  const handlePackPreviewChange = (e: any) => {
+    setPackPreview(e.target.files[0]);
+  };
+
   return (
     <Tabs defaultValue="pack">
       <TabsContent value="pack">
@@ -64,6 +72,30 @@ const PackTab = () => {
           <PackGenreCombobox
           
           />        
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="pack-image">
+            Pack Image
+          </label>
+          <Input
+            id="pack-image"
+            type="file"
+            accept="image/*"
+            onChange={handlePackImageChange}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="pack-preview">
+            Pack Preview
+          </label>
+          <Input
+            id="pack-preview"
+            type="file"
+            accept="audio/*"
+            onChange={handlePackPreviewChange}
+          />
         </div>
       </TabsContent>
     </Tabs>

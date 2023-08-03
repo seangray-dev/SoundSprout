@@ -1,5 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import PackTab from './PackTab';
+import SoundsTab from './SoundsTab';
 //import SoundsTab from './SoundsTab';
 
 const UploadForm = () => {
@@ -13,7 +14,7 @@ const UploadForm = () => {
         <PackTab />
       </TabsContent>
       <TabsContent value="sounds">
-        {/* Insert SoundsTab Component here */}
+        <SoundsTab />
       </TabsContent>
     </Tabs>
   );
