@@ -23,7 +23,7 @@ const SoundsInput = ({ onChange }: any) => {
       {inputList.map((_, index) => (
         <div 
           key={index} 
-          className={`mb-4 p-4 rounded ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}`}
+          className={`p-4 rounded ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}`}
         >
           <label>Sound {index + 1}</label>
           <Input
@@ -46,6 +46,7 @@ const SoundsInput = ({ onChange }: any) => {
       {!showAlert && <Button 
           variant="ghost" 
           onClick={handleAddClick}
+          className="mt-2"
         >
           Add More ({inputList.length}/10)
         </Button>}
