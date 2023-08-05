@@ -38,7 +38,7 @@ const SoundsInput = ({ onChange }: any) => {
             id={`tags-${index}`}
             rows={2} 
             onChange={e => onChange(e.target.value, index, 'tags')}
-            className="mt-1 block w-full h-[40px] bg-white" // Add this line
+            className="mt-1 block w-full h-[40px] bg-white"
             placeholder="Enter tags (separate by commas)"
           />
         </div>

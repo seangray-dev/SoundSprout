@@ -19,7 +19,7 @@ interface BPMComboboxProps {
   onChange: (selectedBpm: number) => void;
 }
 
-const bpmValues = Array.from({length: 201}, (_, i) => i); // 0 to 200
+const bpmValues = Array.from({length: 141}, (_, i) => i + 60);
 
 const BPMCombobox: React.FC<BPMComboboxProps> = ({ onChange }) => {
   const [open, setOpen] = useState(false);
@@ -28,7 +28,7 @@ const BPMCombobox: React.FC<BPMComboboxProps> = ({ onChange }) => {
   const handleSelect = (currentValue: number) => {
     const newValue = currentValue === Number(value) ? "" : String(currentValue);
     setValue(newValue);
-    onChange(currentValue);  // Call the passed onChange function
+    onChange(currentValue);
     setOpen(false);
   };
 

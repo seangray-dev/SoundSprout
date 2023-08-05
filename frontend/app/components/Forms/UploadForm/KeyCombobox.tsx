@@ -13,6 +13,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '../../ui/popover';
+import { ScrollArea } from '../../ui/scroll';
 
 interface KeyComboboxProps {
   onChange: (selectedKey: string) => void;
@@ -48,19 +49,23 @@ const KeyCombobox: React.FC<KeyComboboxProps> = ({ onChange }) => {
         <Command>
           <CommandInput placeholder="Search key..." />
           <CommandEmpty>No key found.</CommandEmpty>
-          <CommandGroup>
-            {keys.map((key) => (
-              <CommandItem
-                key={key}
-                onSelect={() => handleSelect(key)}
-              >
-                <Check
-                  className={value === key ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
-                />
-                {key}
-              </CommandItem>
-            ))}
-          </CommandGroup>
+          <ScrollArea className="h-[200px] w-[200px] rounded-md border">
+            <div className="p-4">
+              <CommandGroup>
+                {keys.map((key) => (
+                  <CommandItem
+                    key={key}
+                    onSelect={() => handleSelect(key)}
+                  >
+                    <Check
+                      className={value === key ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
+                    />
+                    {key}
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </div>
+          </ScrollArea>
         </Command>
       </PopoverContent>
     </Popover>
