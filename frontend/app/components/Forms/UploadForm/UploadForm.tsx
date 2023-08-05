@@ -4,11 +4,11 @@ import SoundsTab from './SoundsTab';
 
 const UploadForm = () => {
   return (
-    <div className="p-8">
+    <div className="p-4">
       <Tabs defaultValue="pack" className="flex flex-col justify-center items-center">
         <TabsList>
-          <TabsTrigger value="pack">Pack</TabsTrigger>
-          <TabsTrigger value="sounds">Sounds</TabsTrigger>
+          <TabsTrigger value="pack" style={{ fontSize: '1em', width: '104px' }}>Pack</TabsTrigger>
+          <TabsTrigger value="sounds" style={{ fontSize: '1em', width: '104px' }}>Sounds</TabsTrigger>
         </TabsList>
         <TabsContent value="pack">
           <PackTab />
