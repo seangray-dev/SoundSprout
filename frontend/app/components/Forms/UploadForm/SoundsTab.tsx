@@ -1,66 +1,26 @@
 import { useState } from 'react';
-import { Input } from '../../ui/input';
-import { Textarea } from '../../ui/textarea';
-import BPMCombobox from './BPMCombobox';
-import KeyCombobox from './KeyCombobox';
 import SoundsInput from './SoundsInput';
 
 const SoundsTab = () => {
-  const [sounds, setSounds] = useState<File[]>([]);
-  const [key, setKey] = useState('');
-  const [bpm, setBpm] = useState('');
-  const [tags, setTags] = useState('');
+  const [sounds, setSounds] = useState<Array<{ file: File, key: string, bpm: string, tags: string }>>([]);
 
-  const handleSoundsChange = (e: any) => {
-    setSounds([...sounds, e.target.files[0]]);
-  };
+  const handleSoundsChange = (value: any, index: number, field?: string) => {
+    let newSounds = [...sounds];
 
-  const handleKeyChange = (selectedKey: any) => {
-    setKey(selectedKey);
-  };
+    if (field) {
+      newSounds[index] = { ...newSounds[index], [field]: value };
+    } else {
+      newSounds[index] = { ...newSounds[index], file: value.target.files[0] };
+    }
 
-  const handleBPMChange = (selectedBpm: any) => {
-    setBpm(selectedBpm);
-  };
-
-  const handleTagsChange = (e: any) => {
-    setTags(e.target.value);
+    setSounds(newSounds);
   };
 
   return (
     <div>
-      <div className="mb-4">
-        <label htmlFor="pack-sounds">
-          Pack Sounds
-        </label>
+      <div>
+        
         <SoundsInput onChange={handleSoundsChange} />
-      </div>
-
-      <div className="mb-4">
-        <label htmlFor="pack-key" className="block">
-          Key
-        </label>
-        <KeyCombobox onChange={handleKeyChange} />
-      </div>
-
-      <div className="mb-4">
-        <label htmlFor="pack-bpm" className="block">
-          BPM
-        </label>
-        <BPMCombobox onChange={handleBPMChange} />
-      </div>
-
-      <div className="mb-4">
-        <label htmlFor="pack-tags">
-          Tags
-        </label>
-        <Textarea
-          id="pack-tags"
-          value={tags}
-          onChange={handleTagsChange}
-          className="mt-1 block w-full"
-          placeholder="Enter tags (separate by commas)"
-        />
       </div>
     </div>
   );

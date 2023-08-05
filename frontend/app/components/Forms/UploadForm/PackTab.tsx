@@ -36,66 +36,70 @@ const PackTab = () => {
   return (
     <Tabs defaultValue="pack">
       <TabsContent value="pack">
-        <div className="mb-4">
-          <label htmlFor="pack-name">
-            Pack Name
-          </label>
-          <Input 
-            id="pack-name"
-            name="packName"
-            type="text"
-            value={packName}
-            onChange={handlePackNameChange}
-            className="mt-1 block w-full"
-            placeholder="Enter Pack Name"
-          />
-        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div className= "w-[400px]">
+            <div className="mb-4" >
+              <label htmlFor="pack-name">
+                Name
+              </label>
+              <Input 
+                id="pack-name"
+                name="packName"
+                type="text"
+                value={packName}
+                onChange={handlePackNameChange}
+                className="mt-1 block w-full"
+                placeholder="Enter Pack Name"
+              />
+            </div>
 
-        <div className="mb-4">
-          <label htmlFor="pack-description">
-            Pack Description
-          </label>
-          <Textarea
-            id="pack-description"
-            name="packDescription"
-            value={packDescription}
-            onChange={handlePackDescriptionChange}
-            className="mt-1 block w-full"
-            placeholder="Enter Pack Description"
-          />
-        </div>
+            <div className="mb-4">
+              <label htmlFor="pack-description">
+                Description
+              </label>
+              <Textarea
+                id="pack-description"
+                name="packDescription"
+                value={packDescription}
+                onChange={handlePackDescriptionChange}
+                className="mt-1 block w-full"
+                placeholder="Enter Pack Description"
+              />
+            </div>
 
-        <div className="mb-4">
-          <label htmlFor="pack-description" className="block">
-            Pack Genre
-          </label>
-          <PackGenreCombobox
-          
-          />        
-        </div>
+            <div className="mb-4">
+              <label htmlFor="pack-description" className="block">
+                Genre
+              </label>
+              <PackGenreCombobox
+              
+              />        
+            </div>
 
-        <div className="mb-4">
-          <label htmlFor="pack-image">
-            Pack Image
-          </label>
-          <Input
-            id="pack-image"
-            type="file"
-            accept="image/*"
-            onChange={handlePackImageChange}
-          />
-        </div>
+            <div className="mb-4">
+              <label htmlFor="pack-image">
+                Pack Image
+              </label>
+              <Input
+                id="pack-image"
+                type="file"
+                accept="image/*"
+                onChange={handlePackImageChange}
+              />
+            </div>
 
-        <div className="mb-4">
-          <label htmlFor="pack-preview">
-            Pack Preview
-          </label>
-          <Input
-            id="pack-preview"
-            type="file"
-            accept="audio/*"
-            onChange={handlePackPreviewChange}
-          />
+            <div className="mb-4">
+              <label htmlFor="pack-preview">
+                Pack Preview
+              </label>
+              <Input
+                id="pack-preview"
+                type="file"
+                accept="audio/*"
+                onChange={handlePackPreviewChange}
+              />
+            </div>
+          </div>
         </div>
       </TabsContent>
     </Tabs>
