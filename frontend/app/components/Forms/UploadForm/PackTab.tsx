@@ -1,9 +1,12 @@
+import { useEffect, useState } from 'react';
 import { Input } from '../../ui/input';
 import { Tabs, TabsContent } from '../../ui/tabs';
 import { Textarea } from '../../ui/textarea';
 import GenreCombobox from './GenreCombobox';
 
 const PackTab = ({ packData, handlePackDataChange, fileInputs, handleFileInputChange }: any) => {
+  const [selectedGenre, setSelectedGenre] = useState(packData.selectedGenre || "");
+
   const handlePackNameChange = (e: any) => {
     handlePackDataChange('packName', e.target.value);
   };
@@ -11,6 +14,10 @@ const PackTab = ({ packData, handlePackDataChange, fileInputs, handleFileInputCh
   const handlePackDescriptionChange = (e: any) => {
     handlePackDataChange('packDescription', e.target.value);
   };
+
+  useEffect(() => {
+    handlePackDataChange('selectedGenre', selectedGenre);
+  }, [selectedGenre]);
 
   const handlePackImageChange = (e: any) => {
     handleFileInputChange('packImage', e.target.files[0]);
@@ -58,7 +65,7 @@ const PackTab = ({ packData, handlePackDataChange, fileInputs, handleFileInputCh
               <label htmlFor="pack-description" className="block">
                 Genre
               </label>
-              <GenreCombobox/>        
+                <GenreCombobox selectedGenre={selectedGenre} setSelectedGenre={setSelectedGenre}/>           
             </div>
 
             <div className="mb-4">

@@ -14,7 +14,12 @@ import {
   PopoverTrigger,
 } from '../../ui/popover';
 
-const genres = [
+type Genre = {
+  value: string;
+  label: string;
+};
+
+const genres: Genre[] = [
   {
     value: "hip-hop-rnb",
     label: "Hip Hop / R&B",
@@ -49,9 +54,13 @@ const genres = [
   }
 ];
 
-const GenreCombobox = () => {
-  const [open, setOpen] = useState(false)
-  const [value, setValue] = useState("")
+type GenreComboboxProps = {
+  selectedGenre: string;
+  setSelectedGenre: (genre: string) => void;
+};
+
+const GenreCombobox: React.FC<GenreComboboxProps> = ({ selectedGenre, setSelectedGenre }) => {
+  const [open, setOpen] = useState(false);
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -62,8 +71,8 @@ const GenreCombobox = () => {
           aria-expanded={open}
           className="w-[200px] justify-between"
         >
-          {value
-            ? genres.find((genre) => genre.value === value)?.label
+          {selectedGenre
+            ? genres.find((genre) => genre.value === selectedGenre)?.label
             : "Select Genre..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
@@ -75,24 +84,23 @@ const GenreCombobox = () => {
           <CommandGroup>
             {genres.map((genre) => (
               <CommandItem
-              key={genre.value}
-              onSelect={() => {
-                  setValue(value === genre.value ? "" : genre.value);
+                key={genre.value}
+                onSelect={() => {
+                  setSelectedGenre(selectedGenre === genre.value ? "" : genre.value);
                   setOpen(false);
-              }}
-          >
-              <Check
-                  className={value === genre.value ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
-              />
-              {genre.label}
-          </CommandItem>
-          
+                }}
+              >
+                <Check
+                  className={selectedGenre === genre.value ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
+                />
+                {genre.label}
+              </CommandItem>
             ))}
           </CommandGroup>
         </Command>
       </PopoverContent>
     </Popover>
-  )
-}
+  );
+};
 
 export default GenreCombobox;
