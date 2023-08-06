@@ -49,7 +49,7 @@ const genres = [
   }
 ];
 
-const PackGenreCombobox = () => {
+const GenreCombobox = () => {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState("")
 
@@ -75,17 +75,18 @@ const PackGenreCombobox = () => {
           <CommandGroup>
             {genres.map((genre) => (
               <CommandItem
-                key={genre.value}
-                onSelect={(currentValue) => {
-                  setValue(currentValue === value ? "" : currentValue)
-                  setOpen(false)
-                }}
-              >
-                <Check
+              key={genre.value}
+              onSelect={() => {
+                  setValue(value === genre.value ? "" : genre.value);
+                  setOpen(false);
+              }}
+          >
+              <Check
                   className={value === genre.value ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
-                />
-                {genre.label}
-              </CommandItem>
+              />
+              {genre.label}
+          </CommandItem>
+          
             ))}
           </CommandGroup>
         </Command>
@@ -94,4 +95,4 @@ const PackGenreCombobox = () => {
   )
 }
 
-export default PackGenreCombobox;
+export default GenreCombobox;

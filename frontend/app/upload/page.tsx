@@ -4,13 +4,9 @@ import UploadForm from '../components/Forms/UploadForm/UploadForm';
 
 const Upload = () => {
   return (
-    <>
-      <main className="flex justify-center min-h-screen">
-        
-          <UploadForm />
-        
-      </main>
-    </>
+    <main className="flex justify-center min-h-screen">   
+      <UploadForm />
+    </main>
   );
 };
 

@@ -1,30 +1,23 @@
-import { useState } from 'react';
 import { Input } from '../../ui/input';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
+import { Tabs, TabsContent } from '../../ui/tabs';
 import { Textarea } from '../../ui/textarea';
-import PackGenreCombobox from './PackGenreCombobox';
+import GenreCombobox from './GenreCombobox';
 
-const PackTab = () => {
-  const [packName, setPackName] = useState('');
-  const [packDescription, setPackDescription] = useState('');
-  const [packGenre, setPackGenre] = useState('');
-  const [packImage, setPackImage] = useState(null);
-  const [packPreview, setPackPreview] = useState(null);
-
+const PackTab = ({ packData, handlePackDataChange, fileInputs, handleFileInputChange }: any) => {
   const handlePackNameChange = (e: any) => {
-    setPackName(e.target.value);
+    handlePackDataChange('packName', e.target.value);
   };
 
   const handlePackDescriptionChange = (e: any) => {
-    setPackDescription(e.target.value);
+    handlePackDataChange('packDescription', e.target.value);
   };
 
   const handlePackImageChange = (e: any) => {
-    setPackImage(e.target.files[0]);
+    handleFileInputChange('packImage', e.target.files[0]);
   };
 
   const handlePackPreviewChange = (e: any) => {
-    setPackPreview(e.target.files[0]);
+    handleFileInputChange('packPreview', e.target.files[0]);
   };
 
   return (
@@ -40,7 +33,7 @@ const PackTab = () => {
                 id="pack-name"
                 name="packName"
                 type="text"
-                value={packName}
+                value={packData.packName}
                 onChange={handlePackNameChange}
                 className="mt-1 block w-full"
                 placeholder="Enter Pack Name"
@@ -54,7 +47,7 @@ const PackTab = () => {
               <Textarea
                 id="pack-description"
                 name="packDescription"
-                value={packDescription}
+                value={packData.packDescription}
                 onChange={handlePackDescriptionChange}
                 className="mt-1 block w-full"
                 placeholder="Enter Pack Description"
@@ -65,9 +58,7 @@ const PackTab = () => {
               <label htmlFor="pack-description" className="block">
                 Genre
               </label>
-              <PackGenreCombobox
-              
-              />        
+              <GenreCombobox/>        
             </div>
 
             <div className="mb-4">
