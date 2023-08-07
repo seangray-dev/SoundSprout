@@ -34,7 +34,7 @@ const UploadForm = () => {
           <TabsContent value="sounds">
             <SoundsTab />
           </TabsContent>
-      </Tabs>      
+      </Tabs>
     </div>
   );
 };
