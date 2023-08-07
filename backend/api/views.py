@@ -1,22 +1,29 @@
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import api_view, permission_classes
-from django.contrib.auth import get_user_model
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
+from cloudinary.utils import cloudinary_url
+import logging
+import mimetypes
 import os
-import tempfile
+import requests
 import stripe
+import time
+import threading
+import uuid
+import zipfile
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, permission_classes
+from django.contrib.auth import get_user_model
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.core.exceptions import MultipleObjectsReturned
 from django.core.files.storage import default_storage
 from django.db import IntegrityError
-from django.http import HttpResponse, JsonResponse, FileResponse
-from mimetypes import guess_extension
+from django.http import HttpResponse, JsonResponse, FileResponse, Http404
 from dotenv import load_dotenv
 from requests import get as http_get
 from django.core.exceptions import MultipleObjectsReturned, ObjectDoesNotExist
+from pydub import AudioSegment
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -24,11 +31,12 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
 from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
-from zipfile import ZipFile
+from wsgiref.util import FileWrapper
 
 load_dotenv()
 CLOUDINARY_BASE_URL = os.getenv('CLOUDINARY_BASE_URL')
 CLOUDINARY_CLOUD_NAME = os.getenv('CLOUDINARY_CLOUD_NAME')
+CLOUNDINARY_PACKS_URL = os.getenv('CLOUNDINARY_PACKS_URL')
 CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
@@ -304,7 +312,83 @@ def generate_download_links(public_id):
 
 @api_view(['POST'])
 def download_files(request):
-    public_ids = request.data.get('publicIds', [])
+    public_ids = request.data.get('soundPublicIds', [])
     download_links = [generate_download_links(
         public_id) for public_id in public_ids]
     return JsonResponse({'downloadLinks': download_links})
+
+
+@api_view(['POST'])
+def download_packs(request):
+    pack_ids = request.data.get('packIds', [])
+    unique_id = str(uuid.uuid4())
+
+    for pack_id in pack_ids:
+        try:
+            pack = Pack.objects.get(id=pack_id)
+            # Unique filename for each request
+            zip_filename = f'{pack.name}_{unique_id}.zip'
+            zipfile_obj = zipfile.ZipFile(zip_filename, 'w')
+
+            sounds = Sound.objects.filter(pack=pack)
+            serializer = SoundSerializer(sounds, many=True)
+
+            for sound in serializer.data:
+                wav_url = generate_download_links(sound['audio_file'])
+                wav_filename = f"{sound['name']}.wav"
+
+                # Debug print
+                print(f"Downloading from {wav_url} to {wav_filename}")
+
+                # Download .wav file
+                with open(wav_filename, 'wb') as f:
+                    f.write(requests.get(wav_url).content)
+
+                # Add .wav file to .zip file
+                zipfile_obj.write(wav_filename)
+
+                # Delete the .wav files
+                print(os.path.getsize(wav_filename))
+                os.remove(wav_filename)
+
+        except Pack.DoesNotExist:
+            continue
+
+    zipfile_obj.close()
+    delayed_delete(zip_filename, 300)
+
+    return JsonResponse({'zipFileName': zip_filename})
+
+
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
+
+@api_view(['GET'])
+def get_zip_file(request, filename):
+    cwd = os.getcwd()
+    logger.debug(f'Current working directory: {cwd}')
+    logger.debug(f'Requesting file: {filename}')
+
+    # Check if the file exists
+    if not os.path.exists(filename):
+        logger.warning(f'File not found: {filename}')
+        raise Http404
+
+    wrapper = FileWrapper(open(filename, 'rb'))
+    content_type = mimetypes.guess_type(filename)[0]
+    file_size = os.path.getsize(filename)
+    logger.debug(f'File size: {file_size}')
+
+    response = FileResponse(wrapper, content_type=content_type)
+    response['Content-Disposition'] = f'attachment; filename={filename}'
+    response['Content-Length'] = file_size
+
+    return response
+
+
+def delayed_delete(filename, delay):
+    def delete_file():
+        time.sleep(delay)
+        os.remove(filename)
+    threading.Thread(target=delete_file).start()

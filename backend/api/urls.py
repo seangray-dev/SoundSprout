@@ -17,4 +17,7 @@ urlpatterns = [
     path('create-payment-intent/', views.create_payment_intent,
          name='create-payment-intent'),
     path('download-files/', views.download_files, name='download-files'),
+    path('download-packs/', views.download_packs, name='download-packs'),
+    path('get-zip-file/<str:filename>',
+         views.get_zip_file, name='get-zip-file'),
 ]
