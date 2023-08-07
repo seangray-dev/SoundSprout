@@ -19,16 +19,21 @@ interface BPMComboboxProps {
   onChange: (selectedBpm: number) => void;
 }
 
-const bpmValues = Array.from({length: 141}, (_, i) => i + 60);
+const bpmValues = Array.from({length: 181}, (_, i) => i + 40);
 
 const BPMCombobox: React.FC<BPMComboboxProps> = ({ onChange }) => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
 
-  const handleSelect = (currentValue: number) => {
-    const newValue = currentValue === Number(value) ? "" : String(currentValue);
-    setValue(newValue);
-    onChange(currentValue);
+  const handleSelect = (currentValue: number | "None") => {
+    if (currentValue === "None") {
+      setValue("");
+      onChange(0);
+    } else {
+      const newValue = currentValue === Number(value) ? "" : String(currentValue);
+      setValue(newValue);
+      onChange(currentValue);
+    }
     setOpen(false);
   };
 
@@ -52,14 +57,15 @@ const BPMCombobox: React.FC<BPMComboboxProps> = ({ onChange }) => {
           <ScrollArea className="h-[200px] w-[200px] rounded-md border">
             <div className="p-4">
               <CommandGroup>
+                <CommandItem onSelect={() => handleSelect("None")}>
+                  <Check className={value === "" ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"} />
+                  None
+                </CommandItem>
+
+
                 {bpmValues.map((bpm) => (
-                  <CommandItem
-                    key={bpm}
-                    onSelect={() => handleSelect(bpm)}
-                  >
-                    <Check
-                      className={String(value) === String(bpm) ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"}
-                    />
+                  <CommandItem key={bpm} onSelect={() => handleSelect(bpm)}>
+                    <Check className={String(value) === String(bpm) ? "mr-2 h-4 w-4 opacity-100" : "mr-2 h-4 w-4 opacity-0"} />
                     {bpm}
                   </CommandItem>
                 ))}

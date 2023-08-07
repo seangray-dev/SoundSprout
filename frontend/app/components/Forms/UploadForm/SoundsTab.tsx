@@ -3,7 +3,7 @@ import SoundsInput from './SoundsInput';
 
 const SoundsTab = () => {
   const [sounds, setSounds] = useState<Array<{ file: File, key: string, bpm: string, tags: string }>>([]);
-
+  console.log("SoundsTab Rendered");
   const handleSoundsChange = (value: any, index: number, field?: string) => {
     let newSounds = [...sounds];
 
@@ -19,7 +19,6 @@ const SoundsTab = () => {
   return (
     <div>
       <div>
-        
         <SoundsInput onChange={handleSoundsChange} />
       </div>
     </div>

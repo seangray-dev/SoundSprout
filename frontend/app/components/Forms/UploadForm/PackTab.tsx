@@ -4,8 +4,10 @@ import { Tabs, TabsContent } from '../../ui/tabs';
 import { Textarea } from '../../ui/textarea';
 import GenreCombobox from './GenreCombobox';
 
-const PackTab = ({ packData, handlePackDataChange, fileInputs, handleFileInputChange }: any) => {
+const PackTab = ({ packData, handlePackDataChange, handleFileChange  }: any) => {
   const [selectedGenre, setSelectedGenre] = useState(packData.selectedGenre || "");
+  const [fileInputs, setFileInputs] = useState<{ packImage?: File, packPreview?: File }>({});
+  console.log("PackTab Rendered");
 
   const handlePackNameChange = (e: any) => {
     handlePackDataChange('packName', e.target.value);
@@ -18,16 +20,24 @@ const PackTab = ({ packData, handlePackDataChange, fileInputs, handleFileInputCh
   useEffect(() => {
     handlePackDataChange('selectedGenre', selectedGenre);
   }, [selectedGenre]);
-
+  
   const handlePackImageChange = (e: any) => {
-    handleFileInputChange('packImage', e.target.files[0]);
+    const file = e.target.files[0];
+    if (file) {
+      handleFileChange('packImage', file);
+      setFileInputs(prev => ({ ...prev, packImage: file }));
+    }
   };
-
+  
   const handlePackPreviewChange = (e: any) => {
-    handleFileInputChange('packPreview', e.target.files[0]);
+    const file = e.target.files[0];
+    if (file) {
+      handleFileChange('packPreview', file);
+      setFileInputs(prev => ({ ...prev, packImage: file }));
+    }
   };
 
-  return (
+  return (   
     <Tabs defaultValue="pack">
       <TabsContent value="pack">
         <div className="flex flex-col justify-center items-center">
@@ -70,27 +80,31 @@ const PackTab = ({ packData, handlePackDataChange, fileInputs, handleFileInputCh
 
             <div className="mb-4">
               <label htmlFor="pack-image">
-                Pack Image
+                  Pack Image
               </label>
               <Input
-                id="pack-image"
-                type="file"
-                accept="image/*"
-                onChange={handlePackImageChange}
+                  id="pack-image"
+                  type="file"
+                  accept="image/*"
+                  onChange={handlePackImageChange}
               />
+              {packData.packImage && <p className="text-sm mt-1">{(packData.packImage as File).name}</p>}
+
             </div>
 
             <div className="mb-4">
               <label htmlFor="pack-preview">
-                Pack Preview
+                  Pack Preview
               </label>
               <Input
-                id="pack-preview"
-                type="file"
-                accept="audio/*"
-                onChange={handlePackPreviewChange}
+                  id="pack-preview"
+                  type="file"
+                  accept="audio/*"
+                  onChange={handlePackPreviewChange}
               />
-            </div>
+              {packData.packPreview && <p className="text-sm mt-1">{(packData.packPreview as File).name}</p>}
+
+          </div>
           </div>
         </div>
       </TabsContent>

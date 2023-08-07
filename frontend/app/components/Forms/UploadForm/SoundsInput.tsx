@@ -20,8 +20,9 @@ const SoundsInput = ({ onChange }: any) => {
 
   return (
     <div>
+      <ul>
       {inputList.map((_, index) => (
-        <div 
+        <li 
           key={index} 
           className={`p-4 rounded ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}`}
         >
@@ -41,7 +42,7 @@ const SoundsInput = ({ onChange }: any) => {
             className="mt-1 block w-full h-[40px] bg-white"
             placeholder="Enter tags (separate by commas)"
           />
-        </div>
+        </li>
       ))}
       {!showAlert && <Button 
           variant="ghost" 
@@ -55,6 +56,7 @@ const SoundsInput = ({ onChange }: any) => {
           <AlertTitle>You have reached the maximum limit of 10 sound files.</AlertTitle>
         </Alert>
       )}
+      </ul>
     </div>
   );
 };
