@@ -7,6 +7,9 @@ import GenreCombobox from './GenreCombobox';
 const PackTab = ({ packData, handlePackDataChange, handleFileChange  }: any) => {
   const [selectedGenre, setSelectedGenre] = useState(packData.selectedGenre || "");
   const [fileInputs, setFileInputs] = useState<{ packImage?: File, packPreview?: File }>({});
+  const [packPrice, setPackPrice] = useState<number | string>("");
+
+  //debugging
   console.log("PackTab Rendered");
 
   const handlePackNameChange = (e: any) => {
@@ -35,6 +38,17 @@ const PackTab = ({ packData, handlePackDataChange, handleFileChange  }: any) => 
       handleFileChange('packPreview', file);
       setFileInputs(prev => ({ ...prev, packImage: file }));
     }
+  };
+
+  const handlePackPriceChange = (e: any) => {
+    const value = e.target.value;
+    
+    if (value && (parseFloat(value) > 99.99 || !/^\d+(\.\d{0,2})?$/.test(value))) {
+      return; 
+    }
+    
+    setPackPrice(value);
+    handlePackDataChange('packPrice', value);
   };
 
   return (   
@@ -105,6 +119,24 @@ const PackTab = ({ packData, handlePackDataChange, handleFileChange  }: any) => 
               {packData.packPreview && <p className="text-sm mt-1">{(packData.packPreview as File).name}</p>}
 
           </div>
+          <div className="mb-4">
+            <label htmlFor="pack-price">
+              Price ($)
+            </label>
+            <Input 
+              id="pack-price"
+              name="packPrice"
+              type="number"
+              step="0.01"
+              min="0"
+              max="99.99"
+              value={packPrice}
+              onChange={handlePackPriceChange}
+              className="mt-1 block w-full"
+              placeholder="Enter Pack Price"
+            />
+          </div>
+
           </div>
         </div>
       </TabsContent>
