@@ -8,12 +8,38 @@ const OrderSuccess = () => {
 
 	useEffect(() => {
 		// Retrieve the download links from local storage on the client side
-		const downloadLinksJSON = localStorage.getItem('downloadLinks') || '[]';
-		setDownloadLinks(JSON.parse(downloadLinksJSON));
+		const downloadLinksJSON = localStorage.getItem('downloadLinks');
+		if (downloadLinksJSON) {
+			try {
+				const parsedLinks = JSON.parse(downloadLinksJSON);
+				setDownloadLinks(parsedLinks);
+				console.log('download links JSON:', downloadLinksJSON);
 
-		// Reset the downloadLinks item in local storage
-		localStorage.removeItem('downloadLinks');
+				// Reset the downloadLinks item in local storage
+				localStorage.removeItem('downloadLinks');
+			} catch (e) {
+				console.error('Could not parse downloadLinksJSON:', e);
+			}
+		}
+
+		const zipFileName = localStorage.getItem('zipFileName');
+		if (zipFileName) {
+			fetch(
+				`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/get-zip-file/${zipFileName}`
+			)
+				.then((response) => response.blob())
+				.then((blob) => {
+					const url = window.URL.createObjectURL(blob);
+					const a = document.createElement('a');
+					a.href = url;
+					a.download = zipFileName;
+					a.click();
+					localStorage.removeItem('zipFileName');
+				});
+		}
 	}, []);
+
+	console.log('download links:', downloadLinks);
 
 	return (
 		<section className='container h-full grid place-items-center'>
