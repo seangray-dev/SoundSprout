@@ -6,6 +6,7 @@ import { AppDispatch } from '@/redux/store';
 import { LockClosedIcon, UserIcon } from '@heroicons/react/24/outline';
 import axios, { AxiosError } from 'axios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
@@ -112,6 +113,11 @@ const LoginForm = () => {
 					</div>
 					<div className='relative'>
 						<Btn_Primary type='submit'>Login</Btn_Primary>
+						<Link href={'/signup'}>
+							<p className='text-white mt-4 text-center hover:text-purple transition-all duration-300'>
+								Don't have an account? Click here to sign up
+							</p>
+						</Link>
 						{status && (
 							<div className='text-red-500 text-sm text-center absolute inset-x-0 -top-6'>
 								{status}

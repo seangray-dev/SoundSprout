@@ -7,6 +7,7 @@ import {
 	UserIcon,
 } from '@heroicons/react/24/outline';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+import Link from 'next/link';
 import * as Yup from 'yup';
 import Btn_Primary from '../components/Buttons/Btn_Primary';
 
@@ -190,6 +191,11 @@ const SignupForm = () => {
 					/>
 				</div>
 				<Btn_Primary>Sign Up</Btn_Primary>
+				<Link href={'/login'}>
+					<p className='text-white text-center hover:text-purple transition-all duration-300'>
+						Already have an account? Click here to login
+					</p>
+				</Link>
 			</Form>
 		</Formik>
 	);
