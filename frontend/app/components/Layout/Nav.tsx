@@ -2,13 +2,17 @@
 
 import { logout } from '@/redux/features/auth-slice';
 import { RootState } from '@/redux/store';
-import { ShoppingCartIcon } from '@heroicons/react/24/outline';
+import {
+	MagnifyingGlassIcon,
+	ShoppingCartIcon,
+} from '@heroicons/react/24/outline';
 import { UserIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import CartPopover from './CartPopover';
 import logo from '/public/assets/images/logo-no-background.png';
@@ -44,6 +48,14 @@ const Nav = () => {
 					</ul>
 				</div>
 				<ul className='flex items-center gap-4 text-white'>
+					<li className='flex-grow relative'>
+						<MagnifyingGlassIcon className='w-5 h-5 text-purple absolute left-3 top-[5px]' />
+						<input
+							className='py-1 px-4 pl-10 w-40 text-black outline-none rounded-md border focus:border-purple'
+							type='text'
+							placeholder='Search'
+						/>
+					</li>
 					{isAuth ? (
 						<>
 							<li className='underline underline-offset-2 text-white flex gap-2 items-center'>
@@ -53,13 +65,13 @@ const Nav = () => {
 							<li>
 								<button
 									onClick={onLogout}
-									className='py-1 px-4 gap-4 bg-purple rounded-full hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full'>
+									className='py-1 px-4 gap-4 bg-purple rounded-md hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full'>
 									Logout
 								</button>
 							</li>
 						</>
 					) : (
-						<li className='py-1 px-4 gap-4 bg-purple rounded-full hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full'>
+						<li className='py-1 px-4 gap-4 bg-purple rounded-md border border-purple hover:opacity-70 hover:cursor-pointer transition-opacity duration-300 w-full text-center'>
 							<Link href={'/login'}>Login</Link>
 						</li>
 					)}
