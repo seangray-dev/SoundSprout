@@ -7,7 +7,6 @@ import PackTab from './PackTab';
 import SoundsTab from './SoundsTab';
 
 const UploadForm = () => {
-  const [activeTab, setActiveTab] = useState('pack');
   const [packData, setPackData] = useState({
     packName: '',
     packDescription: '',
