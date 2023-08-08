@@ -6,6 +6,7 @@ import logging
 import mimetypes
 import os
 import requests
+import scipy
 import stripe
 import time
 import threading
@@ -31,6 +32,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
 from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
+from transformers import AutoProcessor, MusicgenForConditionalGeneration
 from wsgiref.util import FileWrapper
 
 load_dotenv()
@@ -39,6 +41,41 @@ CLOUDINARY_CLOUD_NAME = os.getenv('CLOUDINARY_CLOUD_NAME')
 CLOUNDINARY_PACKS_URL = os.getenv('CLOUNDINARY_PACKS_URL')
 CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
+
+
+@api_view(['POST'])
+def generate_audio(request):
+    genre = request.data.get('genre')
+    mood = request.data.get('mood')
+    bpm = request.data.get('bpm')
+    instruments = request.data.get('instruments')
+    descriptions = f"{genre} genre, {mood} mood, bpm:{bpm}, {instruments}"
+
+    file_path = ai_music_gen(descriptions)
+
+    return FileResponse(open(file_path, 'rb'), as_attachment=True, filename='musicgen_out.wav')
+
+
+def ai_music_gen(text):
+    processor = AutoProcessor.from_pretrained("facebook/musicgen-small")
+    model = MusicgenForConditionalGeneration.from_pretrained(
+        "facebook/musicgen-small")
+
+    print('ai music gen:', text)
+
+    inputs = processor(
+        text=[text],
+        padding=True,
+        return_tensors="pt",
+    )
+
+    audio_values = model.generate(**inputs, max_new_tokens=256)
+    sampling_rate = model.config.audio_encoder.sampling_rate
+    file_path = "musicgen_out.wav"
+    scipy.io.wavfile.write(file_path, rate=sampling_rate,
+                           data=audio_values[0, 0].numpy())
+
+    return file_path
 
 
 User = get_user_model()
