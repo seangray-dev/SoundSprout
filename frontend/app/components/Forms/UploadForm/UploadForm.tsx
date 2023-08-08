@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import Cookie from 'js-cookie';
+import { useEffect, useState } from 'react';
 import { Button } from '../../ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '../../ui/dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
@@ -13,20 +14,45 @@ const UploadForm = () => {
     packGenre: '',
     packImage: null,
     packPreview: null,
-    packPrice: 0
+    packPrice: null,
   });
   const [showDialog, setShowDialog] = useState(false);
   const [soundData, setSoundData] = useState<Array<{ file: File, name: string, key: string, bpm: string, tags: string, price: number }>>([]);
 
 
+  useEffect(() => {
+    const savedPackData = Cookie.get('packData');
+    const savedSoundData = Cookie.get('soundData');
 
-  const handlePackDataChange = (key: string, value: any) => {
-    setPackData(prevState => ({ ...prevState, [key]: value }));
-  };
+    console.log("Saved Pack Data from Cookies:", savedPackData);
+    console.log("Saved Sound Data from Cookies:", savedSoundData);
 
-  const handleSoundDataUpdate = (updatedSounds: any) => {
-    setSoundData(updatedSounds);
-  };
+    if (savedPackData) {
+        setPackData(JSON.parse(savedPackData));
+    }
+
+    if (savedSoundData) {
+        setSoundData(JSON.parse(savedSoundData));
+    }
+}, []);
+
+const handlePackDataChange = (key: string, value: any) => {
+  const updatedPackData = { ...packData, [key]: value };
+  setPackData(updatedPackData);
+
+  console.log("Updating Pack Data:", updatedPackData);
+
+  Cookie.set('packData', JSON.stringify(updatedPackData));
+};
+
+const handleSoundDataUpdate = (updatedSounds: any) => {
+  setSoundData(updatedSounds);
+
+  console.log("Updating Sound Data:", updatedSounds);
+
+  Cookie.set('soundData', JSON.stringify(updatedSounds));
+};
+
 
   const handleFileChange = (key: string, file: File) => {
     setPackData(prevState => ({ ...prevState, [key]: file }));
@@ -100,6 +126,9 @@ const UploadForm = () => {
           genre: packData.packGenre
         })
       });
+
+      Cookie.remove('packData');
+      Cookie.remove('soundData');
   
       window.location.href = "/success"; 
   
