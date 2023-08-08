@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { Input } from '../../ui/input';
 import { Textarea } from '../../ui/textarea';
 import GenreCombobox from './GenreCombobox';
+import handleFileChange from './UploadForm';
 
-const PackTab = ({ packData, handlePackDataChange, handleFileChange  }: any) => {
+const PackTab = ({ packData, handlePackDataChange  }: any) => {
   const [selectedGenre, setSelectedGenre] = useState(packData.selectedGenre || "");
   const [fileInputs, setFileInputs] = useState<{ packImage?: File, packPreview?: File }>({});
   const [packPrice, setPackPrice] = useState<number | string>("");
@@ -18,23 +19,19 @@ const PackTab = ({ packData, handlePackDataChange, handleFileChange  }: any) => 
   const handlePackDescriptionChange = (e: any) => {
     handlePackDataChange('packDescription', e.target.value);
   };
-
-  useEffect(() => {
-    handlePackDataChange('selectedGenre', selectedGenre);
-  }, [selectedGenre]);
   
   const handlePackImageChange = (e: any) => {
     const file = e.target.files[0];
     if (file) {
-      handleFileChange('packImage', file);
+      handlePackDataChange('packImage', file);
       setFileInputs(prev => ({ ...prev, packImage: file }));
     }
   };
-  
+
   const handlePackPreviewChange = (e: any) => {
     const file = e.target.files[0];
     if (file) {
-      handleFileChange('packPreview', file);
+      handlePackDataChange('packPreview', file);
       setFileInputs(prev => ({ ...prev, packImage: file }));
     }
   };
@@ -49,6 +46,10 @@ const PackTab = ({ packData, handlePackDataChange, handleFileChange  }: any) => 
     setPackPrice(value);
     handlePackDataChange('packPrice', value);
   };
+
+  useEffect(() => {
+    handlePackDataChange('selectedGenre', selectedGenre);
+  }, [selectedGenre]);
 
   return (   
     <div className="flex flex-col justify-center items-center">

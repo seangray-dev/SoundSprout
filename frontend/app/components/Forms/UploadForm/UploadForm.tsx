@@ -18,43 +18,21 @@ const UploadForm = () => {
   const [showDialog, setShowDialog] = useState(false);
   const [soundData, setSoundData] = useState<Array<{ file: File, name: string, key: string, bpm: string, tags: string, price: number }>>([]);
 
+  const handlePackDataChange = (key: string, value: any) => {
+    const updatedPackData = { ...packData, [key]: value };
+    setPackData(updatedPackData);
 
-  useEffect(() => {
-    const savedPackData = Cookie.get('packData');
-    const savedSoundData = Cookie.get('soundData');
+    console.log("Updating Pack Data:", updatedPackData);
 
-    console.log("Saved Pack Data from Cookies:", savedPackData);
-    console.log("Saved Sound Data from Cookies:", savedSoundData);
+    Cookie.set('packData', JSON.stringify(updatedPackData));
+  };
 
-    if (savedPackData) {
-        setPackData(JSON.parse(savedPackData));
-    }
+  const handleSoundDataChange = (updatedSounds: any) => {
+    setSoundData(updatedSounds);
 
-    if (savedSoundData) {
-        setSoundData(JSON.parse(savedSoundData));
-    }
-}, []);
+    console.log("Updating Sound Data:", updatedSounds);
 
-const handlePackDataChange = (key: string, value: any) => {
-  const updatedPackData = { ...packData, [key]: value };
-  setPackData(updatedPackData);
-
-  console.log("Updating Pack Data:", updatedPackData);
-
-  Cookie.set('packData', JSON.stringify(updatedPackData));
-};
-
-const handleSoundDataUpdate = (updatedSounds: any) => {
-  setSoundData(updatedSounds);
-
-  console.log("Updating Sound Data:", updatedSounds);
-
-  Cookie.set('soundData', JSON.stringify(updatedSounds));
-};
-
-
-  const handleFileChange = (key: string, file: File) => {
-    setPackData(prevState => ({ ...prevState, [key]: file }));
+    Cookie.set('soundData', JSON.stringify(updatedSounds));
   };
 
   const handleSubmit = async () => {
@@ -136,6 +114,21 @@ const handleSoundDataUpdate = (updatedSounds: any) => {
     }
   };
   
+  useEffect(() => {
+    const savedPackData = Cookie.get('packData');
+    const savedSoundData = Cookie.get('soundData');
+
+    console.log("Saved Pack Data from Cookies:", savedPackData);
+    console.log("Saved Sound Data from Cookies:", savedSoundData);
+
+    if (savedPackData) {
+        setPackData(JSON.parse(savedPackData));
+    }
+
+    if (savedSoundData) {
+        setSoundData(JSON.parse(savedSoundData));
+    }
+  }, []);
 
   return (
     <div className="p-4">
@@ -148,7 +141,7 @@ const handleSoundDataUpdate = (updatedSounds: any) => {
             <PackTab packData={packData} handlePackDataChange={handlePackDataChange} />
           </TabsContent>
           <TabsContent value="sounds">
-            <SoundsTab onSoundsUpdate={handleSoundDataUpdate} />
+            <SoundsTab onSoundsUpdate={handleSoundDataChange} />
           </TabsContent>
       </Tabs>
       <div className="mt-4">
