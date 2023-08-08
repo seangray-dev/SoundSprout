@@ -3,7 +3,7 @@
 import { logout } from '@/redux/features/auth-slice';
 import { RootState } from '@/redux/store';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
-import { UserIcon, } from '@heroicons/react/24/solid';
+import { UserIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -23,17 +23,27 @@ const Nav = () => {
 		console.log('Logout button clicked');
 		dispatch(logout());
 	};
-  
+
 	return (
 		<nav className='bg-gray-1 py-8'>
 			<div className='flex justify-between items-center container'>
-				<Link href={'/'}>
-					<Image src={logo} width={150} alt='sound-sprout-logo' />
-				</Link>
+				<div className='flex justify-between items-center gap-10'>
+					<Link href={'/'}>
+						<Image src={logo} width={150} alt='sound-sprout-logo' />
+					</Link>
+					<ul className='flex items-center gap-10 text-white'>
+						<li className='relative bg-purple rounded-lg py-1 px-4 hover:underline transition-all duration-300'>
+							<Link href={'/ai-melody-generator'}>AI Generator</Link>
+							<div className=' absolute bg-white text-black text-center px-2 text-xs rounded -top-2 -right-4 rotate-12'>
+								Beta
+							</div>
+						</li>
+						<li className='hover:underline hover:text-purple transition-all duration-300'>
+							<Link href={'/upload'}>Upload</Link>
+						</li>
+					</ul>
+				</div>
 				<ul className='flex items-center gap-4 text-white'>
-					<li className='hover:underline transition-all'>
-						<Link href={'/upload'}>Upload</Link>
-					</li>
 					{isAuth ? (
 						<>
 							<li className='underline underline-offset-2 text-white flex gap-2 items-center'>
