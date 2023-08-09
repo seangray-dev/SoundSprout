@@ -1,4 +1,4 @@
-import { getCoverArtUrl } from '@/app/api/cloudinary';
+import { getCoverArtUrl, getPreviewUrl } from '@/app/api/cloudinary';
 import { Pack, PackSoundsProps, Sound, Tag } from '@/app/types';
 import {
 	resetCurrentSound,
@@ -76,10 +76,6 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 	useEffect(() => {
 		audioRefs.current = audioRefs.current.slice(0, sounds.length);
 	}, [sounds]);
-
-	function getPreviewUrl(audio_file: string) {
-		return `${process.env.NEXT_PUBLIC_CLOUDINARY_SOUND_URL}${audio_file}`;
-	}
 
 	const handlePlay = (index: number) => {
 		if (isCurrentPackPlaying && currentSound.soundIndex === index) {

@@ -1,7 +1,7 @@
 'use client';
 
 import { getPackById } from '@/app/api/api';
-import { getCoverArtUrl, getPreviewUrl } from '@/app/api/cloudinary';
+import { getCoverArtUrl, getPackPreviewUrl } from '@/app/api/cloudinary';
 import Btn_Primary_Small from '@/app/components/Buttons/Btn_Purple_Small';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 import PackSounds from '@/app/components/Layout/PackSounds/PackSounds';
@@ -39,7 +39,7 @@ export default function Packs({ params }: { params: { id: number } }) {
 
 	const handlePreviewClick = () => {
 		if (pack) {
-			const previewUrl = pack.preview ? getPreviewUrl(pack.preview) : '';
+			const previewUrl = pack.preview ? getPackPreviewUrl(pack.preview) : '';
 			dispatch(
 				setCurrentSound({
 					audio_file: `${previewUrl}`,

@@ -60,7 +60,7 @@ const Nav = () => {
 							type='text'
 							placeholder='Search'
 							value={searchQuery}
-							onChange={handleSearchChange}
+							onSubmit={handleSearchChange}
 						/>
 					</li>
 					{isAuth ? (
