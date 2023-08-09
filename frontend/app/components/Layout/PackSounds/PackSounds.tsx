@@ -15,11 +15,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { handleAddSoundToCart } from '../../Utils/cartActions';
+import { Button } from '../../ui/button';
+import { useToast } from '../../ui/use-toast';
 
 const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 	const dispatch = useDispatch();
+	const { toast } = useToast();
 	const currentSound = useSelector((state: RootState) => state.currentSound);
-	const isCurrentPackPlaying = currentSound.packId === packId;
+	const isCurrentPackPlaying = currentSound.pack?.id.toString() === packId;
 	const { field, order } = useSelector((state: RootState) => state.sortSounds);
 	const [sounds, setSounds] = useState<Sound[]>([]);
 	const [soundTags, setSoundTags] = useState<{ [key: number]: Tag[] }>({});
@@ -64,9 +68,6 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 			});
 
 			setSoundTags(soundTags);
-
-			console.log('Tags for sounds', tagsForSounds);
-			console.log('Sound tags object', soundTags);
 		};
 
 		fetchSoundsAndTags();
@@ -86,14 +87,20 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 		} else {
 			dispatch(
 				setCurrentSound({
-					packId,
+					id: sounds[index].id,
+					pack: sounds[index].pack,
 					soundIndex: index,
 					coverArt: getCoverArtUrl(coverArtLocation),
 					name: sounds[index].name,
 					key: sounds[index].key,
 					bpm: sounds[index].bpm,
-					audioFile: getPreviewUrl(sounds[index].audio_file),
+					audio_file: getPreviewUrl(sounds[index].audio_file),
 					isPlaying: true,
+					price: sounds[index].price,
+					purchase_count: sounds[index].purchase_count,
+					created_at: sounds[index].created_at,
+					modified_at: sounds[index].modified_at,
+					isPack: false,
 				})
 			);
 		}
@@ -189,8 +196,15 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 							</div>
 							<div className='text-gray-500'>{sound.key}</div>
 							<div className='text-gray-500'>{sound.bpm}</div>
-							<div className=' flex justify-center'>
-								<PlusIcon className='text-gray-500 w-5 h-5 -ml-8 hover:text-purple hover:cursor-pointer transition-all duration-300' />
+							<div className='flex justify-center'>
+								<Button
+									asChild
+									variant='ghost'
+									onClick={(event) =>
+										handleAddSoundToCart(dispatch, toast, event, sound)
+									}>
+									<PlusIcon className='text-gray-500 w-5 h-5 -ml-8  hover:cursor-pointer hover:bg-purple hover:text-white transition-all duration-300' />
+								</Button>
 							</div>
 						</li>
 					))}

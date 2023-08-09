@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import LoginForm from '../components/Forms/LoginForm';
 import Heading from '../components/Utils/Heading';
+import LoginForm from './LoginForm';
 
 const Login = () => {
 	return (
