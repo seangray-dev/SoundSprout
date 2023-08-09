@@ -16,7 +16,7 @@ const UploadForm = () => {
     packPrice: null,
   });
   const [showDialog, setShowDialog] = useState(false);
-  const [soundData, setSoundData] = useState<Array<{ file: File, name: string, key: string, bpm: string, tags: string, price: number }>>([]);
+  const [soundData, setSoundData] = useState<Array<{ file: File, name: string, key: string, bpm: number, tags: string, price: number }>>([]);
 
   const handlePackDataChange = (key: string, value: any) => {
     const updatedPackData = { ...packData, [key]: value };

@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import SoundsInput from './SoundsInput';
 
-const SoundsTab = ({ onSoundsUpdate }: any) => {
-  const [sounds, setSounds] = useState<Array<{ file: File, name: string, key: string, bpm: string, tags: string, price: number }>>([]);
+const SoundsTab = ({ onSoundsUpdate, soundsData }: any) => {
+  const [sounds, setSounds] = useState(soundsData || []);
+
   console.log("SoundsTab Rendered");
 
-const handleSoundsChange = (value: any, index: number, field?: string) => {
+  const handleSoundsChange = (value: any, index: number, field?: string) => {
     let newSounds = [...sounds];
 
     if (field) {
@@ -13,7 +14,7 @@ const handleSoundsChange = (value: any, index: number, field?: string) => {
     } else {
       newSounds[index] = { 
         ...newSounds[index], 
-        file: value.target.files[0],
+        audio_file: value.target.files[0],
         name: value.target.files[0].name,
         price: 0.99  
       };
