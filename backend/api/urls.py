@@ -22,4 +22,5 @@ urlpatterns = [
     path('get-zip-file/<str:filename>',
          views.get_zip_file, name='get-zip-file'),
     path('generate-audio/', views.generate_audio),
+    path('search/', views.search_sounds, name='search_sounds'),
 ]

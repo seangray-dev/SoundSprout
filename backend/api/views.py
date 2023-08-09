@@ -34,6 +34,7 @@ from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundT
 from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
 from transformers import AutoProcessor, MusicgenForConditionalGeneration
 from wsgiref.util import FileWrapper
+from django.db.models import Q
 
 load_dotenv()
 CLOUDINARY_BASE_URL = os.getenv('CLOUDINARY_BASE_URL')
@@ -42,6 +43,24 @@ CLOUNDINARY_PACKS_URL = os.getenv('CLOUNDINARY_PACKS_URL')
 CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
+@api_view(['GET'])
+def search_sounds(request):
+    query = request.query_params.get('query', '')
+
+    # Searching by sound titles
+    sounds_by_title = Sound.objects.filter(name__icontains=query)
+    serializer_title = SoundSerializer(sounds_by_title, many=True)
+
+    # Searching by tags
+    sounds_by_tag = Sound.objects.filter(soundtagassociation__tag__name__icontains=query).distinct()
+    serializer_tag = SoundSerializer(sounds_by_tag, many=True)
+
+    response_data = {
+        'sounds_by_title': serializer_title.data,
+        'sounds_by_tag': serializer_tag.data
+    }
+
+    return Response(response_data, status=status.HTTP_200_OK)
 
 @api_view(['POST'])
 def generate_audio(request):
