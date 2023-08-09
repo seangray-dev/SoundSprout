@@ -12,7 +12,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../ui/button';
-import { Input } from '../ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import CartPopover from './CartPopover';
 import logo from '/public/assets/images/logo-no-background.png';
@@ -21,7 +20,12 @@ const Nav = () => {
 	const dispatch = useDispatch();
 	const { user, isAuth } = useSelector((state: RootState) => state.authReducer);
 	const [isOpen, setIsOpen] = useState(false);
+	const [searchQuery, setSearchQuery] = useState('');
 	const username = user?.username || '';
+
+	const handleSearchChange = (e) => {
+		setSearchQuery(e.target.value);
+	};
 
 	const onLogout = () => {
 		console.log('Logout button clicked');
@@ -54,6 +58,8 @@ const Nav = () => {
 							className='py-1 px-4 pl-10 w-40 text-black outline-none rounded-md border focus:border-purple'
 							type='text'
 							placeholder='Search'
+							value={searchQuery}
+							onChange={handleSearchChange}
 						/>
 					</li>
 					{isAuth ? (
