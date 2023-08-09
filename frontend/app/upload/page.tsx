@@ -1,13 +1,13 @@
 'use client';
 
-import UploadForm from '../components/Forms/UploadForm/UploadForm';
+import UploadForm from './UploadForm/UploadForm';
 
 const Upload = () => {
-  return (
-    <main className="flex justify-center min-h-screen">   
-      <UploadForm />
-    </main>
-  );
+	return (
+		<main className='grid place-items-center min-h-full mb-40'>
+			<UploadForm />
+		</main>
+	);
 };
 
 export default Upload;

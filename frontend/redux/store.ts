@@ -3,6 +3,7 @@ import authReducer from './features/auth-slice';
 import cartReducer from './features/cartSlice';
 import currentSound from './features/currentSound-slice';
 import sortSounds from './features/sortSounds';
+import uploadReducer from './features/upload-pack';
 
 export const store = configureStore({
 	reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
 		sortSounds,
 		currentSound,
 		cartReducer,
+		uploadReducer,
 	},
 });
 
