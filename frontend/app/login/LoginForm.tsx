@@ -85,7 +85,7 @@ const LoginForm = () => {
 							id='userIdentifier'
 							name='userIdentifier'
 							placeholder='Username or Email'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 						<ErrorMessage
 							name='userIdentifier'
@@ -103,7 +103,7 @@ const LoginForm = () => {
 							id='password'
 							name='password'
 							placeholder='Password'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 						<ErrorMessage
 							name='password'

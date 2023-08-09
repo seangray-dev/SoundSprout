@@ -107,7 +107,7 @@ export default function Packs({ params }: { params: { id: number } }) {
 								</p>
 							</article>
 						</header>
-						<div>
+						<div className='mt-16'>
 							<PackSoundsHeader />
 							<PackSounds
 								packId={params.id.toString()}

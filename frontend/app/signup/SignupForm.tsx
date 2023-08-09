@@ -96,7 +96,7 @@ const SignupForm = () => {
 							id='username'
 							name='username'
 							placeholder='Username'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 						<ErrorMessage
 							name='username'
@@ -114,7 +114,7 @@ const SignupForm = () => {
 							id='firstName'
 							name='firstName'
 							placeholder='First Name'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 
 						<ErrorMessage
@@ -133,7 +133,7 @@ const SignupForm = () => {
 							id='lastName'
 							name='lastName'
 							placeholder='Last Name'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 						<ErrorMessage
 							name='lastName'
@@ -151,7 +151,7 @@ const SignupForm = () => {
 							id='email'
 							name='email'
 							placeholder='Email'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 						<ErrorMessage
 							name='email'
@@ -169,7 +169,7 @@ const SignupForm = () => {
 							id='password'
 							name='password'
 							placeholder='Password'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 						<ErrorMessage
 							name='password'
@@ -187,7 +187,7 @@ const SignupForm = () => {
 							id='confirmPassword'
 							name='confirmPassword'
 							placeholder='Confirm Password'
-							className='input-field rounded-full py-2 pl-12 w-full'
+							className='input-field rounded-md py-2 pl-12 w-full'
 						/>
 						<ErrorMessage
 							name='confirmPassword'
