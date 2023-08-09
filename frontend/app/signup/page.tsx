@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Heading from '../components/Utils/Heading';
 import SignupForm from './SignupForm';

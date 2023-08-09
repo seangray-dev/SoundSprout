@@ -78,53 +78,6 @@ def ai_music_gen(text):
     return file_path
 
 
-User = get_user_model()
-
-
-@api_view(['GET', 'PUT', 'PATCH'])
-@permission_classes([IsAuthenticated])
-def profile(request):
-    user = request.user
-
-    if request.method == 'GET':
-        serializer = UserSerializer(user)
-        return Response(serializer.data)
-
-    elif request.method == 'PUT':
-        try:
-            serializer = UserSerializer(instance=user, data=request.data)
-            if serializer.is_valid():
-                serializer.save()
-                return Response(serializer.data)
-            else:
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        except User.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
-    elif request.method == 'PATCH':
-
-        new_password = request.data.get('new_password')
-
-        user.set_password(new_password)
-        user.save()
-
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-
-# unused
-@api_view(['GET'])
-def get_current_user(request):
-    """
-    Determine the current user by their token, and return their data
-    """
-    user = request.user
-    serializer = UserSerializer(user)
-    return Response(serializer.data)
-
-
-User = get_user_model()
-
-
 @api_view(['GET', 'PUT', 'PATCH'])
 @permission_classes([IsAuthenticated])
 def profile(request):
