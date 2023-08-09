@@ -9,9 +9,6 @@ const PackTab = ({ packData, handlePackDataChange  }: any) => {
   const [fileInputs, setFileInputs] = useState<{ packImage?: File, packPreview?: File }>({});
   const [packPrice, setPackPrice] = useState<number | string>("");
 
-  //debugging
-  console.log("PackTab Rendered");
-
   const handlePackNameChange = (e: any) => {
     handlePackDataChange('packName', e.target.value);
   };

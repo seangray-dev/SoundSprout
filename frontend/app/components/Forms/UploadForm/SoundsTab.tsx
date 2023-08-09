@@ -4,8 +4,6 @@ import SoundsInput from './SoundsInput';
 const SoundsTab = ({ onSoundsUpdate, soundsData }: any) => {
   const [sounds, setSounds] = useState(soundsData || []);
 
-  console.log("SoundsTab Rendered");
-
   const handleSoundsChange = (value: any, index: number, field?: string) => {
     let newSounds = [...sounds];
 

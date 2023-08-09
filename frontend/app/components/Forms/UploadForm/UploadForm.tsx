@@ -13,7 +13,7 @@ const UploadForm = () => {
     packGenre: '',
     packImage: null,
     packPreview: null,
-    packPrice: null,
+    packPrice: '',
   });
   
   const [soundData, setSoundData] = useState<Array<{ 
@@ -154,16 +154,26 @@ const UploadForm = () => {
       </Tabs>
       <div className="mt-4">
         <Dialog>
-          <DialogTrigger className="w-full">
-            <Button 
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={() => setShowDialog(true)}
+            className="w-full cursor-pointer" // you can add more styles if needed
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                setShowDialog(true);
+              }
+            }}
+          >
+            <Button
               variant="default"
               className="bg-purple w-full font-bold"
               type="button"
-              onClick={() => setShowDialog(true)}
             >
               Submit
             </Button>
-          </DialogTrigger>
+          </div>
+
           <DialogContent>
             <DialogTitle>Confirm Submission</DialogTitle>
             <DialogDescription>
