@@ -23,7 +23,7 @@ const Nav = () => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const username = user?.username || '';
 
-	const handleSearchChange = (e) => {
+	const handleSearchChange = (e: any) => {
 		setSearchQuery(e.target.value);
 		// enter on keyboard
 	};
