@@ -153,26 +153,20 @@ const UploadForm = () => {
           </TabsContent>
       </Tabs>
       <div className="mt-4">
-        <Dialog>
-          <div
+        <Dialog open={showDialog}>
+          <DialogTrigger
             role="button"
             tabIndex={0}
             onClick={() => setShowDialog(true)}
-            className="w-full cursor-pointer" // you can add more styles if needed
+            className="bg-purple w-full font-bold text-white rounded-md cursor-pointer text-center p-2"
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
                 setShowDialog(true);
               }
             }}
           >
-            <Button
-              variant="default"
-              className="bg-purple w-full font-bold"
-              type="button"
-            >
-              Submit
-            </Button>
-          </div>
+            Submit
+          </DialogTrigger>
 
           <DialogContent>
             <DialogTitle>Confirm Submission</DialogTitle>
@@ -180,7 +174,7 @@ const UploadForm = () => {
               Are you sure you want to submit?
             </DialogDescription>
             <button onClick={() => { handleSubmit(); setShowDialog(false); }}>Yes, Submit</button>
-            <button onClick={() => setShowDialog(false)}>Cancel</button>
+            <button onClick={() => setShowDialog(false)}>No, Cancel</button>
           </DialogContent>
         </Dialog>
       </div>
