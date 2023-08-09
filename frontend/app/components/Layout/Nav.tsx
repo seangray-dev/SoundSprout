@@ -25,6 +25,7 @@ const Nav = () => {
 
 	const handleSearchChange = (e) => {
 		setSearchQuery(e.target.value);
+		// enter on keyboard
 	};
 
 	const onLogout = () => {
