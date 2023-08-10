@@ -197,14 +197,12 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 							<div className='text-gray-500'>{sound.key}</div>
 							<div className='text-gray-500'>{sound.bpm}</div>
 							<div className='flex justify-center'>
-								<Button
-									asChild
-									variant='ghost'
+								<button
 									onClick={(event) =>
 										handleAddSoundToCart(dispatch, toast, event, sound)
 									}>
-									<PlusIcon className='text-gray-500 w-5 h-5 -ml-8  hover:cursor-pointer hover:bg-purple hover:text-white transition-all duration-300' />
-								</Button>
+									<PlusIcon className='text-gray-500 w-5 h-5 -ml-8  hover:cursor-pointer hover:bg-purple hover:text-white transition-all duration-300 rounded-md' />
+								</button>
 							</div>
 						</li>
 					))}

@@ -85,7 +85,9 @@ const Nav = () => {
 					<li className='flex item-center text-white'>
 						<Popover open={isOpen} onOpenChange={setIsOpen}>
 							<PopoverTrigger asChild>
-								<Button variant={'ghost'}>
+								<Button
+									variant='ghost'
+									className='bg-transparent hover:bg-transparent'>
 									<ShoppingCartIcon className='text-white w-6 h-6 hover:text-purple transition-all duration-300' />
 								</Button>
 							</PopoverTrigger>

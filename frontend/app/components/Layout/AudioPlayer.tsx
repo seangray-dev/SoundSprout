@@ -133,9 +133,9 @@ const AudioPlayer: React.FC = (props) => {
 							<span className='text-sm'>BPM</span>
 						</div>
 						<div className='flex items-center'>
-							<Button asChild variant='ghost' onClick={handleAddToCartClick}>
-								<PlusIcon className='w-6 h-6 hover:cursor-pointer hover:bg-purple transition-all duration-300'></PlusIcon>
-							</Button>
+							<button onClick={handleAddToCartClick}>
+								<PlusIcon className='w-6 h-6 hover:cursor-pointer hover:bg-purple transition-all duration-300 rounded-md'></PlusIcon>
+							</button>
 						</div>
 					</div>
 				</div>

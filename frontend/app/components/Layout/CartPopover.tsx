@@ -55,13 +55,11 @@ const CartPopover = ({ setIsOpen }: { setIsOpen: (open: boolean) => void }) => {
 										<p className='text-sm truncate w-[300px]'>{item.name}</p>
 										<div className='flex gap-4 items-center justify-between'>
 											<p>${item.price}</p>
-											<Button
+											<button
 												onClick={() => handleRemoveFromCart(item.id)}
-												title='Remove Item'
-												asChild
-												variant='ghost'>
-												<XCircleIcon className='w-6 h-6 hover:cursor-pointer hover:text-red-500' />
-											</Button>
+												title='Remove Item'>
+												<XCircleIcon className='w-6 h-6 hover:cursor-pointer hover:text-red-500 transition-all duration-300' />
+											</button>
 										</div>
 									</div>
 								</li>

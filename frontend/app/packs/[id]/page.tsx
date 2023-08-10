@@ -90,13 +90,13 @@ export default function Packs({ params }: { params: { id: number } }) {
 											onClick={(event) =>
 												handleAddPackToCart(dispatch, toast, event, pack)
 											}
-											className='flex items-center gap-2 py-1 px-4 border bg-purple text-white border-purple hover:bg-purple hover:opacity-80 rounded-full transition-all duration-300'>
+											className='flex items-center gap-2 py-1 px-4 border bg-purple text-white border-purple hover:bg-purple hover:opacity-80 rounded-md transition-all duration-300'>
 											<PlusSmallIcon className='w-6 h-6'></PlusSmallIcon>
 											Get Pack
 										</Button>
 										<Button
 											onClick={handlePreviewClick}
-											className='flex items-center gap-2 py-1 px-4 border bg-white text-black border-black rounded-full hover:text-purple hover:bg-white hover:border-purple transition-all duration-300'>
+											className='flex items-center gap-2 py-1 px-4 border bg-white text-black border-black rounded-md hover:text-purple hover:bg-white hover:border-purple transition-all duration-300'>
 											<PlayIcon className='w-6 h-6' />
 											<span>Preview</span>
 										</Button>
