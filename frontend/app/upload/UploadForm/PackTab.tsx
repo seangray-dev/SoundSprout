@@ -57,8 +57,8 @@ const PackTab = ({ packData, handlePackDataChange }: any) => {
 	}, [selectedGenre]);
 
 	return (
-		<div className='flex flex-col justify-center items-center'>
-			<div className='w-[400px]'>
+		<div className='flex flex-col justify-center items-center mt-8'>
+			<div className='grid grid-cols-2 gap-10 bg-gray-100 p-10 rounded-md'>
 				<div className='mb-4'>
 					<label htmlFor='pack-name'>Name</label>
 					<Input
@@ -79,7 +79,7 @@ const PackTab = ({ packData, handlePackDataChange }: any) => {
 						name='packDescription'
 						value={packData.packDescription}
 						onChange={handlePackDescriptionChange}
-						className='mt-1 block w-full'
+						className='mt-1 block w-full bg-white'
 						placeholder='Enter Pack Description'
 					/>
 				</div>

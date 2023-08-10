@@ -1,3 +1,4 @@
+import { PlusIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import { Alert, AlertTitle } from '../../components/ui/alert';
 import { Button, buttonVariants } from '../../components/ui/button';
@@ -8,7 +9,7 @@ import KeyCombobox from './KeyCombobox';
 
 const SoundsInput = ({ onChange }: any) => {
 	const [inputList, setInputList] = useState(
-		Array.from({ length: 5 }, (_, i) => i)
+		Array.from({ length: 6 }, (_, i) => i)
 	);
 	const [showAlert, setShowAlert] = useState(false);
 
@@ -21,13 +22,11 @@ const SoundsInput = ({ onChange }: any) => {
 	};
 
 	return (
-		<div>
+		<div className='grid grid-cols-2 gap-4 mt-8'>
 			{inputList.map((_, index) => (
 				<div
 					key={index}
-					className={`p-4 rounded ${
-						index % 2 === 0 ? 'bg-gray-100' : 'bg-white'
-					}`}>
+					className='flex flex-wrap gap-2 p-4 rounded bg-gray-100'>
 					<label>Sound {index + 1}</label>
 					<Input
 						type='file'
@@ -51,8 +50,12 @@ const SoundsInput = ({ onChange }: any) => {
 				</div>
 			))}
 			{!showAlert && (
-				<Button variant='ghost' onClick={handleAddClick} className='mt-2'>
-					Add More ({inputList.length}/10)
+				<Button
+					variant='ghost'
+					onClick={handleAddClick}
+					className='flex gap-2 items-center mt-2 col-span-2 border border-gray-100 hover:bg-gray-100 transition-all duration-300'>
+					<span>Add More ({inputList.length}/10)</span>
+					<PlusIcon className='w-4 h-4' />
 				</Button>
 			)}
 			{showAlert && (

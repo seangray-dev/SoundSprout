@@ -153,7 +153,7 @@ const UploadForm = () => {
 	}, []);
 
 	return (
-		<div className='p-4'>
+		<div className='p-4 mb-10'>
 			<Tabs
 				defaultValue='pack'
 				className='flex flex-col justify-center items-center'>
