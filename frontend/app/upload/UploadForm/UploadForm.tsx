@@ -1,5 +1,8 @@
+import { updatePackData, updateSoundData } from '@/redux/features/upload-pack';
+import { RootState } from '@/redux/store';
 import Cookie from 'js-cookie';
 import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../../components/ui/button';
 import {
 	Dialog,
@@ -18,142 +21,43 @@ import PackTab from './PackTab';
 import SoundsTab from './SoundsTab';
 
 const UploadForm = () => {
-	const [packData, setPackData] = useState({
-		packName: '',
-		packDescription: '',
-		packGenre: '',
-		packImage: null,
-		packPreview: null,
-		packPrice: '',
-	});
+	const dispatch = useDispatch();
 
-	const [soundData, setSoundData] = useState<
-		Array<{
-			file: File;
-			name: string;
-			key: string;
-			bpm: number;
-			tags: string;
-			price: number;
-		}>
-	>([]);
+	const packData = useSelector(
+		(state: RootState) => state.uploadReducer.packData
+	);
+	const soundData = useSelector(
+		(state: RootState) => state.uploadReducer.soundData
+	);
 
 	const [showDialog, setShowDialog] = useState(false);
 
 	const handlePackDataChange = (key: string, value: any) => {
 		const updatedPackData = { ...packData, [key]: value };
-		setPackData(updatedPackData);
-
-		console.log('Updating Pack Data:', updatedPackData);
-
+		dispatch(updatePackData(updatedPackData));
 		Cookie.set('packData', JSON.stringify(updatedPackData));
 	};
 
 	const handleSoundDataChange = (updatedSounds: any) => {
-		setSoundData(updatedSounds);
-
-		console.log('Updating Sound Data:', updatedSounds);
-
+		dispatch(updateSoundData(updatedSounds));
 		Cookie.set('soundData', JSON.stringify(updatedSounds));
-	};
-
-	const handleSubmit = async () => {
-		console.log('Form submitted with data:', packData);
-
-		try {
-			const responsePack = await fetch('/api/pack', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({
-					name: packData.packName,
-					description: packData.packDescription,
-					price: packData.packPrice,
-					cover_art_location: packData.packImage,
-					preview: packData.packPreview,
-				}),
-			});
-
-			if (!responsePack.ok) throw new Error('Error storing pack information.');
-
-			const packResult = await responsePack.json();
-			const packId = packResult.id;
-
-			for (let sound of soundData) {
-				const responseSound = await fetch('/api/sound', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({
-						name: sound.name,
-						audio_file: sound.file,
-						bpm: sound.bpm,
-						key: sound.key,
-						price: sound.price,
-						pack: packId,
-					}),
-				});
-
-				if (!responseSound.ok)
-					throw new Error('Error storing sound information.');
-
-				const soundResult = await responseSound.json();
-				const soundId = soundResult.id;
-
-				for (let tag of sound.tags) {
-					await fetch('/api/soundtagassociation', {
-						method: 'POST',
-						headers: {
-							'Content-Type': 'application/json',
-						},
-						body: JSON.stringify({
-							sound: soundId,
-							tag: tag,
-						}),
-					});
-				}
-			}
-
-			await fetch('/api/packgenreassociation', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({
-					pack: packId,
-					genre: packData.packGenre,
-				}),
-			});
-
-			Cookie.remove('packData');
-			Cookie.remove('soundData');
-
-			window.location.href = '/success';
-		} catch (error) {
-			console.error('Unexpected error:', error);
-		}
 	};
 
 	useEffect(() => {
 		const savedPackData = Cookie.get('packData');
 		const savedSoundData = Cookie.get('soundData');
 
-		console.log('Saved Pack Data from Cookies:', savedPackData);
-		console.log('Saved Sound Data from Cookies:', savedSoundData);
-
 		if (savedPackData) {
-			setPackData(JSON.parse(savedPackData));
+			dispatch(updatePackData(JSON.parse(savedPackData)));
 		}
 
 		if (savedSoundData) {
-			setSoundData(JSON.parse(savedSoundData));
+			dispatch(updateSoundData(JSON.parse(savedSoundData)));
 		}
-	}, []);
+	}, [dispatch]);
 
 	return (
-		<div className='p-4'>
+		<div className='p-4 mb-10'>
 			<Tabs
 				defaultValue='pack'
 				className='flex flex-col justify-center items-center'>
@@ -168,10 +72,7 @@ const UploadForm = () => {
 					</TabsTrigger>
 				</TabsList>
 				<TabsContent value='pack'>
-					<PackTab
-						packData={packData}
-						handlePackDataChange={handlePackDataChange}
-					/>
+					<PackTab />
 				</TabsContent>
 				<TabsContent value='sounds'>
 					<SoundsTab onSoundsUpdate={handleSoundDataChange} />

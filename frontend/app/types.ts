@@ -17,6 +17,9 @@ export interface Pack {
 	purchase_count: number;
 	created_at: string;
 	modified_at: string;
+	uploadStatus?: 'uploading' | 'uploaded' | 'failed';
+	localPreviewFile?: File;
+	localImageFile?: File;
 }
 
 export interface Sound {
@@ -30,6 +33,8 @@ export interface Sound {
 	purchase_count: number;
 	created_at: string;
 	modified_at: string;
+	uploadStatus?: 'uploading' | 'uploaded' | 'failed';
+	localFile?: File;
 }
 
 export interface Transaction {

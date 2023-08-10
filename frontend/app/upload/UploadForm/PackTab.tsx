@@ -1,12 +1,19 @@
+import { updatePackData } from '@/redux/features/upload-pack';
+import { RootState } from '@/redux/store';
 import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
 import GenreCombobox from './GenreCombobox';
 import handleFileChange from './UploadForm';
 
-const PackTab = ({ packData, handlePackDataChange }: any) => {
+const PackTab = () => {
+	const dispatch = useDispatch();
+	const packData = useSelector(
+		(state: RootState) => state.uploadReducer.packData
+	);
 	const [selectedGenre, setSelectedGenre] = useState(
-		packData.selectedGenre || ''
+		packData.genre
 	);
 	const [fileInputs, setFileInputs] = useState<{
 		packImage?: File;
@@ -14,59 +21,35 @@ const PackTab = ({ packData, handlePackDataChange }: any) => {
 	}>({});
 	const [packPrice, setPackPrice] = useState<number | string>('');
 
-	const handlePackNameChange = (e: any) => {
-		handlePackDataChange('packName', e.target.value);
-	};
-
-	const handlePackDescriptionChange = (e: any) => {
-		handlePackDataChange('packDescription', e.target.value);
-	};
-
-	const handlePackImageChange = (e: any) => {
-		const file = e.target.files[0];
-		if (file) {
-			handlePackDataChange('packImage', file);
-			setFileInputs((prev) => ({ ...prev, packImage: file }));
+	const handlePackDataChange = (
+		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
+		const { name, value } = e.target;
+		const updatedPackData = { ...packData, [name]: value };
+		if (name === 'packImage' || name === 'packPreview') {
+			const file = (e.target as HTMLInputElement).files?.[0];
+			if (file) {
+				updatedPackData[name] = file;
+			}
 		}
+		dispatch(updatePackData(updatedPackData));
 	};
 
-	const handlePackPreviewChange = (e: any) => {
-		const file = e.target.files[0];
-		if (file) {
-			handlePackDataChange('packPreview', file);
-			setFileInputs((prev) => ({ ...prev, packImage: file }));
-		}
+	const handleGenreChange = (newGenre: string) => {
+		setSelectedGenre(newGenre);
+		const updatedPackData = { ...packData, selectedGenre: newGenre };
+		dispatch(updatePackData(updatedPackData));
 	};
-
-	const handlePackPriceChange = (e: any) => {
-		const value = e.target.value;
-
-		if (
-			value &&
-			(parseFloat(value) > 99.99 || !/^\d+(\.\d{0,2})?$/.test(value))
-		) {
-			return;
-		}
-
-		setPackPrice(value);
-		handlePackDataChange('packPrice', value);
-	};
-
-	useEffect(() => {
-		handlePackDataChange('selectedGenre', selectedGenre);
-	}, [selectedGenre]);
 
 	return (
-		<div className='flex flex-col justify-center items-center'>
-			<div className='w-[400px]'>
+		<div className='flex flex-col justify-center items-center mt-8'>
+			<div className='grid grid-cols-2 gap-10 bg-gray-100 p-10 rounded-md'>
 				<div className='mb-4'>
 					<label htmlFor='pack-name'>Name</label>
 					<Input
 						id='pack-name'
 						name='packName'
 						type='text'
-						value={packData.packName}
-						onChange={handlePackNameChange}
 						className='mt-1 block w-full'
 						placeholder='Enter Pack Name'
 					/>
@@ -77,9 +60,7 @@ const PackTab = ({ packData, handlePackDataChange }: any) => {
 					<Textarea
 						id='pack-description'
 						name='packDescription'
-						value={packData.packDescription}
-						onChange={handlePackDescriptionChange}
-						className='mt-1 block w-full'
+						className='mt-1 block w-full bg-white'
 						placeholder='Enter Pack Description'
 					/>
 				</div>
@@ -90,18 +71,13 @@ const PackTab = ({ packData, handlePackDataChange }: any) => {
 					</label>
 					<GenreCombobox
 						selectedGenre={selectedGenre}
-						setSelectedGenre={setSelectedGenre}
+						onSelectGenre={handleGenreChange}
 					/>
 				</div>
 
 				<div className='mb-4'>
-					<label htmlFor='pack-image'>Pack Image</label>
-					<Input
-						id='pack-image'
-						type='file'
-						accept='image/*'
-						onChange={handlePackImageChange}
-					/>
+					<label htmlFor='pack-image'>Pack Cover Art</label>
+					<Input id='pack-image' type='file' accept='image/*' />
 					{packData.packImage && (
 						<p className='text-sm mt-1'>{(packData.packImage as File).name}</p>
 					)}
@@ -109,12 +85,7 @@ const PackTab = ({ packData, handlePackDataChange }: any) => {
 
 				<div className='mb-4'>
 					<label htmlFor='pack-preview'>Pack Preview</label>
-					<Input
-						id='pack-preview'
-						type='file'
-						accept='audio/*'
-						onChange={handlePackPreviewChange}
-					/>
+					<Input id='pack-preview' type='file' accept='audio/*' />
 					{packData.packPreview && (
 						<p className='text-sm mt-1'>
 							{(packData.packPreview as File).name}
@@ -130,8 +101,6 @@ const PackTab = ({ packData, handlePackDataChange }: any) => {
 						step='0.01'
 						min='0'
 						max='99.99'
-						value={packData.packPrice}
-						onChange={handlePackPriceChange}
 						className='mt-1 block w-full'
 						placeholder='Enter Pack Price'
 					/>
