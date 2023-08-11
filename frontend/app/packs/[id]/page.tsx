@@ -6,10 +6,10 @@ import Btn_Primary_Small from '@/app/components/Buttons/Btn_Purple_Small';
 import AudioPlayer from '@/app/components/Layout/AudioPlayer';
 import PackSounds from '@/app/components/Layout/PackSounds/PackSounds';
 import PackSoundsHeader from '@/app/components/Layout/PackSounds/PackSoundsHeader';
-import { handleAddPackToCart } from '@/app/components/Utils/cartActions';
 import { Button } from '@/app/components/ui/button';
 import { useToast } from '@/app/components/ui/use-toast';
 import { Pack } from '@/app/types';
+import { handleAddPackToCart } from '@/redux/features/cartActions';
 import {
 	setCurrentSound,
 	togglePlay,

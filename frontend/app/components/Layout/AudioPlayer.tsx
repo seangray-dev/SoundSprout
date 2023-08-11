@@ -19,7 +19,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
 	handleAddPackToCart,
 	handleAddSoundToCart,
-} from '../Utils/cartActions';
+} from '../../../redux/features/cartActions';
 import { Button } from '../ui/button';
 import { useToast } from '../ui/use-toast';
 

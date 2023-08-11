@@ -5,8 +5,8 @@ import {
 	removeFromCart,
 } from '@/redux/features/cartSlice';
 import { useDispatch } from 'react-redux';
-import { ToastAction } from '../ui/toast';
-import { useToast } from '../ui/use-toast';
+import { ToastAction } from '../../app/components/ui/toast';
+import { useToast } from '../../app/components/ui/use-toast';
 
 export const handleUndoAddToCart = (
 	dispatch: ReturnType<typeof useDispatch>,

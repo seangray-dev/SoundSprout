@@ -15,7 +15,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleAddSoundToCart } from '../../Utils/cartActions';
+import { handleAddSoundToCart } from '../../../../redux/features/cartActions';
 import { Button } from '../../ui/button';
 import { useToast } from '../../ui/use-toast';
 
