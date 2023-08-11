@@ -12,6 +12,10 @@ const CartPopover = ({ setIsOpen }: { setIsOpen: (open: boolean) => void }) => {
 	const dispatch = useDispatch();
 	const cartItems = useSelector((state: RootState) => state.cartReducer.items);
 
+	const subtotal = cartItems.reduce((total, cartItem) => {
+		return total + Number(cartItem.item.price);
+	}, 0);
+
 	const proceedToCheckout = () => {
 		setIsOpen(false);
 	};
@@ -66,6 +70,11 @@ const CartPopover = ({ setIsOpen }: { setIsOpen: (open: boolean) => void }) => {
 							);
 						})}
 					</ul>
+
+					<div className='mb-4 flex justify-between items-center'>
+						<span className='text-xl'>Subtotal</span>
+						<span className='font-bold'>${subtotal}</span>
+					</div>
 					<div className='flex justify-center w-full'>
 						<Button
 							onClick={proceedToCheckout}
