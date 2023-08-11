@@ -90,10 +90,10 @@ const MusicGenForm = () => {
 											<SelectValue placeholder='Genre'></SelectValue>
 										</SelectTrigger>
 										<SelectContent>
-											<SelectItem value='hip hop/r&b'>HIP HOP / R&B</SelectItem>
-											<SelectItem value='pop/edm'>POP / EDM</SelectItem>
-											<SelectItem value='bass music'>BASS MUSIC</SelectItem>
-											<SelectItem value='global'>GLOBAL</SelectItem>
+											<SelectItem value='hip hop / trap'>HIP HOP</SelectItem>
+											<SelectItem value='rnb'>R&B</SelectItem>
+											<SelectItem value='edm'>EDM</SelectItem>
+											<SelectItem value='pop'>POP</SelectItem>
 											<SelectItem value='house/techno'>
 												HOUSE / TECHNO
 											</SelectItem>
@@ -128,9 +128,8 @@ const MusicGenForm = () => {
 											<SelectItem value='energetic'>Energetic</SelectItem>
 											<SelectItem value='dark'>Dark</SelectItem>
 											<SelectItem value='relaxing'>Relaxing</SelectItem>
-											<SelectItem value='mysterious'>Mysterious</SelectItem>
 											<SelectItem value='happy'>Happy</SelectItem>
-											<SelectItem value='melancholic'>Melancholic</SelectItem>
+											<SelectItem value='sad'>Sad</SelectItem>
 										</SelectContent>
 									</Select>
 								</FormControl>

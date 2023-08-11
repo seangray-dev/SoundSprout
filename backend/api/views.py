@@ -45,27 +45,38 @@ stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
 @api_view(['POST'])
 def generate_audio(request):
+    start_time = time.time()  # Start the timer
+
     genre = request.data.get('genre')
     mood = request.data.get('mood')
     bpm = request.data.get('bpm')
     instruments = request.data.get('instruments')
-    descriptions = f"{genre} genre, {mood} mood, bpm:{bpm}, {instruments}"
+    descriptions = f"{genre}, {mood}, bpm:{bpm}, {instruments}"
 
     file_path = ai_music_gen(descriptions)
 
-    return FileResponse(open(file_path, 'rb'), as_attachment=True, filename='musicgen_out.wav')
+    end_time = time.time()  # Stop the timer
+    execution_time = end_time - start_time  # Calculate the time taken
+
+    # Print the time taken
+    print(f"Function execution time: {execution_time:.2f} seconds")
+
+    response = FileResponse(open(file_path, 'rb'),
+                            as_attachment=True, filename='musicgen_out.wav')
+
+    return response
 
 
 def ai_music_gen(text):
-    processor = AutoProcessor.from_pretrained("facebook/musicgen-small")
+    processor = AutoProcessor.from_pretrained("facebook/musicgen-medium")
     model = MusicgenForConditionalGeneration.from_pretrained(
-        "facebook/musicgen-small")
+        "facebook/musicgen-medium")
 
     print('ai music gen:', text)
 
     inputs = processor(
         text=[text],
-        padding=True,
+        padding=False,
         return_tensors="pt",
     )
 
