@@ -32,14 +32,16 @@ const Header = () => {
 				</Link>
 			</div>
 			<div className='place-self-end mx-auto md:mx-0'>
-				<Image
-					src={FeaturedPack}
-					className='rounded-2xl hover:cursor-pointer mx-auto'
-					alt={'featured pack'}
-					width={500}
-					height={500}
-					priority
-				/>
+				<Link href={'packs/1'}>
+					<Image
+						src={FeaturedPack}
+						className='rounded-2xl hover:cursor-pointer mx-auto'
+						alt={'featured pack'}
+						width={500}
+						height={500}
+						priority
+					/>
+				</Link>
 			</div>
 		</header>
 	);
