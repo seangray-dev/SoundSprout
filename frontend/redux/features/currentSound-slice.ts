@@ -54,17 +54,10 @@ export const currentSound = createSlice({
 		togglePlay: (state) => {
 			state.isPlaying = !state.isPlaying;
 		},
-		playNext: (state, action: PayloadAction<number>) => {},
-		playPrevious: (state, action: PayloadAction<number>) => {},
 	},
 });
 
-export const {
-	setCurrentSound,
-	resetCurrentSound,
-	togglePlay,
-	playNext,
-	playPrevious,
-} = currentSound.actions;
+export const { setCurrentSound, resetCurrentSound, togglePlay } =
+	currentSound.actions;
 
 export default currentSound.reducer;

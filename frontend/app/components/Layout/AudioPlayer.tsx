@@ -1,8 +1,7 @@
 import { Progress } from '@/app/components/ui/progress';
 import { Slider } from '@/app/components/ui/slider';
 import {
-	playNext,
-	playPrevious,
+	resetCurrentSound,
 	togglePlay,
 } from '@/redux/features/currentSound-slice';
 import { RootState } from '@/redux/store';
@@ -23,10 +22,11 @@ import {
 import { Button } from '../ui/button';
 import { useToast } from '../ui/use-toast';
 
-const AudioPlayer: React.FC = (props) => {
+const AudioPlayer: React.FC = ({ packId }) => {
 	const { toast } = useToast();
 	const audioRef = useRef<HTMLAudioElement>(null);
 	const currentSound = useSelector((state: RootState) => state.currentSound);
+	const isCurrentPackPlaying = currentSound.pack?.id.toString() === packId;
 	const [progress, setProgress] = useState(0);
 	const [isMuted, setIsMuted] = useState(false);
 	const dispatch = useDispatch();
@@ -89,6 +89,25 @@ const AudioPlayer: React.FC = (props) => {
 		}
 	};
 
+	const FAST_FORWARD_SECONDS = 5;
+	const REWIND_SECONDS = 5;
+
+	const handleFastForward = () => {
+		if (
+			audioRef.current &&
+			audioRef.current.currentTime + FAST_FORWARD_SECONDS <
+				audioRef.current.duration
+		) {
+			audioRef.current.currentTime += FAST_FORWARD_SECONDS;
+		}
+	};
+
+	const handleRewind = () => {
+		if (audioRef.current && audioRef.current.currentTime - REWIND_SECONDS > 0) {
+			audioRef.current.currentTime -= REWIND_SECONDS;
+		}
+	};
+
 	return (
 		<div className='fixed inset-x-0 bottom-0 bg-gray-1 text-white'>
 			<Slider
@@ -103,23 +122,23 @@ const AudioPlayer: React.FC = (props) => {
 				<div className='flex items-center gap-2 my-8'>
 					<BackwardIcon
 						className='w-6 h-6 hover:cursor-pointer hover:text-purple transition-all duration-300'
-						onClick={() => dispatch(playPrevious)}></BackwardIcon>
+						onClick={handleRewind}></BackwardIcon>
 					<div className='ml-1'>
-						{isPlaying ? (
-							<StopIcon
-								className='w-6 h-6 hover:cursor-pointer hover:text-purple transition-all duration-300'
-								onClick={() => dispatch(togglePlay())}
-							/>
-						) : (
-							<PlayIcon
-								className='w-6 h-6 hover:cursor-pointer hover:text-purple transition-all duration-300'
-								onClick={() => dispatch(togglePlay())}
-							/>
-						)}
+						<PlayIcon
+							className={`mx-auto w-6 h-6 hover:cursor-pointer hover:text-purple transition-all duration-300 ${
+								!isCurrentPackPlaying ? 'hidden' : 'block'
+							}`}
+						/>
+						<StopIcon
+							onClick={() => dispatch(resetCurrentSound())}
+							className={`mx-auto w-6 h-6 hover:cursor-pointer hover:text-purple transition-all duration-300 ${
+								isCurrentPackPlaying ? 'hidden' : 'block'
+							}`}
+						/>
 					</div>
 					<ForwardIcon
 						className='w-6 h-6 hover:cursor-pointer hover:text-purple transition-all duration-300'
-						onClick={() => dispatch(playNext)}></ForwardIcon>
+						onClick={handleFastForward}></ForwardIcon>
 				</div>
 				<div className='grid grid-cols-[55%,_45%] gap-2 items-center '>
 					<div className='flex gap-4 items-center border-l border-gray-2 h-full pl-6'>
