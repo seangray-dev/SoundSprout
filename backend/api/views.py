@@ -127,7 +127,6 @@ def profile(request):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-# unused
 @api_view(['GET'])
 def get_current_user(request):
     """

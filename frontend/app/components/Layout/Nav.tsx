@@ -31,7 +31,7 @@ const Nav = () => {
 
 	const handleSearchEnter = (e: any) => {
 		if (e.key === 'Enter') {
-			router.push(`/search?q=${searchQuery}`);
+			router.push(`/search?query=${searchQuery}`);
 		}
 	};
 
