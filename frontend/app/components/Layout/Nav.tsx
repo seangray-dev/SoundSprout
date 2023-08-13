@@ -9,6 +9,7 @@ import {
 import { UserIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../ui/button';
@@ -22,10 +23,16 @@ const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [searchQuery, setSearchQuery] = useState('');
 	const username = user?.username || '';
+	const router = useRouter();
 
 	const handleSearchChange = (e: any) => {
 		setSearchQuery(e.target.value);
-		// enter on keyboard
+	};
+
+	const handleSearchEnter = (e: any) => {
+		if (e.key === 'Enter') {
+			router.push(`/search?q=${searchQuery}`);
+		}
 	};
 
 	const onLogout = () => {
@@ -61,6 +68,7 @@ const Nav = () => {
 							placeholder='Search'
 							value={searchQuery}
 							onChange={handleSearchChange}
+							onKeyDown={handleSearchEnter}
 						/>
 					</li>
 					{isAuth ? (
