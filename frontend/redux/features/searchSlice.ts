@@ -2,9 +2,12 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const searchSounds = createAsyncThunk('search/searchSounds', async (query: string) => {
-  const response = await axios.get(`/api/search/?query=${query}`);
+  // replace with the actual URL where your Django server is running
+  const response = await axios.get(`http://localhost:8000/search/?query=${query}`);
+
   return response.data;
 });
+
 
 type SearchState = {
   results: {

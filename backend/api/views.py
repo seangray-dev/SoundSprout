@@ -45,16 +45,19 @@ stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
 @api_view(['GET'])
 def search_sounds(request):
+    print("search_sounds called")
     query = request.query_params.get('query', '')
 
-    # Searching by sound titles
     sounds_by_title = Sound.objects.filter(name__icontains=query)
     serializer_title = SoundSerializer(sounds_by_title, many=True)
 
-    # Searching by tags
     sounds_by_tag = Sound.objects.filter(soundtagassociation__tag__name__icontains=query).distinct()
     serializer_tag = SoundSerializer(sounds_by_tag, many=True)
 
+    print(f"Query: {query}")
+    print(f"Sounds by Title Queryset: {sounds_by_title.query}")
+    print(f"Sounds by Tag Queryset: {sounds_by_tag.query}")
+    
     response_data = {
         'sounds_by_title': serializer_title.data,
         'sounds_by_tag': serializer_tag.data

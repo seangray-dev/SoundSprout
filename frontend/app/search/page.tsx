@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import AudioPlayer from '../components/Layout/AudioPlayer';
 import PackSounds from '../components/Layout/PackSounds/PackSounds';
+import SoundComponent from '../components/Layout/PackSounds/searchSounds';
 
 const SearchPage = () => {
 	const dispatch = useDispatch<AppDispatch>();
@@ -22,13 +23,16 @@ const SearchPage = () => {
 			{status === 'failed' && <div>Error loading results...</div>}
 			{status === 'succeeded' && (
 				<>
-					{results.sounds_by_title.map((pack: any) => (
-						<PackSounds
-							key={pack.id}
-							packId={pack.id}
-							coverArtLocation={pack.cover_art_location}
-						/>
-					))}
+					<h2>Sounds by Title</h2>
+											{results.sounds_by_title && results.sounds_by_title.length > 0 ? (
+							results.sounds_by_title.map((sound: any) => (
+								<SoundComponent key={sound.id} sound={sound} tags={sound.tags} />
+							))
+						) : (
+							<p>No sounds found by title.</p>
+						)}
+
+
 				</>
 			)}
 
