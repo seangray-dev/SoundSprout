@@ -100,7 +100,7 @@ const SearchPage = () => {
 									/>
 								</div>
 								<button
-									className='bg-purple text-white rounded-md p-1 ml-1 w-8 h-8' // Making the button square
+									className='bg-purple text-white rounded-md p-1 ml-1 w-8 h-8'
 									onClick={handleSearchClick}
 								>
 									<ArrowRightIcon className='w-5 h-5 text-white' /> 
@@ -113,22 +113,23 @@ const SearchPage = () => {
       {status === 'succeeded' && (
         <section className='font-light'>
           <ul className='flex flex-col'>
-            {results.sounds_by_title && results.sounds_by_title.length > 0 ? (
-              results.sounds_by_title.map((sound: any, index) => (
-                <li
-                  className='group grid grid-cols-[1fr_3fr_1fr_1fr_1fr_1fr] items-center border-b py-2 text-sm hover:bg-gray-50'
-                  key={index}
-                  onMouseEnter={() => setHoveredIndex(index)}
-                  onMouseLeave={() => setHoveredIndex(null)}
-                >
-                  <div className='flex items-center'>
-                    <Image
-                      className='ml-6'
-                      src={getCoverArtUrl(sound.cover_art_location)}
-                      width={36}
-                      height={36}
-                      alt=''
-                    />
+					{
+						results.sounds_by_title && results.sounds_by_title.length > 0 ? (
+							results.sounds_by_title.map((sound: any, index) => (
+								<li
+									className='group grid grid-cols-[1fr_3fr_1fr_1fr_1fr_1fr] items-center border-b py-2 text-sm hover:bg-gray-50'
+									key={index}
+									onMouseEnter={() => setHoveredIndex(index)}
+									onMouseLeave={() => setHoveredIndex(null)}
+								>
+									<div className='flex items-center'>
+										<Image
+											className='ml-6'
+											src={getCoverArtUrl(sound.pack?.cover_art_location || sound.cover_art_location)}
+											width={36}
+											height={36}
+											alt=''
+										/>
                     <div className='flex-grow'>
 												{playingIndex === index ? (
 											<StopIcon
