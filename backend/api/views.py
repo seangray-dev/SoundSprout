@@ -31,7 +31,7 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
-from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
+from .serializers import PackSerializer, SoundSerializer, SearchSoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
 from transformers import AutoProcessor, MusicgenForConditionalGeneration
 from wsgiref.util import FileWrapper
 from django.db.models import Q
@@ -49,10 +49,10 @@ def search_sounds(request):
     query = request.query_params.get('query', '')
 
     sounds_by_title = Sound.objects.filter(name__icontains=query)
-    serializer_title = SoundSerializer(sounds_by_title, many=True)
+    serializer_title = SearchSoundSerializer(sounds_by_title, many=True)
 
     sounds_by_tag = Sound.objects.filter(soundtagassociation__tag__name__icontains=query).distinct()
-    serializer_tag = SoundSerializer(sounds_by_tag, many=True)
+    serializer_tag = SearchSoundSerializer(sounds_by_tag, many=True)
 
     print(f"Query: {query}")
     print(f"Sounds by Title Queryset: {sounds_by_title.query}")
