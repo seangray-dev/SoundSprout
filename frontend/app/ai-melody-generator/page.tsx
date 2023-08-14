@@ -3,7 +3,7 @@ import MusicGenForm from './Music-Gen-Form';
 
 const AIMelodyGenerator = () => {
 	return (
-		<section className='container mt-10'>
+		<section className='container my-10'>
 			<Heading className='text-3xl' level={1}>
 				AI Sample Generator
 			</Heading>

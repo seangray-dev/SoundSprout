@@ -39,13 +39,16 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 			const soundsData = await response.json();
 
 			const sortedSoundsData = [...soundsData].sort((a, b) => {
-				// Here, we consider that field is either 'name', 'duration', 'key', or 'bpm'
-				if (a[field] < b[field]) {
-					return order === 'asc' ? -1 : 1;
-				} else if (a[field] > b[field]) {
-					return order === 'asc' ? 1 : -1;
+				if (typeof a === 'number') {
+					return a - b;
 				} else {
-					return 0;
+					if (a[field] < b[field]) {
+						return order === 'asc' ? -1 : 1;
+					} else if (a[field] > b[field]) {
+						return order === 'asc' ? 1 : -1;
+					} else {
+						return 0;
+					}
 				}
 			});
 
