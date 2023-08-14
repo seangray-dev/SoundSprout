@@ -4,9 +4,11 @@ import { getCoverArtUrl, getPreviewUrl } from '@/app/api/cloudinary';
 import { searchSounds } from '@/redux/features/searchSlice';
 import { AppDispatch, RootState } from '@/redux/store';
 import {
+	ArrowRightIcon,
+	MagnifyingGlassIcon,
 	PlayIcon,
 	PlusIcon,
-	StopIcon,
+	StopIcon
 } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -26,6 +28,22 @@ const SearchPage = () => {
   const audioRefs = useRef<HTMLAudioElement[]>([]);
   const [durations, setDurations] = useState<{ [key: number]: number }>({});
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
+	const [searchQuery, setSearchQuery] = useState('');
+
+	const handleSearchChange = (e: any) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchEnter = (e: any) => {
+    if (e.key === 'Enter') {
+      dispatch(searchSounds(searchQuery));
+      setSearchQuery('');
+    }
+  };
+
+	const handleSearchClick = () => {
+    dispatch(searchSounds(searchQuery));
+  };
 
   const handlePlaySound = (index: number) => {
     if (playingIndex !== null) {
@@ -41,10 +59,6 @@ const SearchPage = () => {
     audioRefs.current[index].currentTime = 0;
     setPlayingIndex(null);
   };
-  useEffect(() => {
-    const query = new URLSearchParams(window.location.search).get('query') || '';
-    dispatch(searchSounds(query));
-  }, [dispatch]);
 
   const handleLoadedMetadata = (index: number) => {
     setDurations((durations) => ({
@@ -64,10 +78,34 @@ const SearchPage = () => {
       .padStart(2, '0')}`;
   };
 
+	useEffect(() => {
+    const query = new URLSearchParams(window.location.search).get('query') || '';
+    setSearchQuery(query);
+    dispatch(searchSounds(query));
+  }, [dispatch]);
+
   return (
     <div className='container my-10'>
-      <header className='my-4'>
-        <h1>Results:</h1>
+        <header className='my-4 flex items-center'>
+        		<div className='flex ml-4'>
+          		<div className='relative'>
+            		<MagnifyingGlassIcon className='w-5 h-5 text-purple absolute left-3 top-[5px]' />
+									<input
+										className='py-1 px-4 pl-10 w-40 text-black outline-none rounded-md border focus:border-purple'
+										type='text'
+										placeholder='Search'
+										value={searchQuery}
+										onChange={handleSearchChange}
+										onKeyDown={handleSearchEnter}
+									/>
+								</div>
+								<button
+									className='bg-purple text-white rounded-md p-1 ml-1 w-8 h-8' // Making the button square
+									onClick={handleSearchClick}
+								>
+									<ArrowRightIcon className='w-5 h-5 text-white' /> 
+          </button>
+        </div>
       </header>
 			<PackSoundsHeader />
       {status === 'loading' && <div>Loading...</div>}
@@ -144,13 +182,11 @@ const SearchPage = () => {
                 </li>
               ))
             ) : (
-              <div>No results found for your query.</div>
+              <div>No results found.</div>
             )}
           </ul>
-
 					<AudioPlayer />
         </section>
-				
       )}
     </div>
   );

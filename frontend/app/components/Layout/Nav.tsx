@@ -60,17 +60,19 @@ const Nav = () => {
 					</ul>
 				</div>
 				<ul className='flex items-center gap-4 text-white'>
-					<li className='flex-grow relative'>
-						<MagnifyingGlassIcon className='w-5 h-5 text-purple absolute left-3 top-[5px]' />
-						<input
-							className='py-1 px-4 pl-10 w-40 text-black outline-none rounded-md border focus:border-purple'
-							type='text'
-							placeholder='Search'
-							value={searchQuery}
-							onChange={handleSearchChange}
-							onKeyDown={handleSearchEnter}
-						/>
-					</li>
+					<nav>
+						<li className='flex-grow relative'>
+							<MagnifyingGlassIcon className='w-5 h-5 text-purple absolute left-3 top-[5px]' />
+							<input
+								className='py-1 px-4 pl-10 w-40 text-black outline-none rounded-md border focus:border-purple'
+								type='text'
+								placeholder='Search'
+								value={searchQuery}
+								onChange={handleSearchChange}
+								onKeyDown={handleSearchEnter}
+							/>
+						</li>
+					</nav>
 					{isAuth ? (
 						<>
 							<li className='underline underline-offset-2 text-white flex gap-2 items-center'>
