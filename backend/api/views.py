@@ -68,9 +68,9 @@ def generate_audio(request):
 
 
 def ai_music_gen(text):
-    processor = AutoProcessor.from_pretrained("facebook/musicgen-medium")
+    processor = AutoProcessor.from_pretrained("facebook/musicgen-small")
     model = MusicgenForConditionalGeneration.from_pretrained(
-        "facebook/musicgen-medium")
+        "facebook/musicgen-small")
 
     print('ai music gen:', text)
 
