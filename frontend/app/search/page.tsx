@@ -138,7 +138,7 @@ const SearchPage = () => {
 											/>
 										) : (
 											<PlayIcon
-												className={`mx-auto w-6 h-6 text-purple ${index === hoveredIndex ? 'block' : 'hidden'}`}
+												className={`mx-auto w-6 h-6 text-purple hover:cursor-pointer ${index === hoveredIndex ? 'block' : 'hidden'}`}
 												onClick={() => handlePlaySound(index)}
 											/>
 										)}
@@ -172,13 +172,14 @@ const SearchPage = () => {
                   <div className='text-gray-500'>{sound.key}</div>
                   <div className='text-gray-500'>{sound.bpm}</div>
                   <div className='flex justify-center'>
-                    <Button
-                      asChild
-                      variant='ghost'
-                      onClick={(event) => handleAddSoundToCart(dispatch, toast, event, sound)}
-                    >
-                      <PlusIcon className='text-gray-500 w-5 h-5 -ml-8 hover:cursor-pointer hover:bg-purple hover:text-white transition-all duration-300' />
-                    </Button>
+									
+									<Button
+											asChild
+											variant='ghost'
+											onClick={(event) => handleAddSoundToCart(dispatch, toast, event, sound)}
+									>
+										<PlusIcon className='text-gray-500 w-5 h-5 -ml-8 hover:cursor-pointer hover:bg-purple hover:text-white transition-all duration-300 rounded-md ' />
+									</Button>
                   </div>
                 </li>
               ))
