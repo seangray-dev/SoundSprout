@@ -56,7 +56,7 @@ def search_packs(request):
 def search_sounds(request):
     query = request.GET.get('q', '')
     sounds = Sound.objects.filter(name__icontains=query)
-    result = [{"id": sound.id, "name": sound.name, "bpm": sound.bpm, 'key': sound.key, 'audio_file': sound.audio_file.url,
+    result = [{"id": sound.id, "name": sound.name, "bpm": sound.bpm, 'key': sound.key, 'audio_file': sound.audio_file.url, 'price': sound.price,
                "pack": {"id": sound.pack.id, "name": sound.pack.name, 'cover_art_location': sound.pack.cover_art_location}} for sound in sounds]
     return JsonResponse(result, safe=False)
 
