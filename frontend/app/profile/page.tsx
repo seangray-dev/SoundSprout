@@ -7,12 +7,12 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { changeUserPassword, deleteUser, fetchUser, updateUser } from '../api/api';
 import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 } from "../components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '../components/ui/dialog';
 import { User } from '../types';
@@ -23,20 +23,15 @@ const ProfilePage = () => {
   const [user, setUser] = useState<User>();
   const [open, setOpen] = useState(false);
   const router = useRouter();
-
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     firstName: "",
     lastName: "",
   });
-
-  // Change Password Dialog
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 	const [openPasswordDialog, setOpenPasswordDialog] = useState(false);
-
-	// Delete Account Dialog
 	const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
 	const [deleteConfirm, setDeleteConfirm] = useState(false);
 
@@ -83,7 +78,6 @@ const ProfilePage = () => {
 			}; 
 		
         const response = await updateUser(data);
-        console.log(response); // Debugging line
         if (response.success) {
 					console.log(formData)
 					setUser(response.user);
@@ -93,7 +87,7 @@ const ProfilePage = () => {
 							firstName: response.user.first_name,
 							lastName: response.user.last_name,
 					});
-					setOpen(false); // Close the dialog
+					setOpen(false);
 			} else {
 					alert(response.message);
 			}
@@ -121,7 +115,7 @@ const ProfilePage = () => {
     } else {
         try {
             await changeUserPassword(newPassword);
-            setOpenPasswordDialog(false); // Close the dialog
+            setOpenPasswordDialog(false);
         } catch (error) {
             console.error('Failed to change password:', error);
         }

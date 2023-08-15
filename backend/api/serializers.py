@@ -25,6 +25,18 @@ class SoundSerializer(serializers.ModelSerializer):
         model = Sound
         fields = ['id', 'pack', 'name', 'audio_file', 'price', 'bpm', 'key']
 
+class SoundTagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SoundTagAssociation
+        fields = ['tag']
+
+class SearchSoundSerializer(serializers.ModelSerializer):
+    pack = PackSerializer()
+    tags = SoundTagSerializer(source='soundtagassociation_set', many=True, read_only=True)
+
+    class Meta:
+        model = Sound
+        fields = ['id', 'pack', 'name', 'audio_file', 'price', 'bpm', 'key', 'tags']
 
 class GenreSerializer(serializers.ModelSerializer):
     class Meta:

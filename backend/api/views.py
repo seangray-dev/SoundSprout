@@ -31,9 +31,10 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from sound_sprout.models import Pack, Sound, Genre, PackGenreAssociation, SoundTagAssociation
-from .serializers import PackSerializer, SoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
+from .serializers import PackSerializer, SoundSerializer, SearchSoundSerializer, UserSerializer, GenreSerializer, SoundTagAssociationSerializer
 from transformers import AutoProcessor, MusicgenForConditionalGeneration
 from wsgiref.util import FileWrapper
+from django.db.models import Q
 
 load_dotenv()
 CLOUDINARY_BASE_URL = os.getenv('CLOUDINARY_BASE_URL')
@@ -41,6 +42,23 @@ CLOUDINARY_CLOUD_NAME = os.getenv('CLOUDINARY_CLOUD_NAME')
 CLOUNDINARY_PACKS_URL = os.getenv('CLOUNDINARY_PACKS_URL')
 CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
+
+
+@api_view(['GET'])
+def search_packs(request):
+    query = request.GET.get('q', '')
+    packs = Pack.objects.filter(name__icontains=query)
+    result = [{"id": pack.id, "name": pack.name} for pack in packs]
+    return JsonResponse(result, safe=False)
+
+
+@api_view(['GET'])
+def search_sounds(request):
+    query = request.GET.get('q', '')
+    sounds = Sound.objects.filter(name__icontains=query)
+    result = [{"id": sound.id, "name": sound.name, "bpm": sound.bpm, 'key': sound.key, 'audio_file': sound.audio_file.url, 'price': sound.price,
+               "pack": {"id": sound.pack.id, "name": sound.pack.name, 'cover_art_location': sound.pack.cover_art_location}} for sound in sounds]
+    return JsonResponse(result, safe=False)
 
 
 @api_view(['POST'])
@@ -119,7 +137,6 @@ def profile(request):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-# unused
 @api_view(['GET'])
 def get_current_user(request):
     """

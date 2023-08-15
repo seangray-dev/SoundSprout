@@ -68,6 +68,7 @@ export interface SoundTagAssociation {
 export interface PackSoundsProps {
 	packId: string;
 	coverArtLocation: string;
+	sounds?: Sound[];
 }
 
 export interface LoginFormValues {
