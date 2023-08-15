@@ -53,10 +53,6 @@ def search_sounds(request):
 
     sounds_by_tag = Sound.objects.filter(soundtagassociation__tag__name__icontains=query).distinct()
     serializer_tag = SearchSoundSerializer(sounds_by_tag, many=True)
-
-    print(f"Query: {query}")
-    print(f"Sounds by Title Queryset: {sounds_by_title.query}")
-    print(f"Sounds by Tag Queryset: {sounds_by_tag.query}")
     
     response_data = {
         'sounds_by_title': serializer_title.data,
