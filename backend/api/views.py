@@ -43,23 +43,23 @@ CLOUNDINARY_PACKS_URL = os.getenv('CLOUNDINARY_PACKS_URL')
 CLOUDINARY_AUDIO_BASE_URL = f"{CLOUDINARY_BASE_URL}/{CLOUDINARY_CLOUD_NAME}/video/upload/f_auto:video,q_auto/v1/packs"
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
+
+@api_view(['GET'])
+def search_packs(request):
+    query = request.GET.get('q', '')
+    packs = Pack.objects.filter(name__icontains=query)
+    result = [{"id": pack.id, "name": pack.name} for pack in packs]
+    return JsonResponse(result, safe=False)
+
+
 @api_view(['GET'])
 def search_sounds(request):
-    print("search_sounds called")
-    query = request.query_params.get('query', '')
+    query = request.GET.get('q', '')
+    sounds = Sound.objects.filter(name__icontains=query)
+    result = [{"id": sound.id, "name": sound.name, "bpm": sound.bpm, 'key': sound.key, 'audio_file': sound.audio_file.url,
+               "pack": {"id": sound.pack.id, "name": sound.pack.name, 'cover_art_location': sound.pack.cover_art_location}} for sound in sounds]
+    return JsonResponse(result, safe=False)
 
-    sounds_by_title = Sound.objects.filter(name__icontains=query)
-    serializer_title = SearchSoundSerializer(sounds_by_title, many=True)
-
-    sounds_by_tag = Sound.objects.filter(soundtagassociation__tag__name__icontains=query).distinct()
-    serializer_tag = SearchSoundSerializer(sounds_by_tag, many=True)
-    
-    response_data = {
-        'sounds_by_title': serializer_title.data,
-        'sounds_by_tag': serializer_tag.data
-    }
-
-    return Response(response_data, status=status.HTTP_200_OK)
 
 @api_view(['POST'])
 def generate_audio(request):

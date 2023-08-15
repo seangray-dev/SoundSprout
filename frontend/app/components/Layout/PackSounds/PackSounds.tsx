@@ -19,7 +19,11 @@ import { handleAddSoundToCart } from '../../Utils/cartActions';
 import { Button } from '../../ui/button';
 import { useToast } from '../../ui/use-toast';
 
-const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
+const PackSounds = ({
+	packId,
+	coverArtLocation,
+	sounds: soundsProp,
+}: PackSoundsProps) => {
 	const dispatch = useDispatch();
 	const { toast } = useToast();
 	const currentSound = useSelector((state: RootState) => state.currentSound);
@@ -32,46 +36,50 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 	const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
 	useEffect(() => {
-		const fetchSoundsAndTags = async () => {
-			const response = await fetch(
-				`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/packs/${packId}/sounds`
-			);
-			const soundsData = await response.json();
-
-			const sortedSoundsData = [...soundsData].sort((a, b) => {
-				// Here, we consider that field is either 'name', 'duration', 'key', or 'bpm'
-				if (a[field] < b[field]) {
-					return order === 'asc' ? -1 : 1;
-				} else if (a[field] > b[field]) {
-					return order === 'asc' ? 1 : -1;
-				} else {
-					return 0;
-				}
-			});
-
-			setSounds(sortedSoundsData);
-
-			// Fetch the tags for each sound concurrently using Promise.all
-			const tagsPromises = soundsData.map(async (sound: Sound) => {
-				const tagResponse = await fetch(
-					`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/sounds/${sound.id}/tags/`
+		if (soundsProp) {
+			setSounds(soundsProp);
+		} else {
+			const fetchSoundsAndTags = async () => {
+				const response = await fetch(
+					`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/packs/${packId}/sounds`
 				);
-				const tags = await tagResponse.json();
-				return { soundId: sound.id, tags };
-			});
+				const soundsData = await response.json();
 
-			const tagsForSounds = await Promise.all(tagsPromises);
+				const sortedSoundsData = [...soundsData].sort((a, b) => {
+					// Here, we consider that field is either 'name', 'duration', 'key', or 'bpm'
+					if (a[field] < b[field]) {
+						return order === 'asc' ? -1 : 1;
+					} else if (a[field] > b[field]) {
+						return order === 'asc' ? 1 : -1;
+					} else {
+						return 0;
+					}
+				});
 
-			const soundTags: { [key: number]: Tag[] } = {};
-			tagsForSounds.forEach(({ soundId, tags }) => {
-				soundTags[soundId] = tags;
-			});
+				setSounds(sortedSoundsData);
 
-			setSoundTags(soundTags);
-		};
+				// Fetch the tags for each sound concurrently using Promise.all
+				const tagsPromises = soundsData.map(async (sound: Sound) => {
+					const tagResponse = await fetch(
+						`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/sounds/${sound.id}/tags/`
+					);
+					const tags = await tagResponse.json();
+					return { soundId: sound.id, tags };
+				});
 
-		fetchSoundsAndTags();
-	}, [packId, field, order]);
+				const tagsForSounds = await Promise.all(tagsPromises);
+
+				const soundTags: { [key: number]: Tag[] } = {};
+				tagsForSounds.forEach(({ soundId, tags }) => {
+					soundTags[soundId] = tags;
+				});
+
+				setSoundTags(soundTags);
+			};
+
+			fetchSoundsAndTags();
+		}
+	}, [packId, field, order, soundsProp]);
 
 	useEffect(() => {
 		audioRefs.current = audioRefs.current.slice(0, sounds.length);
@@ -136,13 +144,15 @@ const PackSounds = ({ packId, coverArtLocation }: PackSoundsProps) => {
 							onMouseEnter={() => setHoveredIndex(index)}
 							onMouseLeave={() => setHoveredIndex(null)}>
 							<div className='flex items-center'>
-								<Image
-									className='ml-6'
-									src={getCoverArtUrl(coverArtLocation)}
-									width={36}
-									height={36}
-									alt=''
-								/>
+								<Link href={`/packs/${packId}`}>
+									<Image
+										className='ml-6'
+										src={getCoverArtUrl(coverArtLocation)}
+										width={36}
+										height={36}
+										alt=''
+									/>
+								</Link>
 								<div className='flex-grow'>
 									<PlayIcon
 										className={`mx-auto w-6 h-6 text-purple ${

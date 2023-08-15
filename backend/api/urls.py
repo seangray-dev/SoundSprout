@@ -9,7 +9,7 @@ urlpatterns = [
     path('create-user/', views.create_user),
     path('login/', views.login_user),
     path('profile/', views.profile),
-    #path('upload/', views.upload),
+    # path('upload/', views.upload),
     path('genre/<int:genre_id>/', views.get_genre),
     path('genre/<int:genre_id>/sounds/', views.get_sounds_by_genre),
     path('genre/<int:genre_id>/packs/', views.get_packs_by_genre),
@@ -23,4 +23,6 @@ urlpatterns = [
          views.get_zip_file, name='get-zip-file'),
     path('generate-audio/', views.generate_audio),
     path('search/', views.search_sounds, name='search_sounds'),
+    path('search/packs/', views.search_packs, name='search_packs'),
+    path('search/sounds/', views.search_sounds, name='search_sounds'),
 ]

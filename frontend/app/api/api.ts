@@ -22,27 +22,27 @@ export const fetchUser = async () => {
 export const updateUser = async (userData: any) => {
 	const token = localStorage.getItem('token');
 	if (!token) {
-			throw new Error('Token not found');
+		throw new Error('Token not found');
 	}
 
 	try {
-			const response = await axios.put(`${BACKEND}/profile/`, userData, {
-					headers: {
-							Authorization: `Bearer ${token}`,
-					},
-			});
+		const response = await axios.put(`${BACKEND}/profile/`, userData, {
+			headers: {
+				Authorization: `Bearer ${token}`,
+			},
+		});
 
-			console.log('Update User:', response.data);
-			if (response.status === 200) {
-					return { success: true, user: response.data };
-			} else {
-					return { success: false, message: response.data.message };
-			}
+		console.log('Update User:', response.data);
+		if (response.status === 200) {
+			return { success: true, user: response.data };
+		} else {
+			return { success: false, message: response.data.message };
+		}
 	} catch (error) {
-			if (axios.isAxiosError(error)) {
-					throw new Error(error?.response?.data?.error || 'Unknown error');
-			}
-			throw error;
+		if (axios.isAxiosError(error)) {
+			throw new Error(error?.response?.data?.error || 'Unknown error');
+		}
+		throw error;
 	}
 };
 
@@ -65,21 +65,25 @@ export const changeUserPassword = async (newPassword: string) => {
 		throw new Error('Token not found');
 	}
 
-	console.log('Token:', token);  // For debugging
+	console.log('Token:', token); // For debugging
 
 	try {
-		const response = await axios.patch(`${BACKEND}/profile/`, {
-			new_password: newPassword,
-		}, {
-			headers: {
-				Authorization: `Bearer ${token}`,
+		const response = await axios.patch(
+			`${BACKEND}/profile/`,
+			{
+				new_password: newPassword,
 			},
-		});
+			{
+				headers: {
+					Authorization: `Bearer ${token}`,
+				},
+			}
+		);
 
-		console.log('Response:', response);  // For debugging
+		console.log('Response:', response); // For debugging
 		return response;
 	} catch (error) {
-		console.error('Error changing password:', error);  // Logs the error
+		console.error('Error changing password:', error); // Logs the error
 		throw error;
 	}
 };
@@ -111,6 +115,34 @@ export const getSoundsByGenre = async (genreId: number) => {
 export const getPackById = async (id: number): Promise<Pack> => {
 	try {
 		const response = await axios.get<Pack>(`${BACKEND}/packs/${id}/`);
+		return response.data;
+	} catch (error) {
+		if (axios.isAxiosError(error)) {
+			throw new Error(error?.response?.data?.error || 'Unknown error');
+		}
+		throw error;
+	}
+};
+
+// Search packs by query string
+export const searchPacks = async (query: string) => {
+	try {
+		const response = await axios.get(`${BACKEND}/search/packs/?q=${query}`);
+		console.log('Search Packs API:,', response.data);
+		return response.data;
+	} catch (error) {
+		if (axios.isAxiosError(error)) {
+			throw new Error(error?.response?.data?.error || 'Unknown error');
+		}
+		throw error;
+	}
+};
+
+// Search sounds by query string
+export const searchSounds = async (query: string) => {
+	try {
+		const response = await axios.get(`${BACKEND}/search/sounds/?q=${query}`);
+		console.log('Search Sounds API:', response.data);
 		return response.data;
 	} catch (error) {
 		if (axios.isAxiosError(error)) {
