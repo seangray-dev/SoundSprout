@@ -171,16 +171,14 @@ const SearchPage = () => {
                   <div className='text-gray-500'>{formatTime(durations[index])}</div>
                   <div className='text-gray-500'>{sound.key}</div>
                   <div className='text-gray-500'>{sound.bpm}</div>
-                  <div className='flex justify-center'>
-									
-									<Button
-											asChild
-											variant='ghost'
-											onClick={(event) => handleAddSoundToCart(dispatch, toast, event, sound)}
-									>
-										<PlusIcon className='text-gray-500 w-5 h-5 -ml-8 hover:cursor-pointer hover:bg-purple hover:text-white transition-all duration-300 rounded-md ' />
-									</Button>
-                  </div>
+									<div className='flex justify-center'>
+										<button											
+											onClick={(event) =>
+												handleAddSoundToCart(dispatch, toast, event, sound)
+											}>
+												<PlusIcon className='text-gray-500 w-5 h-5 -ml-8  hover:cursor-pointer hover:bg-purple hover:text-white transition-all rounded-md duration-300' />
+										</button>
+									</div>
                 </li>
               ))
             ) : (
