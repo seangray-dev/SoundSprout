@@ -373,7 +373,7 @@ def download_packs(request):
             continue
 
     zipfile_obj.close()
-    delayed_delete(zip_filename, 300)
+    # delayed_delete(zip_filename, 300)
 
     return JsonResponse({'zipFileName': zip_filename})
 

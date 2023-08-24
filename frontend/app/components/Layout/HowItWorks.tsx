@@ -18,7 +18,7 @@ const HowItWorks = () => {
 					<HowItWorksItem
 						icon={<UserPlusIcon className='text-purple w-20 h-20 mx-auto' />}
 						title='Create Your Account'
-						description='Register and set up your Sound Sprout account.  Get started by clicking the sign-up button.'
+						description='Register and set up your Sound Sprout account.  Sign-up by clicking the Get Started button.'
 					/>
 					<HowItWorksItem
 						icon={

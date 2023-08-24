@@ -53,16 +53,14 @@ export const columns: ColumnDef<CartItem>[] = [
 			return (
 				<div className='flex items-center justify-between'>
 					<div>${row.original.item.price}</div>
-					<Button
-						asChild
+					<button
 						title='Remove Item'
-						variant='ghost'
 						onClick={() => {
 							dispatch(removeFromCart(Number(row.original.item.id)));
 						}}
 						className='text-red-600 hover:text-red-800 hover:cursor-pointer transition-all duration-300'>
 						<XCircleIcon className='h-6 w-6'></XCircleIcon>
-					</Button>
+					</button>
 				</div>
 			);
 		},
