@@ -2,6 +2,12 @@
 
 This repository consists of a full stack application that uses [Next.js](https://nextjs.org/) for the frontend, and Python [Django](https://www.djangoproject.com/) with [Django Rest Framework](https://www.django-rest-framework.org/) for the backend API, all backed by a [PostgreSQL](https://www.postgresql.org/) database.
 
+## Preview
+
+![](./screenshots/home.png)
+
+For more screenshots [click here](./screenshots/)
+
 ## Features & Functionality
 
 - **Browse Sound Packs:** Users can visit the homepage to browse and explore a list of sound packs fetched from the database.
@@ -27,8 +33,8 @@ This repository consists of a full stack application that uses [Next.js](https:/
 
 ## Prerequisites
 
-1. Python 3
-2. Pip3 (Python Package Installer)
+1. Python
+2. Pip (Python Package Installer)
 3. PostgreSQL
 4. Node.js and npm
 
@@ -45,14 +51,14 @@ git clone https://github.com/seangray-dev/SoundSprout.git
 - macOs/Linuxs
 
 ```
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate
 ```
 
 - Windows
 
 ```
-python3 -m venv myenv
+python -m venv myenv
 .\myenv\Scripts\activate
 ```
 
@@ -60,7 +66,7 @@ python3 -m venv myenv
 
 ```
 cd backend
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 4. Setup PostgreSQL database
