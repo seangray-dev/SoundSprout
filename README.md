@@ -4,11 +4,11 @@ This repository consists of a full stack application that uses [Next.js](https:/
 
 ## Preview
 
-[Presentation](https://www.youtube.com/embed/QweGtTM0H_w)
-
 ![](./screenshots/home.png)
 
 For more screenshots [click here](./screenshots/)
+
+For our presentation [click here](https://www.youtube.com/embed/QweGtTM0H_w)
 
 ## Features & Functionality
 
