@@ -4,13 +4,11 @@ This repository consists of a full stack application that uses [Next.js](https:/
 
 ## Preview
 
+[Presentation](https://www.youtube.com/embed/QweGtTM0H_w)
+
 ![](./screenshots/home.png)
 
 For more screenshots [click here](./screenshots/)
-
-## Presentation
-
-<iframe width="2543" height="1122" src="https://www.youtube.com/embed/QweGtTM0H_w" title="SoundSprout Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Features & Functionality
 
