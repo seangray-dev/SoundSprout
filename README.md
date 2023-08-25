@@ -8,6 +8,10 @@ This repository consists of a full stack application that uses [Next.js](https:/
 
 For more screenshots [click here](./screenshots/)
 
+## Presentation
+
+https://www.youtube.com/watch?v=QweGtTM0H_w
+
 ## Features & Functionality
 
 - **Browse Sound Packs:** Users can visit the homepage to browse and explore a list of sound packs fetched from the database.
